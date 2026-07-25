@@ -362,8 +362,6 @@ common:
   url: changelog/osfi-changelog.yml
 - type: Conformance
   url: conformance/osfi-conformance.yml
-- type: WellKnown
-  url: well-known/osfi-well-known.yml
 - type: Packages
   url: packages/osfi-packages.yml
 - type: DataModel
