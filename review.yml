@@ -1,0 +1,266 @@
+aid: osfi
+name: OSFI
+review:
+  question: Does OSFI publish a public, self-serve developer portal and downloadable
+    OpenAPI for its insurance regulatory data?
+  answer: false
+  date: '2026-07-25'
+  reviewer: API Evangelist
+  homeMarket: Canada
+  tier: market-infrastructure
+findings:
+  summary: |
+    OSFI (Office of the Superintendent of Financial Institutions / Bureau du
+    surintendant des institutions financières) is Canada's federal PRUDENTIAL
+    regulator. On the insurance side it supervises federally regulated life
+    insurers, property and casualty insurers, mortgage insurers and fraternal
+    benefit societies for solvency and capital adequacy. It is not a market-conduct
+    regulator — conduct sits with the provinces (FSRA in Ontario, AMF in Quebec) —
+    and Canada has no open-insurance mandate; Consumer-Driven Banking excludes
+    insurance entirely.
+
+    OSFI operates NO first-party developer portal. Every conventional developer
+    subdomain fails DNS, and every conventional developer path 404s (see
+    portalProbes). There is no OpenAPI, Swagger, AsyncAPI, GraphQL, gRPC or
+    Postman surface anywhere on osfi-bsif.gc.ca, and none on the Open Government
+    host that carries OSFI's data.
+
+    What OSFI does publish machine-readably is real and materially useful: its
+    insurance regulatory returns (FINDAT) and its "Who we regulate" register are
+    pushed to Canada's Open Government portal (open.canada.ca) as datastore-active
+    CKAN datasets, readable ANONYMOUSLY over the CKAN 3 Action API. OSFI ships a
+    "Step by Step Guide on how to use reporting tools such as Power BI and Excel to
+    access Open Government API sources" PDF alongside each dataset, so the API
+    route is explicitly sanctioned rather than incidental. Four insurance-relevant
+    datasets were confirmed live on 2026-07-25 (see confirmedEndpoints). This is
+    the closest Canadian analogue to the FCA Financial Services Register API — but
+    it is Government-of-Canada CKAN infrastructure, not an OSFI-branded API
+    product, and it carries no first-party reference documentation.
+
+    The filing side is institution-gated. Federally regulated insurers submit
+    LF1/LF2/LF3, PC1-PC4 and MI-series returns through the Regulatory Reporting
+    System, reached via a Bank of Canada Connect login that returns HTTP 401
+    anonymously. The successor platform, the Regulatory Data Hub (RDH), is part of
+    the Data Collection Modernization project (May 2023 - April 2028) and is stated
+    to go live in late fall 2026; no API contract for it has been published.
+
+    Everything else is a documentation-and-rulebook corpus: 313 guidance-library
+    pages and 142 financial reporting instruction pages across a 3,622-URL sitemap,
+    including the LICAT, MCT and BAAT capital guidelines that define the insurance
+    return schemas.
+  developerPortal:
+    url: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data
+    httpStatus: 200
+    confirmed: false
+    classification: data-access how-to page
+    note: |
+      This is the nearest thing OSFI has to a developer landing page — it explains
+      how to find, filter and share the financial data on Open Government and links
+      the per-dataset API usage guide. It is NOT a self-serve developer portal: no
+      reference docs, no console, no keys, no SDKs, no changelog. It is also not a
+      login wall and not a marketing "innovation" page.
+  portalProbes:
+    - url: https://developer.osfi-bsif.gc.ca/
+      httpStatus: 000
+      note: DNS does not resolve.
+    - url: https://developers.osfi-bsif.gc.ca/
+      httpStatus: 000
+      note: DNS does not resolve.
+    - url: https://docs.osfi-bsif.gc.ca/
+      httpStatus: 000
+      note: DNS does not resolve.
+    - url: https://api.osfi-bsif.gc.ca/
+      httpStatus: 000
+      note: DNS does not resolve.
+    - url: https://www.osfi-bsif.gc.ca/en/developers
+      httpStatus: 404
+    - url: https://www.osfi-bsif.gc.ca/en/api
+      httpStatus: 404
+    - url: https://www.osfi-bsif.gc.ca/developers
+      httpStatus: 404
+    - url: https://www.osfi-bsif.gc.ca/api
+      httpStatus: 404
+    - url: https://www.osfi-bsif.gc.ca/en
+      httpStatus: 200
+      note: Corporate site. "Data and forms" is the only data-bearing top-level section.
+  specProbes:
+    - url: https://www.osfi-bsif.gc.ca/openapi.json
+      httpStatus: 404
+    - url: https://www.osfi-bsif.gc.ca/swagger.json
+      httpStatus: 404
+    - url: https://open.canada.ca/openapi.json
+      httpStatus: 404
+    - url: https://open.canada.ca/data/openapi.json
+      httpStatus: 404
+    - url: https://open.canada.ca/data/api/openapi.json
+      httpStatus: 404
+  openapiHarvested: false
+  specsCount: 0
+  specsNote: |
+    Zero OpenAPI/Swagger documents were found and therefore none were saved; the
+    openapi/ directory is deliberately absent. The CKAN 3 Action API that serves
+    OSFI's data is documented in prose at docs.ckan.org and publishes no machine-
+    readable contract.
+  acordPosture: no ACORD reference found
+  acordEvidence: |
+    Zero of the 3,622 URLs in the osfi-bsif.gc.ca sitemap contain "acord". OSFI
+    collects insurance data in its OWN return schemas — LICAT (LCA/LCQ), LF1 Life
+    Core Financial Statement Return, LF2/LF3 life supervisory returns, PC1 P&C Core
+    Financial Statement Return, PC2/PC3 supervisory returns, PC4 Minimum Capital
+    Test and Branch Adequacy of Assets Test, and the MI/MI1/MI3/MI4/MI5 mortgage
+    insurance series — not ACORD AL3, ACORD XML or the ACORD Data Standards. This
+    is expected for a prudential regulator: ACORD governs policy and claims
+    transactions between carriers, brokers and agencies, not solvency reporting to
+    a supervisor. No AL3, ACORD XML, NGDS or IVANS reference appears anywhere on
+    the site.
+  insuranceVerbs:
+    quote: false
+    bind: false
+    issue: false
+    fnol: false
+    note: |
+      None of the four insurance API verbs are exposed. OSFI is a supervisor, not a
+      carrier or a broker; it writes no policies and settles no claims. Its API-
+      shaped surface is statistical and register data only.
+  authModel:
+    publicData: none
+    publicDataNote: |
+      The CKAN 3 Action API endpoints serving OSFI's data are anonymous — no API
+      key, no OAuth, no registration. Verified with unauthenticated GET requests.
+    filing: partner-gated portal login
+    filingNote: |
+      The Regulatory Reporting System is reached through Bank of Canada Connect at
+      https://connect-connexion.bank-banque-canada.ca/igw/apps/ami/portal/login,
+      which returns HTTP 401 to anonymous requests. Accounts are provisioned by a
+      Local Registration Authority at the filing institution. No developer-facing
+      auth documentation, no client-credentials flow, no mTLS profile is published.
+    wellKnown:
+      - url: https://www.osfi-bsif.gc.ca/.well-known/openid-configuration
+        httpStatus: 404
+  webhooks:
+    present: false
+    asyncapi: false
+    note: |
+      No event catalog, no webhook registry, no AsyncAPI document. Data is refreshed
+      on a published calendar instead — "Who we regulate" monthly on the 1st, FINDAT
+      monthly on the 15th, quarterly data in late May, August, November and March.
+  postman:
+    present: false
+  graphql:
+    present: false
+  grpc:
+    present: false
+  transports:
+    - protocol: REST
+      scheme: https
+      baseURL: https://open.canada.ca/data/en/api/3/action
+      documented: true
+      note: |
+        CKAN 3 Action API (package_search, package_show, resource_show,
+        datastore_search, datastore_search_sql) over OSFI's Open Government
+        datasets. Anonymous. Documented in prose by CKAN, plus OSFI's own
+        step-by-step API usage guide PDF per dataset.
+    - protocol: HTTPS portal
+      scheme: https
+      baseURL: https://connect-connexion.bank-banque-canada.ca/igw/apps/ami/portal/login
+      documented: false
+      note: Regulatory Reporting System filing portal. HTTP 401 anonymously. Human
+        UI only; no documented programmatic interface.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: None found.
+  confirmedEndpoints:
+    - request: GET https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=945045fa-2de0-47d4-aad2-144d69467824&limit=1
+      httpStatus: 200
+      note: Who we regulate — federally regulated financial institutions. 349 records.
+        Fields include Company Name, FI Industry Name and Authorized Insurance Classes.
+    - request: GET https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=f3ddcfbc-a852-4dee-be3c-5b08864c9afe&limit=2
+      httpStatus: 200
+      note: Life insurance companies — LF1 Life Core Financial Statement Return (Active).
+        531,347 records, latest fiscal quarter Q2 2026.
+    - request: GET https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=d4c1d98d-c19e-4730-ab2d-6e64160351a7&limit=1
+      httpStatus: 200
+      note: Property and casualty companies — PC1 P&C Core Financial Statement Return
+        (Active). 693,693 records.
+    - request: GET https://open.canada.ca/data/en/api/3/action/package_search?fq=organization:osfi-bsif&rows=100
+      httpStatus: 200
+      note: 36 OSFI datasets published on Open Government; 9 carry datastore-active
+        resources, of which 4 are insurance-relevant.
+    - request: GET https://open.canada.ca/data/en/api/3/action/status_show
+      httpStatus: 200
+      note: CKAN instance responds to unauthenticated Action API calls.
+  gated: false
+  gatedNote: |
+    Set false because the substantive data surface is genuinely open and anonymous.
+    The FILING surface is institution-gated (BoC Connect, HTTP 401), but that is not
+    the only integration surface OSFI offers.
+  wafNote: |
+    open.canada.ca rejects requests carrying a default curl User-Agent with an
+    HTML "Request Rejected" page under HTTP 200. A browser User-Agent is required
+    for the Action API to return JSON. Recorded so future harvests do not
+    misread the WAF page as an API failure.
+sources:
+  - url: https://www.osfi-bsif.gc.ca/en
+    type: Website
+    note: Corporate homepage; "Data and forms" is the only data-bearing section.
+  - url: https://www.osfi-bsif.gc.ca/en/data-forms
+    type: Documentation
+    note: Data and forms hub — financial data, reporting and returns, applications
+      and approvals.
+  - url: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data
+    type: Documentation
+    note: Directs all financial data consumers to Open Government; links the "Who we
+      regulate" dataset and the OSFI publisher search.
+  - url: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data
+    type: Documentation
+    note: |
+      States that each dataset includes "A guide explaining how to access via
+      Application Programming Interface (API)". Confirms publication cadence and
+      the FINDAT / Who we regulate split.
+  - url: https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns/file-submit-return
+    type: Documentation
+    note: Routes filers to the Regulatory Reporting System via Bank of Canada Connect;
+      all guidance is PDF user manuals, no API.
+  - url: https://www.osfi-bsif.gc.ca/en/about-osfi/progress-our-initiatives/modernizing-we-collect-data-institutions
+    type: Documentation
+    note: Data Collection Modernization (May 2023 - April 2028) with the Bank of Canada
+      and CDIC; new Regulatory Data Hub platform stated to go live late fall 2026.
+      No API contract published.
+  - url: https://open.canada.ca/data/en/dataset/b27ec3ef-7338-4e76-a6fd-128339a92df5
+    type: OpenData
+    note: Who we regulate — the public register, updated daily, four datastore-active
+      resources.
+  - url: https://open.canada.ca/data/en/dataset/1358284b-26e7-4c69-abd8-398d3da2c270
+    type: OpenData
+    note: Life insurance companies — 13 datastore-active return series.
+  - url: https://open.canada.ca/data/en/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705
+    type: OpenData
+    note: Property and casualty companies — 14 datastore-active return series including
+      mortgage insurance.
+  - url: https://open.canada.ca/data/en/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c
+    type: OpenData
+    note: Fraternal benefit societies — 13 datastore-active return series.
+  - url: https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/3b81a599-01cd-437e-b090-aeb8adaa5edf/download/step-by-step-api-usage-guide_en.pdf
+    type: Documentation
+    note: |
+      "Step by Step Guide on how to use reporting tools such as Power BI and Excel
+      to access Open Government API sources" — OSFI's only API-access documentation.
+      HTTP 200, application/pdf.
+  - url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library
+    type: Documentation
+    note: 313 guidance-library pages in the sitemap, including LICAT, MCT and BAAT.
+  - url: https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns/filing-financial-returns/financial-reporting-instructions
+    type: Documentation
+    note: 142 financial reporting instruction pages defining the life, P&C and mortgage
+      insurance return schemas.
+actions:
+  apisYmlCreated: true
+  apisListed: 4
+  openapiDirectoryCreated: false
+  reason: |
+    Four real, live, anonymously accessible datasets were captured as apis[] entries
+    with confirmed base URL and documentation. No OpenAPI exists to harvest, so no
+    openapi/ directory was created and no spec pointers were fabricated. OSFI is
+    recorded honestly as a prudential regulator with an open DATA surface, a
+    gated FILING surface, no developer portal, and no ACORD posture.

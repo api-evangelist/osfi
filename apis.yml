@@ -1,0 +1,158 @@
+aid: osfi
+url: https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/apis.yml
+name: OSFI
+kind: company
+description: The Office of the Superintendent of Financial Institutions (OSFI / BSIF)
+  is Canada's federal prudential regulator, supervising more than 400 federally regulated
+  financial institutions and over 1,200 private pension plans. On the insurance side
+  OSFI supervises federally regulated life insurance companies, property and casualty
+  insurers, mortgage insurers and fraternal benefit societies for solvency and capital
+  adequacy — issuing the LICAT, MCT and BAAT capital guidelines and collecting the
+  LF1/LF2/LF3, PC1-PC4 and MI1-MI5 regulatory returns. It does NOT regulate market
+  conduct; that sits with the provinces (FSRA in Ontario, AMF in Quebec), and Canada
+  has no open-insurance mandate — Consumer-Driven Banking excludes insurance entirely.
+  OSFI publishes no first-party developer portal and no OpenAPI — developer.osfi-bsif.gc.ca,
+  api.osfi-bsif.gc.ca and docs.osfi-bsif.gc.ca do not resolve, and /developers, /api
+  and /developer all return 404. Its real machine-readable surface is its insurance
+  and banking regulatory data (FINDAT) plus the "Who we regulate" register, published
+  as datastore-active datasets on Canada's Open Government portal and readable
+  anonymously through the CKAN 3 Action API — OSFI ships a step-by-step API usage
+  guide PDF with each dataset. The filing side (the Regulatory Reporting System) is
+  institution-gated behind a Bank of Canada Connect login. Everything else is a
+  documentation-and-rulebook corpus of 313 guidance-library pages and 142 financial
+  reporting instruction pages.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Insurance
+- Canada
+- Regulator
+- Life Insurance
+- Property and Casualty
+- Financial Regulation
+- Prudential Supervision
+- Open Data
+- Risk Data
+- Market Infrastructure
+created: '2026-07-25'
+modified: '2026-07-25'
+specificationVersion: '0.19'
+apis:
+- aid: osfi:osfi-who-we-regulate-register
+  name: OSFI Who We Regulate Register
+  description: Public register of the federally regulated financial institutions OSFI
+    supervises, including every federally regulated insurer with its Authorized Insurance
+    Classes, FI industry group, trade name and principal representative. Published
+    as a datastore-active dataset on Canada's Open Government portal and queryable
+    anonymously over the CKAN 3 Action API (datastore_search / datastore_search_sql).
+    Confirmed live 2026-07-25 — 349 institution records returned.
+  humanURL: https://open.canada.ca/data/en/dataset/b27ec3ef-7338-4e76-a6fd-128339a92df5
+  baseURL: https://open.canada.ca/data/en/api/3/action
+  tags:
+  - Register
+  - Insurance
+  - Canada
+  - Open Data
+  properties:
+  - type: Documentation
+    url: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data
+  - type: Documentation
+    url: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data
+  - type: APIReference
+    url: https://docs.ckan.org/en/latest/maintaining/datastore.html
+- aid: osfi:osfi-life-insurance-financial-data
+  name: OSFI Life Insurance Companies Financial Data
+  description: Publicly disclosable regulatory returns filed by federally regulated
+    life insurance companies — LCA/LCQ (LICAT capital), LF1 Life Core Financial Statement
+    Return, LF2 Life Supervisory Quarterly Return and LF3 Life Supervisory Annual Return,
+    plus inactive legacy returns. Thirteen datastore-active CSV resources on Canada's
+    Open Government portal, readable anonymously over the CKAN 3 Action API. Confirmed
+    live 2026-07-25 — the LF1 resource alone returns 531,347 records.
+  humanURL: https://open.canada.ca/data/en/dataset/1358284b-26e7-4c69-abd8-398d3da2c270
+  baseURL: https://open.canada.ca/data/en/api/3/action
+  tags:
+  - Life Insurance
+  - Regulatory Reporting
+  - LICAT
+  - Canada
+  - Open Data
+  properties:
+  - type: Documentation
+    url: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data
+  - type: Documentation
+    url: https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/3b81a599-01cd-437e-b090-aeb8adaa5edf/download/step-by-step-api-usage-guide_en.pdf
+  - type: APIReference
+    url: https://docs.ckan.org/en/latest/maintaining/datastore.html
+- aid: osfi:osfi-property-casualty-financial-data
+  name: OSFI Property and Casualty Companies Financial Data
+  description: Publicly disclosable regulatory returns filed by federally regulated
+    property and casualty insurers and mortgage insurers — PC1 P&C Core Financial Statement
+    Return, PC2/PC3 supervisory returns, PC4 Minimum Capital Test and Branch Adequacy
+    of Assets Test, and the MI/MI3/MI4/MI5 mortgage-insurance series. Fourteen datastore-active
+    CSV resources on Canada's Open Government portal, readable anonymously over the
+    CKAN 3 Action API. Confirmed live 2026-07-25 — the PC1 resource returns 693,693
+    records.
+  humanURL: https://open.canada.ca/data/en/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705
+  baseURL: https://open.canada.ca/data/en/api/3/action
+  tags:
+  - Property and Casualty
+  - Regulatory Reporting
+  - Minimum Capital Test
+  - Canada
+  - Open Data
+  properties:
+  - type: Documentation
+    url: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data
+  - type: Documentation
+    url: https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/c979598d-46fc-45dd-b0a2-ce094737d308/download/step-by-step-api-usage-guide_en.pdf
+  - type: APIReference
+    url: https://docs.ckan.org/en/latest/maintaining/datastore.html
+- aid: osfi:osfi-fraternal-benefit-societies-financial-data
+  name: OSFI Fraternal Benefit Societies Financial Data
+  description: Publicly disclosable regulatory returns filed by federally regulated
+    fraternal benefit societies — the LICAT (LCA/LCQ) and LF1/LF2/LF3 life-return
+    series applied to Canada's mutual-aid insurers, plus inactive legacy returns.
+    Thirteen datastore-active CSV resources on Canada's Open Government portal, readable
+    anonymously over the CKAN 3 Action API.
+  humanURL: https://open.canada.ca/data/en/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c
+  baseURL: https://open.canada.ca/data/en/api/3/action
+  tags:
+  - Fraternal Benefit Societies
+  - Life Insurance
+  - Regulatory Reporting
+  - Canada
+  - Open Data
+  properties:
+  - type: Documentation
+    url: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data
+  - type: Documentation
+    url: https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7f829d95-245c-4e84-a125-6b2dac93cc57/download/step-by-step-api-usage-guide_en.pdf
+  - type: APIReference
+    url: https://docs.ckan.org/en/latest/maintaining/datastore.html
+common:
+- type: Website
+  url: https://www.osfi-bsif.gc.ca/en
+- type: Documentation
+  url: https://www.osfi-bsif.gc.ca/en/data-forms
+- type: Documentation
+  url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library
+- type: Documentation
+  url: https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns/filing-financial-returns/financial-reporting-instructions
+- type: Documentation
+  url: https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns
+- type: Documentation
+  url: https://www.osfi-bsif.gc.ca/en/about-osfi/progress-our-initiatives/modernizing-we-collect-data-institutions
+- type: Portal
+  url: https://connect-connexion.bank-banque-canada.ca/igw/apps/ami/portal/login
+- type: OpenData
+  url: https://search.open.canada.ca/opendata/?owner_org=osfi-bsif
+- type: News
+  url: https://www.osfi-bsif.gc.ca/en/news
+- type: LinkedIn
+  url: https://www.linkedin.com/company/office-of-the-superintendent-of-financial-institutions-of-canada
+- type: Twitter
+  url: https://twitter.com/OSFICanada
+- type: YouTube
+  url: https://www.youtube.com/user/OSFIBSIF
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
