@@ -1,0 +1,147 @@
+generated: '2026-07-25'
+method: derived
+source: live CKAN package_search / package_show / datastore_search responses on 2026-07-25; field lists
+  in json-schema/
+description: 'The entity graph behind OSFI''s public data. There is no OpenAPI to derive from, so this
+  is derived from the live CKAN catalog structure plus the actual column sets returned by datastore_search.
+  Two domains sit side by side: a REGISTER of supervised entities, and a long, narrow FACT table of regulatory-return
+  data points.'
+entities:
+- name: Organization
+  id: osfi-bsif
+  description: The OSFI publisher on the Open Government Portal.
+  read: https://open.canada.ca/data/en/api/3/action/organization_show?id=osfi-bsif
+- name: Dataset
+  key: package id (UUID)
+  description: One supervised-sector grouping (Banks, Life insurance companies, …) or the Who we regulate
+    register. 36 OSFI datasets exist; 9 carry datastore-active resources.
+  read: https://open.canada.ca/data/en/api/3/action/package_show?id=<package_id>
+- name: Resource
+  key: resource id (UUID)
+  description: One return series (M4, BA/BCAR, LF1, PC1, MI3, …) or one register file, as a CSV loaded
+    into the CKAN datastore.
+  read: https://open.canada.ca/data/en/api/3/action/resource_show?id=<resource_id>
+  attributes:
+  - datastore_active
+  - format
+  - name (bilingual)
+- name: FinancialInstitution
+  key: Id (institution identifier used across return series)
+  description: A federally regulated financial institution. In the register it carries Company Name, FI
+    Type Name, FI Group Name, FI Industry Name, Canadian Trade Company Name, Representative Name, address
+    and Authorized Insurance Classes.
+  schema: json-schema/osfi-who-we-regulate-financial-institutions.json
+  resource_id: 945045fa-2de0-47d4-aad2-144d69467824
+  records: 349
+- name: PrivatePensionPlan
+  key: Plan Registration Number
+  description: A federally regulated private pension plan, with sponsor and administrator contact.
+  schema: json-schema/osfi-who-we-regulate-private-pension-plans.json
+  resource_id: 2282e8c7-f949-454d-9c34-b6a78d94b162
+  records: 1002
+- name: ReturnDataPoint
+  key: Id + Return/Releve + Data Point Address + period
+  description: 'One reported value. The FINDAT resources are a tall fact table: the institution (Id),
+    the return (Return/Releve, Return Title), the cell within that return (Data Point Address + Data Point
+    Address Label), the period (Fiscal Year + Fiscal Quarter, or Calendar Year + Calendar Month), and
+    Measure Value.'
+  schema: json-schema/osfi-financial-return-datapoint.json
+  note: All columns are typed `text` by the datastore, including Measure Value.
+relationships:
+- from: Organization
+  to: Dataset
+  type: has_many
+  via: owner_org
+- from: Dataset
+  to: Resource
+  type: has_many
+  via: resources[]
+- from: Resource
+  to: ReturnDataPoint
+  type: has_many
+  via: resource_id
+- from: ReturnDataPoint
+  to: FinancialInstitution
+  type: belongs_to
+  via: Id
+  confidence: medium
+  note: The register and the return series both carry an institution identity, but the register exposes
+    it as Company Name while the return series expose 'Id'. Joining the two requires OSFI's per-dataset
+    user manual / data dictionary.
+- from: ReturnDataPoint
+  to: ReportingConcept
+  type: belongs_to
+  via: Data Point Address/Adresse de point de donnee
+  note: Cell addresses are defined by the financial reporting instructions; the terms they use are defined
+    in vocabulary/osfi-vocabulary.yml.
+periodicity:
+  quarterly_series: Fiscal Year/Annee fiscale + Fiscal Quarter
+  monthly_series: Calendar Year/Annee civile + Calendar Month/Mois civil
+catalog:
+- dataset: Who we regulate
+  package_id: b27ec3ef-7338-4e76-a6fd-128339a92df5
+  resources:
+  - name: Who we regulate financial institutions
+    resource_id: 945045fa-2de0-47d4-aad2-144d69467824
+    records: 349
+  - name: Who we regulate – private pension plans
+    resource_id: 2282e8c7-f949-454d-9c34-b6a78d94b162
+    records: 1002
+- dataset: Life insurance companies
+  package_id: 1358284b-26e7-4c69-abd8-398d3da2c270
+  resources:
+  - name: LCA - LICAT (Active)
+    resource_id: 69b6fcd5-50c9-43bd-bd18-3f4e031854d0
+    records: null
+  - name: LF1 - Life Core Financial Statement Return (Active)
+    resource_id: f3ddcfbc-a852-4dee-be3c-5b08864c9afe
+    records: 531347
+- dataset: Property and casualty companies
+  package_id: 4c6c515f-7c44-4bb6-ab56-c5f79f75f705
+  resources:
+  - name: PC1 - P&C Core Financial Statement Return (Active)
+    resource_id: d4c1d98d-c19e-4730-ab2d-6e64160351a7
+    records: 693693
+  - name: PC4 - P&C Minimum Capital Test and BAAT (Active)
+    resource_id: 2658af9f-0676-4d61-8e49-fc8fa612bc69
+    records: null
+- dataset: Fraternal benefit societies
+  package_id: 7ad44bfe-aa26-4b5b-930b-e7845023dd4c
+  resources:
+  - name: LF1 - Life Core Financial Statement Return (Active)
+    resource_id: 1907c224-cef2-40c4-ba0f-4743ed42c904
+    records: 80647
+- dataset: Banks
+  package_id: 91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de
+  resources:
+  - name: M4 - Consolidated Balance Sheet (Active)
+    resource_id: d0f6040e-671c-4301-a235-e9e7ba164604
+    records: 1555044
+  - name: BA - BASEL III Capital Adequacy Reporting / BCAR (Active)
+    resource_id: fe7617f7-a676-4966-aae3-c4cfbab4b935
+    records: 299223
+- dataset: Foreign bank branches
+  package_id: c6879faf-2bc7-4c84-999c-0626ae33ec84
+  resources:
+  - name: K3 - Supplementary Return for Foreign Bank Branches (Active)
+    resource_id: cfc1e5fc-624f-42a0-ad82-406332a87c45
+    records: 28337
+- dataset: Trust companies
+  package_id: 203bb08d-fdff-46f6-93ec-00e5d1d76a81
+  resources:
+  - name: M4 - Consolidated Balance Sheet (Active)
+    resource_id: 6c9cfdc2-b3ea-4eb9-b564-fd28e7aba16b
+    records: 895465
+- dataset: Loan companies
+  package_id: 79c99c29-deff-4093-9c55-fde484d20028
+  resources:
+  - name: M4 - Consolidated Balance Sheet (Active)
+    resource_id: d5e1e6e8-c13c-4224-8b22-521a1661a0ee
+    records: 301455
+- dataset: Retail associations
+  package_id: af61ecdd-1a40-4630-8e75-1470e721f318
+  resources:
+  - name: M4 - Consolidated Balance Sheet (Active)
+    resource_id: f1bcf4fd-0a0f-4c9b-86c8-664b3e6ffeb7
+    records: 19480
+dcat: json-ld/

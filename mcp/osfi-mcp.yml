@@ -1,0 +1,59 @@
+generated: '2026-07-25'
+method: derived
+status: candidate
+source: live CKAN Action API probes 2026-07-25; data-model/osfi-data-model.yml
+note: OSFI publishes NO MCP server, and none exists for Canada's Open Government Portal in the official
+  MCP registry, on npm under @modelcontextprotocol, or in OSFI's (empty) GitHub organization. The tools
+  below are a CANDIDATE surface derived from the CKAN Action API actions that were verified live against
+  OSFI's own datasets — every action and every resource_id below returned HTTP 200 anonymously on 2026-07-25.
+  Nothing here is hosted.
+server:
+  name: osfi
+  transport: http
+  url: null
+  upstream: https://open.canada.ca/data/en/api/3/action
+  auth: none
+tools:
+- name: osfi_list_datasets
+  description: List every OSFI dataset published on Canada's Open Government Portal.
+  source_action: package_search
+  source_request: https://open.canada.ca/data/en/api/3/action/package_search?fq=organization:osfi-bsif&rows=100
+- name: osfi_get_dataset
+  description: Get one OSFI dataset with all of its resources and datastore_active flags.
+  source_action: package_show
+  source_request: https://open.canada.ca/data/en/api/3/action/package_show?id=<package_id>
+- name: osfi_get_resource
+  description: Get one OSFI return series or register file as a resource record.
+  source_action: resource_show
+  source_request: https://open.canada.ca/data/en/api/3/action/resource_show?id=<resource_id>
+- name: osfi_describe_resource
+  description: Return the datastore table metadata (columns and types) for a resource.
+  source_action: datastore_info
+  source_request: https://open.canada.ca/data/en/api/3/action/datastore_info?id=<resource_id>
+- name: osfi_search_regulated_institutions
+  description: Search the Who We Regulate register of federally regulated financial institutions.
+  source_action: datastore_search
+  source_request: https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=945045fa-2de0-47d4-aad2-144d69467824
+- name: osfi_search_pension_plans
+  description: Search the Who We Regulate register of federally regulated private pension plans.
+  source_action: datastore_search
+  source_request: https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=2282e8c7-f949-454d-9c34-b6a78d94b162
+- name: osfi_query_return_series
+  description: Read data points out of any FINDAT regulatory-return resource, with filters, projection,
+    sort, limit and offset.
+  source_action: datastore_search
+  source_request: https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=<resource_id>
+- name: osfi_dataset_activity
+  description: Return the change activity stream for an OSFI dataset.
+  source_action: package_activity_list
+  source_request: https://open.canada.ca/data/en/api/3/action/package_activity_list?id=<package_id>
+- name: osfi_portal_status
+  description: Report the portal's CKAN version and enabled extensions.
+  source_action: status_show
+  source_request: https://open.canada.ca/data/en/api/3/action/status_show
+not_covered:
+- capability: regulatory filing
+  reason: The Regulatory Reporting System is a human portal behind a Bank of Canada Connect login (HTTP
+    401); it publishes no programmatic interface.
+- capability: SQL over the datastore
+  reason: datastore_search_sql is disabled on open.canada.ca (HTTP 400).

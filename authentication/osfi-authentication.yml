@@ -1,0 +1,44 @@
+generated: '2026-07-25'
+method: searched
+source: live probes of https://open.canada.ca/data/en/api/3/action and https://connect-connexion.bank-banque-canada.ca
+  on 2026-07-25; https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data
+description: 'OSFI runs two entirely separate surfaces with two different auth models: an anonymous READ
+  surface (its data on Canada''s Open Government Portal) and a gated WRITE/FILING surface (the Regulatory
+  Reporting System behind Bank of Canada Connect).'
+summary:
+  types:
+  - none
+  - portal-login
+  api_key_in: []
+  oauth2_flows: []
+  public_read_requires_credentials: false
+schemes:
+- name: anonymous
+  type: none
+  surface: public data — CKAN 3 Action API over OSFI's Open Government datasets
+  base_url: https://open.canada.ca/data/en/api/3/action
+  sources:
+  - live probe 2026-07-25
+  detail: 'No API key, no token, no registration, no referer restriction. Every action in conventions/osfi-conventions.yml
+    returned 200 unauthenticated. CKAN supports an Authorization: <api-token> header for authenticated
+    actions, but none of the OSFI read actions need it.'
+  verified: true
+- name: bank-of-canada-connect
+  type: portal-login
+  surface: regulatory filing — Regulatory Reporting System (RRS)
+  url: https://connect-connexion.bank-banque-canada.ca/igw/apps/ami/portal/login
+  http_status: 401
+  detail: Human login only. Accounts are provisioned by a Local Registration Authority at the filing institution.
+    No developer-facing auth documentation, no client-credentials flow, no mTLS profile, no published
+    token endpoint.
+  programmatic: false
+  verified: true
+well_known:
+  openid_configuration:
+    url: https://www.osfi-bsif.gc.ca/.well-known/openid-configuration
+    status: 404
+  oauth_authorization_server:
+    url: https://open.canada.ca/.well-known/oauth-authorization-server
+    status: 404
+  note: No OIDC or OAuth discovery document is published on any OSFI or portal host.
+docs: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data

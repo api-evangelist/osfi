@@ -64,6 +64,60 @@ The LICAT (LCA/LCQ) and LF1/LF2/LF3 life-return series applied to Canada's mutua
 - **Human URL:** [https://open.canada.ca/data/en/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c](https://open.canada.ca/data/en/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c)
 - **Base URL:** `https://open.canada.ca/data/en/api/3/action`
 
+### OSFI Banks Financial Data
+
+M4 Consolidated Balance Sheet, BA BASEL III Capital Adequacy Reporting (BCAR), E3 Allowances for Expected Credit Losses, LR Leverage Requirements Return and P3 Consolidated Statement of Income — seven datastore-active CSV resources. Confirmed live 2026-07-25; M4 returns 1,555,044 records and BCAR returns 299,223.
+
+- **Human URL:** [https://open.canada.ca/data/en/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de](https://open.canada.ca/data/en/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de)
+- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+
+### OSFI Foreign Bank Branches Financial Data
+
+M4, E3, K3 Supplementary Return for Foreign Bank Branches and P3 — five datastore-active CSV resources. Confirmed live 2026-07-25; K3 returns 28,337 records.
+
+- **Human URL:** [https://open.canada.ca/data/en/dataset/c6879faf-2bc7-4c84-999c-0626ae33ec84](https://open.canada.ca/data/en/dataset/c6879faf-2bc7-4c84-999c-0626ae33ec84)
+- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+
+### OSFI Trust Companies Financial Data
+
+M4, BA/BCAR, E3, LR and P3 — six datastore-active CSV resources. Confirmed live 2026-07-25; M4 returns 895,465 records.
+
+- **Human URL:** [https://open.canada.ca/data/en/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81](https://open.canada.ca/data/en/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81)
+- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+
+### OSFI Loan Companies Financial Data
+
+M4, BA/BCAR, E3, LR and P3 — six datastore-active CSV resources. Confirmed live 2026-07-25; M4 returns 301,455 records.
+
+- **Human URL:** [https://open.canada.ca/data/en/dataset/79c99c29-deff-4093-9c55-fde484d20028](https://open.canada.ca/data/en/dataset/79c99c29-deff-4093-9c55-fde484d20028)
+- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+
+### OSFI Retail Associations Financial Data
+
+M4, BA/BCAR, E3, LR and P3 for federally regulated cooperative retail associations — six datastore-active CSV resources. Confirmed live 2026-07-25; M4 returns 19,480 records.
+
+- **Human URL:** [https://open.canada.ca/data/en/dataset/af61ecdd-1a40-4630-8e75-1470e721f318](https://open.canada.ca/data/en/dataset/af61ecdd-1a40-4630-8e75-1470e721f318)
+- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+
+## Artifacts
+
+Enrichment round 2026-07-25. Everything below was probed live against `https://open.canada.ca/data/en/api/3/action`; nothing is fabricated.
+
+- [`conventions/`](conventions/osfi-conventions.yml) — the CKAN 3 Action API contract as OSFI exposes it: 13 verified actions, limit/offset pagination with `_links`, the `{help, success, result}` envelope, the bilingual/all-text column shape, and two gotchas (the WAF rejects non-browser User-Agents; `datastore_search_sql` is **disabled**, HTTP 400).
+- [`errors/`](errors/osfi-problem-types.yml) — the CKAN error envelope (not RFC 9457), with live-captured 404 and 400 cases and the HTML-under-HTTP-200 WAF failure mode.
+- [`authentication/`](authentication/osfi-authentication.yml) — two surfaces, two models: anonymous read, gated human filing.
+- [`lifecycle/`](lifecycle/osfi-lifecycle.yml) — CKAN v3 path versioning, OSFI's publication calendar, and deprecation-in-the-open (retired return series stay queryable, re-labelled `(Inactive Qx/YYYY)`).
+- [`changelog/`](changelog/osfi-changelog.yml) — the Glossary of Terms Change Control Log: four dated amendments, including the 2018 rename of "Allowance for Impairment" to "Allowance for Expected Credit Losses".
+- [`vocabulary/`](vocabulary/osfi-vocabulary.yml) — OSFI's published Glossary of Terms, the controlled vocabulary for the returns.
+- [`conformance/`](conformance/osfi-conformance.yml) — what it conforms to (CKAN 3, DCAT, JSON-LD/RDF/Turtle, OGL-Canada, IFRS, Basel III) and what it does not (OpenAPI, OAuth, RFC 9457, ACORD).
+- [`json-ld/`](json-ld/) — DCAT descriptions of all nine datastore-active datasets, saved verbatim.
+- [`json-schema/`](json-schema/) — record schemas derived from the live datastore field lists.
+- [`examples/`](examples/) — real captured request/response pairs, including the error case.
+- [`data-model/`](data-model/osfi-data-model.yml) — the register/fact-table entity graph and the full resource catalog.
+- [`skills/`](skills/_index.yml) — three agent skills grounded in verified actions and resource ids.
+- [`mcp/`](mcp/osfi-mcp.yml) — a candidate MCP tool surface (no server is published).
+- [`llms/`](llms/osfi-llms.txt), [`packages/`](packages/osfi-packages.yml), [`well-known/`](well-known/osfi-well-known.yml), [`rate-limits/`](rate-limits/osfi-rate-limits.yml), [`plans/`](plans/osfi-plans-pricing.yml), [`security/`](security/osfi-domain-security.yml).
+
 ## Links
 
 - [Website](https://www.osfi-bsif.gc.ca/en)

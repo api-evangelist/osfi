@@ -1,0 +1,664 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatap": "http://data.europa.eu/r5r/",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gsp": "http://www.opengis.net/ont/geosparql#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "schema1": "http://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "time1": "http://www.w3.org/2006/time",
+    "vann": "http://purl.org/vocab/vann/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/250078ea-5e81-4897-a366-d7e120ee2f23",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/250078ea-5e81-4897-a366-d7e120ee2f23/download/loan-companies-user-manual.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:05:44.883164"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:05:44.848598"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Loan companies - User manual"
+        },
+        {
+          "@language": "en",
+          "@value": "Loan companies - User manual"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/84125792-4c4c-4019-b4f3-53b63f951224",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/84125792-4c4c-4019-b4f3-53b63f951224/download/loan_companies_quarterly_p3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "50297431.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T10:21:22.030443"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:21:42.518198"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "P3 - Consolidated Statement Of Income, Retained Earnings & AOCI (Active)"
+        },
+        {
+          "@language": "fr",
+          "@value": "P3 - État consolidés des revenus, bénéfices non repartis et AERE (Actif)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N251b56517c234ba593c52b19c6d29702"
+      }
+    },
+    {
+      "@id": "_:N251b56517c234ba593c52b19c6d29702",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "61344913798d82c23f50486e1bc79607"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/5253734e-00a4-4fca-877f-71ff75e8085d",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/5253734e-00a4-4fca-877f-71ff75e8085d/download/loan_companies_quarterly_ba.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "32763993.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T10:21:22.030437"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:11:52.919648"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "BA – BASEL III Capital Adequacy Reporting - BCAR (Active)"
+        },
+        {
+          "@language": "fr",
+          "@value": "BA - Relevé des normes de fonds propres - Bâle III (Actif)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N32329a6483164173bd59e34c1d72c588"
+      }
+    },
+    {
+      "@id": "_:N32329a6483164173bd59e34c1d72c588",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "1df8f6c9584f773bc49d305b3539ee1d"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/4360cdd2-4bd6-4b8c-9807-e5007b97b15e",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/4360cdd2-4bd6-4b8c-9807-e5007b97b15e/download/list-of-fi-loan-subsidiaries.xlsx"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-14T13:22:15.242228"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-14T13:22:15.201024"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "List of Loan Companies Subsidiaries"
+        },
+        {
+          "@language": "fr",
+          "@value": "Liste des filiales d’une société de prêts"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/7d45c65f-9ab9-4158-8a51-e18e546cd39c",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/7d45c65f-9ab9-4158-8a51-e18e546cd39c/download/mapping-legacy-findat-open-government-findat_e.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:32.666843"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:32.657138"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        },
+        {
+          "@language": "en",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/ea7ef5be-b458-422b-b7a8-c70d9e95d24c",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/ea7ef5be-b458-422b-b7a8-c70d9e95d24c/download/step-by-step-api-usage-guide_fr.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:39.649352"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:39.619674"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        },
+        {
+          "@language": "en",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/3e397a93-828e-47b3-be3e-07ab2d84485a",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/3e397a93-828e-47b3-be3e-07ab2d84485a/download/loan_companies_quarterly_e3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "11870057.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:35:45.854730"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:21:42.518052"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "E3 - Return of Allowances for Expected Credit Losses (Active)​"
+        },
+        {
+          "@language": "fr",
+          "@value": "E3 - Relevé Des Provisions Pour Pertes De Crédit Attendues (Actif)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N2f9dbaeb89654893a32999e00fc61da7"
+      }
+    },
+    {
+      "@id": "_:N2f9dbaeb89654893a32999e00fc61da7",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "b39aa3df6cb5516952378e6ecff9c00d"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/225e1e61-d10e-4e2a-999e-725a1c7f8141",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/225e1e61-d10e-4e2a-999e-725a1c7f8141/download/mapping-legacy-findat-open-government-findat_f.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:32.666847"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:32.658221"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028",
+      "@type": "dcat:Dataset",
+      "dcat:contactPoint": {
+        "@id": "_:N0b94071f698e4cbda4a431d8f2c5f4ba"
+      },
+      "dcat:distribution": [
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/225e1e61-d10e-4e2a-999e-725a1c7f8141"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/84125792-4c4c-4019-b4f3-53b63f951224"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/b4fb262d-1cc6-4510-97f1-f399e6857511"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/3e397a93-828e-47b3-be3e-07ab2d84485a"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/59bc774e-ebfe-4155-abd7-3ee2404bb944"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/f1d7e437-c764-45d3-add0-508002f0b071"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/250078ea-5e81-4897-a366-d7e120ee2f23"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/ea7ef5be-b458-422b-b7a8-c70d9e95d24c"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/4360cdd2-4bd6-4b8c-9807-e5007b97b15e"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/7d45c65f-9ab9-4158-8a51-e18e546cd39c"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/39b1b0db-c7df-40be-859e-7281e3fea2f0"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/5253734e-00a4-4fca-877f-71ff75e8085d"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/d5e1e6e8-c13c-4224-8b22-521a1661a0ee"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/d3c6153a-0288-448e-94fa-28fb2d383086"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "Monthly"
+        },
+        {
+          "@language": "en",
+          "@value": "Loan companies"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mensuel"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés de prêt"
+        },
+        {
+          "@language": "fr",
+          "@value": "Trimestriel"
+        },
+        {
+          "@language": "en",
+          "@value": "Quarterly"
+        }
+      ],
+      "dct:accrualPeriodicity": "P1M",
+      "dct:description": [
+        {
+          "@language": "fr",
+          "@value": "Résultats mensuels du mois de décembre des sociétés dont l’exercice financier se termine en octobre seront publiés le 15 février, et les résultats des sociétés dont l’exercice financier se termine en décembre seront publiés le 28 février. Ces dates correspondent à la divulgation publique des résultats d’institutions financières cotées en bourse.\r\n\r\nÀ compter du T2 de 2023, les petites et moyennes institutions de dépôt (PMB) classées dans la catégorie III selon les Normes de fonds propres et de liquidité de 2023 cesseront de déclarer un ratio de fonds propres fondé sur le risque ou un ratio de levier. Elles déclareront plutôt un ratio simplifié de fonds propres fondé sur le risque. Veuillez consulter les lignes directrices du BSIF ci-dessous pour en savoir plus sur les exigences en matière de déclaration qui s’appliquent aux PMB :\r\nLigne directrice Normes de fonds propres et de liquidité des petites et moyennes institutions de dépôt\r\nLigne directrice Normes de fonds propres\r\nLigne directrice Normes de liquidité\r\nDésistement de responsabilité concernant l'information provenant de tiers\r\nUne partie des informations de ce site Web à été fournie par des sources externes. Le gouvernement du Canada n'assume aucune responsabilité concernant la précision, l'actualité ou la fiabilité des informations fournies par les sources externes. Les utilisateurs qui désirent employer cette information devraient consulter directement la source des informations. Le contenu fournit par les sources externes n'est pas assujetti aux exigences sur les langues officielles, la protection des renseignements personnels et l'accessibilité.\r\n\r\n__Dates de publication prévues pour toutes les déclarations mensuelles actives – 2026 : __\r\n\r\n* Janvier – 15 janvier\r\n* Février – 16 février\r\n* Mars – 16 mars\r\n* Avril – 15 avril\r\n* Mai – 15 mai\r\n* Juin – 15 juin\r\n* Juillet – 15 juillet\r\n* Août – 17 août\r\n* Septembre – 15 septembre\r\n* Octobre – 15 octobre\r\n* Novembre – 15 novembre\r\n* Décembre – 15 décembre\r\n\r\n__ Dates de publication prévues pour toutes les déclarations trimestrielles actives – 2026 :__\r\n\r\n* Trimestre 1 — Date d’échéance: 15 mai | Date de publication: 23 mai\r\n* Trimestre 2 — Date d’échéance: 14 août | Date de publication: 22 août \r\n* Trimestre 3 — Date d’échéance: 14 novembre | Date de publication: 22 novembre\r\n* Trimestre 4 — Date d’échéance: 1er mars | Date de publication: 19 mars\r\n\r\n"
+        },
+        {
+          "@language": "en",
+          "@value": "December monthly results for October fiscal year end filers will be published on February 15th and the results for December fiscal year end filers will be published on February 28th. This disclosure is done to align with public disclosure of publicly traded financial institutions.\r\n\r\nEffective Q2 2023, Small and Medium-Sized Deposit Taking Institutions (SMSBs) classified as Category III under the 2023 Capital and Liquidity requirements will no longer report a risk-based capital ratio or leverage ratio. Rather, Category III SMSBs will report simplified risk-based capital ratios. Please refer to the following OSFI Guidelines for additional information on the reporting requirements for SMSBs:\r\n\r\nSmall and Medium-Sized Deposit Taking Institutions Capital and Liquidity Requirements Guideline\r\nCapital Adequacy Requirements Guideline\r\nLiquidity Adequacy Requirements Guideline\r\nThird-Party Information Liability Disclaimer\r\nSome of the information on this Web page has been provided by external sources. The Government of Canada is not responsible for the accuracy, reliability or currency of the information supplied by external sources. Users wishing to rely upon this information should consult directly with the source of the information. Content provided by external sources is not subject to official languages, privacy and accessibility requirements.\r\n\r\n__Scheduled publication dates for all active Monthly returns 2026:__\r\n\r\n* January – January 15\r\n* February – February 16\r\n* March – March 16\r\n* April – April 15\r\n* May – May 15\r\n* June – June 15\r\n* July – July 15\r\n* August – August 17\r\n* September – September 15\r\n* October – October 15\r\n* November – November 15\r\n* December – December 15\r\n\r\n__Scheduled publication dates for all active Quarterly returns 2026: __\r\n\r\n* Quarter 1 — Due: May 15 | Publish: May 23\r\n* Quarter 2 — Due: Aug 14 | Publish: Aug 22 \r\n* Quarter 3 — Due: Nov 14 | Publish: Nov 22 \r\n* Quarter 4 — Due: March 1 | Publish: March 19\r\n"
+        }
+      ],
+      "dct:identifier": "79c99c29-deff-4093-9c55-fde484d20028",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T10:21:22.020342"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-15T14:20:37.410489"
+      },
+      "dct:publisher": {
+        "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Loan companies"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés de prêt"
+        }
+      ]
+    },
+    {
+      "@id": "_:N0b94071f698e4cbda4a431d8f2c5f4ba",
+      "@type": "vcard:Organization",
+      "vcard:hasEmail": {
+        "@id": "mailto:information@osfi-bsif.gc.ca"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/b4fb262d-1cc6-4510-97f1-f399e6857511",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/b4fb262d-1cc6-4510-97f1-f399e6857511/download/step-by-step-api-usage-guide_en.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:39.649349"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:39.616881"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        },
+        {
+          "@language": "fr",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB",
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        {
+          "@language": "fr",
+          "@value": "Bureau du surintendant des institutions financières Canada"
+        },
+        {
+          "@language": "en",
+          "@value": "Office of the Superintendent of Financial Institutions Canada"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/39b1b0db-c7df-40be-859e-7281e3fea2f0",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/39b1b0db-c7df-40be-859e-7281e3fea2f0/download/loan_companies_quarterly_lr.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "404054.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:45:21.378652"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-29T15:02:47.221788"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "LR - Déclaration du ratio de levier (Actif)​"
+        },
+        {
+          "@language": "en",
+          "@value": "LR - Leverage Requirements Return (Active)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Ne9d202f9903b4c1bacb439ed735be48e"
+      }
+    },
+    {
+      "@id": "_:Ne9d202f9903b4c1bacb439ed735be48e",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "0ee3554f4fa0500ea05b18da83f5d900"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/d3c6153a-0288-448e-94fa-28fb2d383086",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/d3c6153a-0288-448e-94fa-28fb2d383086/download/data-dictionary-loan-companies.xlsx"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:02:08.428736"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:02:08.417123"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Data Dictionary"
+        },
+        {
+          "@language": "fr",
+          "@value": "Dictionnaire de données"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/f1d7e437-c764-45d3-add0-508002f0b071",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/f1d7e437-c764-45d3-add0-508002f0b071/download/loan_companies_quarterly_g3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "11394456.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:45:21.378656"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:41:53.128859"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "G3 - Normes de fonds propres (Inactif T1/2008)​"
+        },
+        {
+          "@language": "en",
+          "@value": "G3 - Capital Adequacy Return (Inactive Q1/2008)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N3879079e6b98484ab6f6fe90dea86d9f"
+      }
+    },
+    {
+      "@id": "_:N3879079e6b98484ab6f6fe90dea86d9f",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "87f290f92d48b2e5ba64db5712e6e262"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/d5e1e6e8-c13c-4224-8b22-521a1661a0ee",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/d5e1e6e8-c13c-4224-8b22-521a1661a0ee/download/loan_companies_monthly_m4.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "143413182.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:35:45.854726"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-15T14:20:37.402950"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "M4 - Bilan consolidé (Actif)​"
+        },
+        {
+          "@language": "en",
+          "@value": "M4 - Consolidated Balance Sheet (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nb35ba51726af4579ad4361f95c9dc806"
+      }
+    },
+    {
+      "@id": "_:Nb35ba51726af4579ad4361f95c9dc806",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "9c29a359c656dbf29c95c73ad1d97ed3"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/59bc774e-ebfe-4155-abd7-3ee2404bb944",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/79c99c29-deff-4093-9c55-fde484d20028/resource/59bc774e-ebfe-4155-abd7-3ee2404bb944/download/societes-de-pret-manuel-dutilisation.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:05:44.883167"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:05:44.851616"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Sociétés de prêt - Manuel d'utilisation"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés de prêt - Manuel d'utilisation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+generated: '2026-07-25'
+method: generated
+note: OSFI publishes no OpenAPI and no AGENTS.md/skills of its own. These skills are grounded in CKAN
+  Action API actions and OSFI resource ids that were each verified live (HTTP 200, anonymous) on 2026-07-25
+  — no operation or identifier here is invented.
+skills:
+- file: osfi-look-up-a-regulated-institution.md
+  name: Look up a federally regulated financial institution
+  description: Find an institution OSFI supervises in the Who We Regulate register and read its type,
+    industry group, trade name, principal representative and authorized insurance classes.
+  api: https://open.canada.ca/data/en/api/3/action
+  actions:
+  - package_show
+  - datastore_search
+- file: osfi-pull-a-regulatory-return-series.md
+  name: Pull an OSFI regulatory return series
+  description: Read FINDAT regulatory-return data points (capital adequacy, balance sheet, income) for
+    banks, insurers, trust and loan companies out of the Open Government datastore.
+  api: https://open.canada.ca/data/en/api/3/action
+  actions:
+  - package_search
+  - package_show
+  - datastore_info
+  - datastore_search
+- file: osfi-discover-osfi-data-surface.md
+  name: Discover what OSFI publishes machine-readably
+  description: Enumerate OSFI's datasets, their DCAT descriptions and their datastore-active resources
+    before writing any integration.
+  api: https://open.canada.ca/data/en/api/3/action
+  actions:
+  - status_show
+  - package_search
+  - package_show

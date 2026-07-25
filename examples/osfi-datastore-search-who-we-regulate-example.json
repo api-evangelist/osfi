@@ -1,0 +1,127 @@
+{
+  "generated": "2026-07-25",
+  "method": "searched",
+  "description": "List federally regulated financial institutions from the Who We Regulate register.",
+  "request": {
+    "method": "GET",
+    "url": "https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=945045fa-2de0-47d4-aad2-144d69467824&limit=2",
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "a browser User-Agent is required; the open.canada.ca WAF rejects default curl UAs with an HTML page under HTTP 200"
+    },
+    "auth": "none \u2014 anonymous"
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "help": "https://open.canada.ca/data/en/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "include_total": true,
+        "limit": 2,
+        "records_format": "objects",
+        "resource_id": "945045fa-2de0-47d4-aad2-144d69467824",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "_id": 1408,
+            "Company Name": "ACTRA Fraternal Benefit Society",
+            "FI Type Name": "Federally Regulated Financial Institutions",
+            "FI Group Name": "Fraternal Benefit Societies",
+            "FI Industry Name": "Canadian Fraternal Benefit Societies",
+            "Canadian Trade Company Name": null,
+            "Representative Name": "Ron P. Zammit",
+            "Title": "Chief Executive Officer",
+            "Address Line 1": "1000 Yonge Street",
+            "Address Line 2": null,
+            "City": "Toronto",
+            "Province State": "Ontario",
+            "Postal ZIP Code": "M4W 2K2",
+            "Authorized Insurance Classes": "Life; Accident and sickness. All classes of insurance are limited to the extent authorized by its instrument of incorporation and by-laws."
+          },
+          {
+            "_id": 1409,
+            "Company Name": "AIG Insurance Company of Canada",
+            "FI Type Name": "Federally Regulated Financial Institutions",
+            "FI Group Name": "Property & Casualty Insurance Companies",
+            "FI Industry Name": "Canadian Property & Casualty Insurance Companies",
+            "Canadian Trade Company Name": null,
+            "Representative Name": "Peter  Walker",
+            "Title": "President & CEO",
+            "Address Line 1": "120 BREMNER BOULEVARD",
+            "Address Line 2": "SUITE 2200",
+            "City": "TORONTO",
+            "Province State": "Ontario",
+            "Postal ZIP Code": "M5J 0A8",
+            "Authorized Insurance Classes": "Hail; Credit protection; Surety; Fidelity; Marine; Automobile; Liability; Boiler and machinery; Credit; Property; Accident and sickness; Aircraft."
+          }
+        ],
+        "fields": [
+          {
+            "id": "_id",
+            "type": "int"
+          },
+          {
+            "id": "Company Name",
+            "type": "text"
+          },
+          {
+            "id": "FI Type Name",
+            "type": "text"
+          },
+          {
+            "id": "FI Group Name",
+            "type": "text"
+          },
+          {
+            "id": "FI Industry Name",
+            "type": "text"
+          },
+          {
+            "id": "Canadian Trade Company Name",
+            "type": "text"
+          },
+          {
+            "id": "Representative Name",
+            "type": "text"
+          },
+          {
+            "id": "Title",
+            "type": "text"
+          },
+          {
+            "id": "Address Line 1",
+            "type": "text"
+          },
+          {
+            "id": "Address Line 2",
+            "type": "text"
+          },
+          {
+            "id": "City",
+            "type": "text"
+          },
+          {
+            "id": "Province State",
+            "type": "text"
+          },
+          {
+            "id": "Postal ZIP Code",
+            "type": "text"
+          },
+          {
+            "id": "Authorized Insurance Classes",
+            "type": "text"
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=945045fa-2de0-47d4-aad2-144d69467824&limit=2",
+          "next": "/api/3/action/datastore_search?resource_id=945045fa-2de0-47d4-aad2-144d69467824&limit=2&offset=2"
+        },
+        "total": 349,
+        "total_was_estimated": false
+      }
+    }
+  }
+}

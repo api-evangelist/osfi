@@ -1,0 +1,58 @@
+generated: '2026-07-25'
+method: searched
+source: live probes of https://open.canada.ca/data/en/api/3/action on 2026-07-25; https://docs.ckan.org/en/2.10/api/index.html
+format: ckan-action-envelope
+format_note: 'OSFI''s data surface does NOT use RFC 9457 application/problem+json. CKAN returns its own
+  JSON envelope: {help, success:false, error:{__type, message}} with an HTTP status that matches the error
+  class. Some framework-level failures (unknown action name) return a bare quoted string rather than the
+  envelope — captured below.'
+envelope:
+  success: 'false'
+  error.__type: CKAN error class name
+  error.message: human-readable message
+  help: URL of the action's help_show page
+problems:
+- status: 404
+  type: Not Found Error
+  title: Resource not found
+  example_message: 'Not found: Resource "DOESNOTEXIST" was not found.'
+  when: datastore_search called with a resource_id that does not exist or is not datastore-active.
+  remediation: Call package_show on the dataset and use a resource whose datastore_active is true.
+  verified: '2026-07-25'
+  example: examples/osfi-datastore-search-not-found-example.json
+- status: 400
+  type: Bad request
+  title: Action name not known
+  example_message: 'Bad request - Action name not known: datastore_search_sql'
+  when: The action does not exist, or is not enabled on this CKAN instance.
+  remediation: Use one of the verified actions in conventions/osfi-conventions.yml.
+  note: Returned as a bare quoted JSON string, not the standard envelope.
+  verified: '2026-07-25'
+- status: 409
+  type: Validation Error
+  title: Invalid parameters
+  when: A parameter fails CKAN validation (for example a malformed filters JSON object or a sort column
+    that does not exist).
+  remediation: Check the column names returned in result.fields before filtering or sorting.
+  source: https://docs.ckan.org/en/2.10/api/index.html
+  verified: null
+- status: 403
+  type: Authorization Error
+  title: Access denied
+  when: An action requiring an authenticated user is called anonymously. Every read action OSFI's data
+    needs is anonymous, so this should not occur for consumers.
+  source: https://docs.ckan.org/en/2.10/api/index.html
+  verified: null
+- status: 500
+  type: Internal Server Error
+  title: Server error
+  when: Portal-side failure.
+  remediation: Retry with exponential backoff; there is no published status page.
+  verified: null
+html_failure_mode:
+  status: 200
+  body: HTML 'Request Rejected' page
+  when: The open.canada.ca WAF rejects the request (commonly a default curl User-Agent).
+  remediation: 'Send a browser User-Agent. Always assert Content-Type: application/json before parsing
+    — the WAF page is served with HTTP 200.'
+  verified: '2026-07-25'

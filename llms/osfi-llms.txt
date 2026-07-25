@@ -1,0 +1,65 @@
+# OSFI — Office of the Superintendent of Financial Institutions (Canada)
+
+> Canada's federal prudential regulator, supervising more than 400 federally regulated financial
+> institutions and over 1,200 private pension plans. OSFI operates no developer portal and publishes
+> no OpenAPI. Its machine-readable surface is its registers and regulatory returns (FINDAT),
+> published to Canada's Open Government Portal as datastore-active CKAN datasets and readable
+> anonymously over the CKAN 3 Action API at https://open.canada.ca/data/en/api/3/action.
+
+## How to call it
+
+- Base: `https://open.canada.ca/data/en/api/3/action` — RPC over HTTP, `/<action>` per call.
+- Auth: **none**. No key, no OAuth, no registration.
+- Send a **browser User-Agent**: the portal WAF answers default curl UAs with an HTML page under
+  HTTP 200.
+- `datastore_search_sql` is **disabled**; use `datastore_search` with `filters` / `q` / `fields` /
+  `sort` / `limit` / `offset`.
+- Verified actions: status_show, package_list, package_search, package_show, resource_show,
+  datastore_search, datastore_info, organization_show, organization_list, group_list, tag_list,
+  resource_search, package_activity_list.
+
+## Datasets (datastore-active, verified 2026-07-25)
+
+- [Who we regulate](https://open.canada.ca/data/en/dataset/b27ec3ef-7338-4e76-a6fd-128339a92df5): register of federally regulated financial institutions (349) and private pension plans (1,002)
+- [Banks](https://open.canada.ca/data/en/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de): M4, BA/BCAR, E3, LR, P3 return series
+- [Foreign bank branches](https://open.canada.ca/data/en/dataset/c6879faf-2bc7-4c84-999c-0626ae33ec84): M4, E3, K3, P3
+- [Trust companies](https://open.canada.ca/data/en/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81): M4, BA/BCAR, E3, LR, P3
+- [Loan companies](https://open.canada.ca/data/en/dataset/79c99c29-deff-4093-9c55-fde484d20028): M4, BA/BCAR, E3, LR, P3
+- [Retail associations](https://open.canada.ca/data/en/dataset/af61ecdd-1a40-4630-8e75-1470e721f318): M4, BA/BCAR, E3, LR, P3
+- [Life insurance companies](https://open.canada.ca/data/en/dataset/1358284b-26e7-4c69-abd8-398d3da2c270): LCA/LCQ LICAT, LF1, LF2, LF3
+- [Fraternal benefit societies](https://open.canada.ca/data/en/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c): LCA/LCQ LICAT, LF1, LF2, LF3
+- [Property and casualty companies](https://open.canada.ca/data/en/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705): PC1-PC4, MI/MI3/MI4/MI5
+
+## Docs
+
+- [Open Government and OSFI Financial Data](https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data)
+- [Working with Open Government data](https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data): OSFI's step-by-step guide; each dataset ships a data dictionary, a user manual and an API access guide
+- [Financial reporting instructions](https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns/filing-financial-returns/financial-reporting-instructions): the return schemas
+- [Glossary of Terms](https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns/filing-financial-returns/glossary-terms): the controlled vocabulary for the returns
+- [Guidance library](https://www.osfi-bsif.gc.ca/en/guidance/guidance-library): LICAT, MCT, BAAT and the rest of the rulebook
+- [CKAN DataStore reference](https://docs.ckan.org/en/2.10/maintaining/datastore.html)
+
+## Artifacts (API Evangelist)
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/apis.yml)
+- [Conventions](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/conventions/osfi-conventions.yml)
+- [Errors](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/errors/osfi-problem-types.yml)
+- [Authentication](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/authentication/osfi-authentication.yml)
+- [Lifecycle](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/lifecycle/osfi-lifecycle.yml)
+- [Change log](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/changelog/osfi-changelog.yml)
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/conformance/osfi-conformance.yml)
+- [Data model](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/data-model/osfi-data-model.yml)
+- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/vocabulary/osfi-vocabulary.yml)
+- [JSON Schema](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/json-schema/)
+- [DCAT JSON-LD](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/json-ld/)
+- [Examples](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/examples/)
+- [Agent skills](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/skills/_index.yml)
+- [Candidate MCP tools](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/mcp/osfi-mcp.yml)
+
+## Not available
+
+- No OpenAPI, Swagger, GraphQL, gRPC, AsyncAPI, webhooks or public Postman collection.
+- No developer portal, no API keys, no SDKs, no CLI, no sandbox, no status page.
+- No `/.well-known/` documents on any OSFI or portal host.
+- Regulatory filing is human-only, through the Regulatory Reporting System behind a Bank of Canada
+  Connect login.

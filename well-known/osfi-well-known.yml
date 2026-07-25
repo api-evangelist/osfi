@@ -1,0 +1,35 @@
+generated: '2026-07-25'
+method: searched
+description: Every /.well-known/ discovery document was probed on both hosts that serve OSFI's surfaces.
+  None exist. Recorded so future rounds do not re-probe blind.
+hosts:
+- host: https://www.osfi-bsif.gc.ca
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://open.canada.ca
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+discovery_alternative:
+  note: The portal's real machine-readable discovery surface is DCAT, not /.well-known/. The whole catalog
+    is available as JSON-LD and RDF.
+  catalog_jsonld: https://open.canada.ca/data/en/catalog.jsonld
+  catalog_rdf: https://open.canada.ca/data/en/catalog.rdf
+  dcat_json: https://open.canada.ca/data/en/dcat.json
+  osfi_datasets: https://open.canada.ca/data/en/api/3/action/package_search?fq=organization:osfi-bsif&rows=100
+  saved: json-ld/

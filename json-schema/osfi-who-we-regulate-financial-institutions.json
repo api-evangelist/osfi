@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/json-schema/osfi-who-we-regulate-financial-institutions.json",
+  "title": "OSFI Who We Regulate \u2014 federally regulated financial institution record",
+  "description": "Derived from the live CKAN datastore field list returned by GET https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=945045fa-2de0-47d4-aad2-144d69467824&limit=1 on 2026-07-25. Every column OSFI publishes is bilingual (English/French pairs) and typed `text` by the datastore, including the measure value \u2014 consumers must cast numerics themselves.",
+  "x-source": {
+    "resource_id": "945045fa-2de0-47d4-aad2-144d69467824",
+    "records": 349,
+    "probed": "2026-07-25",
+    "method": "derived"
+  },
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "integer",
+      "x-ckan-type": "int",
+      "description": "CKAN datastore surrogate row id; not an OSFI identifier."
+    },
+    "Company Name": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "FI Type Name": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "FI Group Name": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "FI Industry Name": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Canadian Trade Company Name": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Representative Name": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Title": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Address Line 1": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Address Line 2": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "City": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Province State": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Postal ZIP Code": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Authorized Insurance Classes": {
+      "type": "string",
+      "x-ckan-type": "text"
+    }
+  },
+  "additionalProperties": true
+}

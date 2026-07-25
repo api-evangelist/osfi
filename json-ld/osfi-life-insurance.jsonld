@@ -1,0 +1,1012 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatap": "http://data.europa.eu/r5r/",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gsp": "http://www.opengis.net/ont/geosparql#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "schema1": "http://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "time1": "http://www.w3.org/2006/time",
+    "vann": "http://purl.org/vocab/vann/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/d8042758-8d77-4d38-abf5-5bdb76c16faa",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/d8042758-8d77-4d38-abf5-5bdb76c16faa/download/life_insurance_companies_quarterly_10.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "61510677.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:11:32.704249"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T15:31:15.023768"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "10 - Vie 1 (Inactif T3/2014)​"
+        },
+        {
+          "@language": "en",
+          "@value": "10 - Life 1 (Inactive Q3/2014)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N9d17d6c0e64444b6b472e8c6ca681ed5"
+      }
+    },
+    {
+      "@id": "_:N9d17d6c0e64444b6b472e8c6ca681ed5",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "c5c3a3ee27c3852f5763a0aff0221b12"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/3b81a599-01cd-437e-b090-aeb8adaa5edf",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/3b81a599-01cd-437e-b090-aeb8adaa5edf/download/step-by-step-api-usage-guide_en.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:20.671573"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:20.641792"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        },
+        {
+          "@language": "fr",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/b0cb91ad-540f-4977-bf9c-3f9293eb3a79",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/b0cb91ad-540f-4977-bf9c-3f9293eb3a79/download/mapping-legacy-findat-open-government-findat_f.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:11:38.561036"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:11:38.537039"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB",
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        {
+          "@language": "fr",
+          "@value": "Bureau du surintendant des institutions financières Canada"
+        },
+        {
+          "@language": "en",
+          "@value": "Office of the Superintendent of Financial Institutions Canada"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/1017a532-b70b-45a5-a2be-a75b4e5e3947",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/1017a532-b70b-45a5-a2be-a75b4e5e3947/download/life_insurance_companies_quarterly_20.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "25019734.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:11:32.704250"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T15:41:16.904690"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "20 - Life 2 (Inactive Q3/2014)"
+        },
+        {
+          "@language": "fr",
+          "@value": "20 - Vie 2 (Inactif T3/2014)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nf936aababd2d435099fbd1d0eb30e537"
+      }
+    },
+    {
+      "@id": "_:Nf936aababd2d435099fbd1d0eb30e537",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "ec3628197ab510bb974fb444f16a9e5b"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/cc2cae60-cdc4-4428-b64c-cdaa2eb0b700",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/cc2cae60-cdc4-4428-b64c-cdaa2eb0b700/download/life_insurance_companies_quarterly_lcq.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "22913387.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:30:41.531738"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-02T13:31:32.681980"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "LCQ – TSAV (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "LCQ - LICAT (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N6c5d20fa56e7483caecbdb00d5272527"
+      }
+    },
+    {
+      "@id": "_:N6c5d20fa56e7483caecbdb00d5272527",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "87ebfc84c7a1b5901fcd2057857e0905"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/a9f5f369-0faf-4ca3-aede-b13d303a18de",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/a9f5f369-0faf-4ca3-aede-b13d303a18de/download/societes-dassurance-vie-manuel-dutilisation.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:53:06.479991"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:53:06.452580"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Sociétés d'assurance-vie - Manuel d'utilisation"
+        },
+        {
+          "@language": "en",
+          "@value": "Sociétés d'assurance-vie - Manuel d'utilisation"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/69b6fcd5-50c9-43bd-bd18-3f4e031854d0",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/69b6fcd5-50c9-43bd-bd18-3f4e031854d0/download/life_insurance_companies_quarterly_lca.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "96215.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:30:41.531734"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-02T13:21:39.664606"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "LCA - TSAV(Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "LCA - LICAT (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N8986fcaed8ec4136bc553d423ea61612"
+      }
+    },
+    {
+      "@id": "_:N8986fcaed8ec4136bc553d423ea61612",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "089aa26b77ebfdfb913e9a8e3601b7d7"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/83161e84-f59d-4703-8ca9-fcc3fd2a84ac",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/83161e84-f59d-4703-8ca9-fcc3fd2a84ac/download/life-insurance-companies-user-manual.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:53:06.479994"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:53:06.455551"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Life insurance companies - User manual"
+        },
+        {
+          "@language": "fr",
+          "@value": "Life insurance companies - User manual"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/14dd8023-a6de-49b8-832d-a41a6f773a51",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/14dd8023-a6de-49b8-832d-a41a6f773a51/download/life_insurance_companies_quarterly_10a.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "20558597.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:11:32.704243"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T15:31:15.023829"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "10A - Life Annual Supplement (Inactive Q4/2023)​"
+        },
+        {
+          "@language": "fr",
+          "@value": "10A - Supplément annuel sur la vie (Inactif T4/2023)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Na3f3f639a37f43d6b5b0c204c8921354"
+      }
+    },
+    {
+      "@id": "_:Na3f3f639a37f43d6b5b0c204c8921354",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "424fb319ca08378d3a64dbe9c1e00ee5"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/0cfbf7e8-0d6a-455f-b92e-967aa4627f68",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/0cfbf7e8-0d6a-455f-b92e-967aa4627f68/download/mapping-legacy-findat-open-government-findat_e.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:11:38.561032"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:11:38.535419"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        },
+        {
+          "@language": "en",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/563aa4bf-dc3d-4ece-8669-dd68dd6c2fbf",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/563aa4bf-dc3d-4ece-8669-dd68dd6c2fbf/download/life_insurance_companies_quarterly_lf2.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "102527970.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:30:41.531741"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-02T13:01:43.619861"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "LF2 - Life Supervisory Quarterly Return (Active)"
+        },
+        {
+          "@language": "fr",
+          "@value": "LF2 - Vie Relevé de surveillance trimestiel (Actif)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nd99ea3216de44c9a8eae3916e1ed3ec0"
+      }
+    },
+    {
+      "@id": "_:Nd99ea3216de44c9a8eae3916e1ed3ec0",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "b280ccc432b34207d16b747f0d399ce4"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/7ec500de-a5b8-481a-97a4-4500ec3efe6a",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/7ec500de-a5b8-481a-97a4-4500ec3efe6a/download/life_insurance_companies_quarterly_54.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "51313786.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:11:32.704251"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T15:41:16.904745"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "54 - BSIF 54 (Inactif T3/2005)"
+        },
+        {
+          "@language": "en",
+          "@value": "54 - Return 54 (Inactive Q3/2005)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N28292db7272248a79c3a6986ba4f46de"
+      }
+    },
+    {
+      "@id": "_:N28292db7272248a79c3a6986ba4f46de",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "eaa5bbbadac231e12907068e10f881b5"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/f3ca06b0-66a9-4d55-9bda-d060153ec684",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/f3ca06b0-66a9-4d55-9bda-d060153ec684/download/step-by-step-api-usage-guide_fr.pdf"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "5910923.0"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T11:04:20.139389"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:20.641990"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        },
+        {
+          "@language": "en",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/b97c29b4-76d5-4dc6-9f93-540908157dcb",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/b97c29b4-76d5-4dc6-9f93-540908157dcb/download/life_insurance_companies_quarterly_87.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "16642777.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:11:32.704255"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:01:16.912291"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "87 - Retour 87 / MMPRCE-A (Inactif T4/2017)"
+        },
+        {
+          "@language": "en",
+          "@value": "87 - Return 87 / MCCSR-A (Inactive Q4/2017)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N4e3f0b3005e34c4aa93acce60249b3a7"
+      }
+    },
+    {
+      "@id": "_:N4e3f0b3005e34c4aa93acce60249b3a7",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "97104e6929fb9825c593e23122851f5b"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/a881674b-642a-4e9c-84c4-70ec061f71ca",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/a881674b-642a-4e9c-84c4-70ec061f71ca/download/life_insurance_companies_quarterly_86.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "6898414.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:11:32.704254"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T15:51:15.686322"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "86 - Return 86 / TAAM-A (Inactive Q4/2017)"
+        },
+        {
+          "@language": "fr",
+          "@value": "86 - Retour 86 / TDAMR-A (Inactif T4/2017)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nd993df3616b14a6982dbff559077bbe0"
+      }
+    },
+    {
+      "@id": "_:Nd993df3616b14a6982dbff559077bbe0",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "bf5a8e65645f5efb3958d5ff5a8ad222"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/cc527ad2-e297-463f-8e58-372fe746904e",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/cc527ad2-e297-463f-8e58-372fe746904e/download/list-of-fi-life-subsidiaries.xlsx"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-13T19:47:03.714612"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-13T19:47:03.689807"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Liste des filiales d’assurance‑vie"
+        },
+        {
+          "@language": "en",
+          "@value": "List of Life Insurance Subsidiaries"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/f3ddcfbc-a852-4dee-be3c-5b08864c9afe",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/f3ddcfbc-a852-4dee-be3c-5b08864c9afe/download/life_insurance_companies_quarterly_lf1.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "325535353.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:30:41.531740"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-02T13:41:31.650680"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "LF1 - Life Core Financial Statement Return (Active) "
+        },
+        {
+          "@language": "fr",
+          "@value": "LF1 - Vie Relevé des états financiers (Actif) "
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N0bdaf4388e80430bb32a8a7191885b22"
+      }
+    },
+    {
+      "@id": "_:N0bdaf4388e80430bb32a8a7191885b22",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "de48dcfd90feee96cbfe650bf4d1fb2b"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/c2af08e5-919c-4b94-a326-45c031b9a3e5",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/c2af08e5-919c-4b94-a326-45c031b9a3e5/download/data-dictionary-life-insurance-companies.xlsx"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:11:56.367088"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:11:56.333672"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Data Dictionary"
+        },
+        {
+          "@language": "fr",
+          "@value": "Dictionnaire de données"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/c793a709-f547-463f-aa13-7f529e30c617",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/c793a709-f547-463f-aa13-7f529e30c617/download/life_insurance_companies_quarterly_lf3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "32569966.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:30:41.531742"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-02T13:49:54.503456"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "LF3 - Vie Relevé de surveillance annual (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "LF3 - Life Supervisory Annual Return (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N4c5aed5bfe0c4cb397a230cb0957de71"
+      }
+    },
+    {
+      "@id": "_:N4c5aed5bfe0c4cb397a230cb0957de71",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "e6a1b32e80c449c7e01ac8d60f46286e"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/023628c5-9596-400e-9187-721b849e58af",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/023628c5-9596-400e-9187-721b849e58af/download/life_insurance_companies_quarterly_10q.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "79544747.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:11:32.704247"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T15:31:15.023878"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "10Q - Life Quarterly (Inactive Q4/2023)​"
+        },
+        {
+          "@language": "fr",
+          "@value": "10Q - Vie trimestrielle (Inactif T4/2023)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N9f1d5b901fd342ea810a810e170a3560"
+      }
+    },
+    {
+      "@id": "_:N9f1d5b901fd342ea810a810e170a3560",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "427567bbc2aecb6f3537d1c8a89e413b"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/1dc23ffc-ae5a-46b0-8162-023c00d970f2",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/1dc23ffc-ae5a-46b0-8162-023c00d970f2/download/life_insurance_companies_quarterly_55.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "44533760.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:11:32.704253"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T15:51:15.686269"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "55 - Return 55-A (Inactive Q3/2005)"
+        },
+        {
+          "@language": "fr",
+          "@value": "55 - BSIF 55 (Inactif T3/2005)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N56c78799407246f48b8119ae2abb7ea9"
+      }
+    },
+    {
+      "@id": "_:N56c78799407246f48b8119ae2abb7ea9",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "e2a17550f28df3c64e08d4994c46a6bb"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270",
+      "@type": "dcat:Dataset",
+      "dcat:contactPoint": {
+        "@id": "_:Nc076954c37934f9ba18a40379ac21101"
+      },
+      "dcat:distribution": [
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/83161e84-f59d-4703-8ca9-fcc3fd2a84ac"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/c793a709-f547-463f-aa13-7f529e30c617"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/69b6fcd5-50c9-43bd-bd18-3f4e031854d0"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/f3ddcfbc-a852-4dee-be3c-5b08864c9afe"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/563aa4bf-dc3d-4ece-8669-dd68dd6c2fbf"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/3b81a599-01cd-437e-b090-aeb8adaa5edf"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/14dd8023-a6de-49b8-832d-a41a6f773a51"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/0cfbf7e8-0d6a-455f-b92e-967aa4627f68"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/b97c29b4-76d5-4dc6-9f93-540908157dcb"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/1dc23ffc-ae5a-46b0-8162-023c00d970f2"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/d8042758-8d77-4d38-abf5-5bdb76c16faa"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/1017a532-b70b-45a5-a2be-a75b4e5e3947"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/cc2cae60-cdc4-4428-b64c-cdaa2eb0b700"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/b0cb91ad-540f-4977-bf9c-3f9293eb3a79"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/023628c5-9596-400e-9187-721b849e58af"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/f3ca06b0-66a9-4d55-9bda-d060153ec684"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/a9f5f369-0faf-4ca3-aede-b13d303a18de"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/c2af08e5-919c-4b94-a326-45c031b9a3e5"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/7ec500de-a5b8-481a-97a4-4500ec3efe6a"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/a881674b-642a-4e9c-84c4-70ec061f71ca"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/1358284b-26e7-4c69-abd8-398d3da2c270/resource/cc527ad2-e297-463f-8e58-372fe746904e"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "fr",
+          "@value": "Canadiennes"
+        },
+        {
+          "@language": "en",
+          "@value": "Life"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés"
+        },
+        {
+          "@language": "fr",
+          "@value": "Assurance"
+        },
+        {
+          "@language": "en",
+          "@value": "Canadian"
+        },
+        {
+          "@language": "en",
+          "@value": "Insurance"
+        },
+        {
+          "@language": "fr",
+          "@value": "Étrangèrs"
+        },
+        {
+          "@language": "en",
+          "@value": "Foreign"
+        }
+      ],
+      "dct:accrualPeriodicity": "P3M",
+      "dct:description": [
+        {
+          "@language": "fr",
+          "@value": "Toutes les données financières publiques additionnelles, telles que soumises par les sociétés d’assurance-vie fédérales, sont disponibles sans frais sur le site Web de la société Beyond 20/20.\r\n\r\nRésultat total de l'industrie: On obtient le résultat total de l'industrie en additionnant «Total Sociétés d'assurance-vie canadiennes» et «Total Sociétés d'assurance-vie étrangères»\r\n\r\n(Pour l’exercice de déclaration 2023, les assureurs dont l’exercice se termine en décembre commenceront à produire les nouvelles versions du relevé au titre de l’IFRS 17 à compter du T1 de 2023. Les assureurs dont l’exercice se termine en octobre devront continuer à produire les versions existantes des relevés de l’assurance-vie (« relevés Vie ») jusqu’à ce qu’ils mettent en œuvre l’IFRS 17, ce qui concordera avec leur période de déclaration du T1 de 2024. En raison de cette année de transition, les données afférentes au « résultat total de l’industrie » et au « Total Sociétés d’assurance-vie canadiennes » pourraient ne pas être disponibles.\r\n\r\nLe «Total Sociétés d'assurance-vie canadiennes» ne comprend pas les données déclarées par des sociétés de portefeuille d’assurances ou par des sociétés d’assurance-vie qui sont des filiales d’autres sociétés d’assurance-vie (qui ne sont pas des sociétés de portefeuille d’assurances), car ces données sont déjà prises en compte dans les données consolidées déclarées par la société mère.\r\n\r\n\r\nDésistement de responsabilité concernant l'information provenant de tiers\r\nPour les exercices ouverts en 2023 (janvier 2023 pour les entités dont l’exercice prend fin en décembre; novembre 2023 pour celles dont l’exercice prend fin en octobre) et ultérieurement, les données financières des assureurs sont présentées conformément à la norme IFRS 17 – Contrats d’assurance; pour les exercices antérieurs à 2023, elles sont présentées conformément à la norme IFRS 4.\r\n\r\nUne partie des informations de ce site Web à été fournie par des sources externes. Le gouvernement du Canada n'assume aucune responsabilité concernant la précision, l'actualité ou la fiabilité des informations fournies par les sources externes. Les utilisateurs qui désirent employer cette information devraient consulter directement la source des informations. Le contenu fournit par les sources externes n'est pas assujetti aux exigences sur les langues officielles, la protection des renseignements personnels et l'accessibilité.\r\n\r\n__Dates de publication prévues pour toutes les déclarations mensuelles actives – 2026 : __\r\n\r\n* Janvier – 15 janvier\r\n* Février – 16 février\r\n* Mars – 16 mars\r\n* Avril – 15 avril\r\n* Mai – 15 mai\r\n* Juin – 15 juin\r\n* Juillet – 15 juillet\r\n* Août – 17 août\r\n* Septembre – 15 septembre\r\n* Octobre – 15 octobre\r\n* Novembre – 15 novembre\r\n* Décembre – 15 décembre\r\n\r\n__ Dates de publication prévues pour toutes les déclarations trimestrielles actives – 2026 :__\r\n\r\n* Trimestre 1 — Date d’échéance: 15 mai | Date de publication: 23 mai\r\n* Trimestre 2 — Date d’échéance: 14 août | Date de publication: 22 août \r\n* Trimestre 3 — Date d’échéance: 14 novembre | Date de publication: 22 novembre\r\n* Trimestre 4 — Date d’échéance: 1er mars | Date de publication: 19 mars\r\n\r\n\r\n"
+        },
+        {
+          "@language": "en",
+          "@value": "All publicly available financial data as filed by federally regulated life insurance companies are available free of charge from the Beyond 20/20 Web site.\r\n\r\nIndustry Totals: Please note that to determine total industry data, you must add \"Total Canadian Life Companies\" and \"Total Foreign Life Companies\".\r\n\r\n(For 2023 reporting year, insurers with a December fiscal year-end will begin filing the new IFRS 17 return versions effective Q1 2023 and insurers with an October fiscal year-end are required to continue filing the existing Life returns until they implement IFRS 17 effective with their Q1 2024 filing period. As a result of this transition year, total industry and Total Canadian Life data may not be available.)\r\n\r\nData aggregated under \"Total Canadian Life Companies\" do not include data reported by insurance holding companies, or by Life companies that are subsidiaries of other Life companies (that are not insurance holding companies), since these data are already accounted for in the consolidated data reported by the parent companies.\r\n\r\n\r\nThird-Party Information Liability Disclaimer\r\nFor periods beginning in fiscal 2023 (January 2023 for calendar year-ends; November 2023 for October year-ends) Financial data for insurers reflect IFRS 17 insurance contract accounting and prior periods reflect IFRS 4.\r\n\r\nSome of the information on this Web page has been provided by external sources. The Government of Canada is not responsible for the accuracy, reliability or currency of the information supplied by external sources. Users wishing to rely upon this information should consult directly with the source of the information. Content provided by external sources is not subject to official languages, privacy and accessibility requirements.\r\n\r\n\r\n__Scheduled publication dates for all active Monthly returns 2026:__\r\n\r\n* January – January 15\r\n* February – February 16\r\n* March – March 16\r\n* April – April 15\r\n* May – May 15\r\n* June – June 15\r\n* July – July 15\r\n* August – August 17\r\n* September – September 15\r\n* October – October 15\r\n* November – November 15\r\n* December – December 15\r\n\r\n__Scheduled publication dates for all active Quarterly returns 2026: __\r\n\r\n* Quarter 1 — Due: May 15 | Publish: May 23\r\n* Quarter 2 — Due: Aug 14 | Publish: Aug 22 \r\n* Quarter 3 — Due: Nov 14 | Publish: Nov 22 \r\n* Quarter 4 — Due: March 1 | Publish: March 19\r\n"
+        }
+      ],
+      "dct:identifier": "1358284b-26e7-4c69-abd8-398d3da2c270",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:30:41.526581"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-02T13:49:54.510188"
+      },
+      "dct:publisher": {
+        "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Sociétés d'assurance-vie"
+        },
+        {
+          "@language": "en",
+          "@value": "Life insurance companies"
+        }
+      ]
+    },
+    {
+      "@id": "_:Nc076954c37934f9ba18a40379ac21101",
+      "@type": "vcard:Organization",
+      "vcard:hasEmail": {
+        "@id": "mailto:information@osfi-bsif.gc.ca"
+      }
+    }
+  ]
+}

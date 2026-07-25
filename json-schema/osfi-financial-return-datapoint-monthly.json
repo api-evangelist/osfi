@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/json-schema/osfi-financial-return-datapoint-monthly.json",
+  "title": "OSFI FINDAT regulatory-return data point (calendar-month return series)",
+  "description": "Derived from the live CKAN datastore field list returned by GET https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=d0f6040e-671c-4301-a235-e9e7ba164604&limit=1 on 2026-07-25. Every column OSFI publishes is bilingual (English/French pairs) and typed `text` by the datastore, including the measure value \u2014 consumers must cast numerics themselves.",
+  "x-source": {
+    "resource_id": "d0f6040e-671c-4301-a235-e9e7ba164604",
+    "records": 1555044,
+    "probed": "2026-07-25",
+    "method": "derived"
+  },
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "integer",
+      "x-ckan-type": "int",
+      "description": "CKAN datastore surrogate row id; not an OSFI identifier."
+    },
+    "Calendar Year/Annee civile": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Calendar Month/Mois civil": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Id": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Total All Banks/Total Industry Groups/FIs": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Total Banques/Total des groupe sectoriel/IFFs": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Industry Group": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Groupe Sectoriel": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Return/Releve": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Return Title": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Titre du releve": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Data Point Address/Adresse de point de donnee": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Data Point Address Label": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Libelle de l'adresse du point de donnees": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "FI Inactive Date/Date d'inactivite IFF": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Measure Value/Valeur de mesure": {
+      "type": "string",
+      "x-ckan-type": "text"
+    }
+  },
+  "additionalProperties": true
+}

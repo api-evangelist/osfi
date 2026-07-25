@@ -1,0 +1,21 @@
+{
+  "generated": "2026-07-25",
+  "method": "searched",
+  "description": "CKAN Action API error envelope for an unknown resource_id.",
+  "request": {
+    "method": "GET",
+    "url": "https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=DOESNOTEXIST&limit=1"
+  },
+  "response": {
+    "status": 404,
+    "content_type": "application/json",
+    "body": {
+      "help": "https://open.canada.ca/data/en/api/3/action/help_show?name=datastore_search",
+      "error": {
+        "__type": "Not Found Error",
+        "message": "Not found: Resource \"DOESNOTEXIST\" was not found."
+      },
+      "success": false
+    }
+  }
+}

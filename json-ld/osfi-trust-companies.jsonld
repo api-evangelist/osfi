@@ -1,0 +1,672 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatap": "http://data.europa.eu/r5r/",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gsp": "http://www.opengis.net/ont/geosparql#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "schema1": "http://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "time1": "http://www.w3.org/2006/time",
+    "vann": "http://purl.org/vocab/vann/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/9cef44ce-34af-4c09-81bc-bdbb3b6a5999",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/9cef44ce-34af-4c09-81bc-bdbb3b6a5999/download/societes-de-fiducie-manuel-dutilisation.pdf"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "912277.0"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:08:27.122232"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T17:43:30.201689"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Sociétés de fiducie - Manuel d'utilisation"
+        },
+        {
+          "@language": "en",
+          "@value": "Sociétés de fiducie - Manuel d'utilisation"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/352eef00-9f32-4a76-a81d-17f73929f1cd",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/352eef00-9f32-4a76-a81d-17f73929f1cd/download/trust_companies_quarterly_ba.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "85923778.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T10:28:02.236158"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:25:16.239818"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "BA - Relevé des normes de fonds propres - Bâle III (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "BA – BASEL III Capital Adequacy Reporting - BCAR (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nb048fe52c10145a79c57c64396ad5793"
+      }
+    },
+    {
+      "@id": "_:Nb048fe52c10145a79c57c64396ad5793",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "c1322cd70141487096ff5d5ee1bd22cf"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/6c9cfdc2-b3ea-4eb9-b564-fd28e7aba16b",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/6c9cfdc2-b3ea-4eb9-b564-fd28e7aba16b/download/trust_companies_monthly_m4.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "424998272.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:45:57.052680"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-16T16:12:05.369033"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "M4 - Bilan consolidé (Actif)​"
+        },
+        {
+          "@language": "en",
+          "@value": "M4 - Consolidated Balance Sheet (Active)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N4ddb3d8dbce84110a6d88ff0046b56b4"
+      }
+    },
+    {
+      "@id": "_:N4ddb3d8dbce84110a6d88ff0046b56b4",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "121a9a5a42e24dba8b7009faec48834b"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/253746a4-76a9-41ef-9a2d-968bdf5a7b81",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/253746a4-76a9-41ef-9a2d-968bdf5a7b81/download/step-by-step-api-usage-guide_fr.pdf"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "5910923.0"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T11:04:47.058838"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:56:57.036238"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        },
+        {
+          "@language": "fr",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/fe26c68b-8cde-45b3-9c82-734fb7ec1111",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/fe26c68b-8cde-45b3-9c82-734fb7ec1111/download/step-by-step-api-usage-guide_en.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:56:57.072335"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:56:57.036131"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        },
+        {
+          "@language": "fr",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/029d1645-03f1-49ef-81f4-082197f9cc9a",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/029d1645-03f1-49ef-81f4-082197f9cc9a/download/list-of-fi-trust-subsidiaries.xlsx"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-13T19:46:44.787597"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-13T19:46:44.752020"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "List of Trust Subsidiaries"
+        },
+        {
+          "@language": "fr",
+          "@value": "Liste des filiales de fiducie"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/3bae0eb9-21c0-4017-b48d-4ebf32aaca02",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/3bae0eb9-21c0-4017-b48d-4ebf32aaca02/download/mapping-legacy-findat-open-government-findat_f.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:23.537253"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:23.527970"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        },
+        {
+          "@language": "en",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB",
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Office of the Superintendent of Financial Institutions Canada"
+        },
+        {
+          "@language": "fr",
+          "@value": "Bureau du surintendant des institutions financières Canada"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/0f725147-0e58-45aa-b904-a1fe15b521c3",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/0f725147-0e58-45aa-b904-a1fe15b521c3/download/data-dictionary-trust-companies.xlsx"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:01:59.598967"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:01:59.585584"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Dictionnaire de données"
+        },
+        {
+          "@language": "en",
+          "@value": "Data Dictionary"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/c2c979a9-01f4-4b06-a881-30809b008538",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/c2c979a9-01f4-4b06-a881-30809b008538/download/trust-companies-user-manual.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:08:27.122228"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:08:27.081694"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Trust Companies - User manual"
+        },
+        {
+          "@language": "fr",
+          "@value": "Trust Companies - User manual"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/ad7ccafc-bf60-4a34-a778-02633e92d2b6",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/ad7ccafc-bf60-4a34-a778-02633e92d2b6/download/mapping-legacy-findat-open-government-findat_e.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T12:51:37.265020"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T12:51:37.260756"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        },
+        {
+          "@language": "en",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/bacbc9e4-c66f-4971-8fa6-562441f2c9b3",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/bacbc9e4-c66f-4971-8fa6-562441f2c9b3/download/trust_companies_quarterly_lr.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1359901.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:45:57.052688"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:28:20.914769"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "LR - Déclaration du ratio de levier (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "LR - Leverage Requirements Return (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N58df87ca1fa74a4fb384bc3a32d237bd"
+      }
+    },
+    {
+      "@id": "_:N58df87ca1fa74a4fb384bc3a32d237bd",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "1b80a87322975fa56e0ebfb11903e287"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/ddd7f303-7f30-4011-aa3b-aea412aaae6f",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/ddd7f303-7f30-4011-aa3b-aea412aaae6f/download/trust_companies_quarterly_e3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "36290444.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:45:57.052685"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:25:16.239884"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "E3 - Return of Allowances for Expected Credit Losses (Active)​"
+        },
+        {
+          "@language": "fr",
+          "@value": "E3 - Relevé Des Provisions Pour Pertes De Crédit Attendues (Actif)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N0d2816fc2bd94f38a721886515f562e2"
+      }
+    },
+    {
+      "@id": "_:N0d2816fc2bd94f38a721886515f562e2",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "bd859b833810307470c0e0e038299cb1"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81",
+      "@type": "dcat:Dataset",
+      "dcat:contactPoint": {
+        "@id": "_:N689d7e5bd4784a70a4ce1a92ab0528b7"
+      },
+      "dcat:distribution": [
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/352eef00-9f32-4a76-a81d-17f73929f1cd"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/fe26c68b-8cde-45b3-9c82-734fb7ec1111"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/ad7ccafc-bf60-4a34-a778-02633e92d2b6"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/029d1645-03f1-49ef-81f4-082197f9cc9a"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/9cef44ce-34af-4c09-81bc-bdbb3b6a5999"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/3bae0eb9-21c0-4017-b48d-4ebf32aaca02"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/ddd7f303-7f30-4011-aa3b-aea412aaae6f"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/4679fcee-29ad-4619-9612-a0ddcb46d84d"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/0f725147-0e58-45aa-b904-a1fe15b521c3"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/c2c979a9-01f4-4b06-a881-30809b008538"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/9df41a7b-87cd-425b-a036-cf650177e5cd"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/6c9cfdc2-b3ea-4eb9-b564-fd28e7aba16b"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/bacbc9e4-c66f-4971-8fa6-562441f2c9b3"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/253746a4-76a9-41ef-9a2d-968bdf5a7b81"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "Monthly"
+        },
+        {
+          "@language": "fr",
+          "@value": "Trimestriel"
+        },
+        {
+          "@language": "en",
+          "@value": "Trust companies"
+        },
+        {
+          "@language": "en",
+          "@value": "Quarterly"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mensuel"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés de fiducie"
+        }
+      ],
+      "dct:accrualPeriodicity": "P1M",
+      "dct:description": [
+        {
+          "@language": "fr",
+          "@value": "Résultats mensuels du mois de décembre des sociétés dont l’exercice financier se termine en octobre seront publiés le 15 février, et les résultats des sociétés dont l’exercice financier se termine en décembre seront publiés le 28 février. Ces dates correspondent à la divulgation publique des résultats d’institutions financières cotées en bourse.\r\n\r\nÀ compter du T2 de 2023, les petites et moyennes institutions de dépôt (PMB) classées dans la catégorie III selon les Normes de fonds propres et de liquidité de 2023 cesseront de déclarer un ratio de fonds propres fondé sur le risque ou un ratio de levier. Elles déclareront plutôt un ratio simplifié de fonds propres fondé sur le risque. Veuillez consulter les lignes directrices du BSIF ci-dessous pour en savoir plus sur les exigences en matière de déclaration qui s’appliquent aux PMB :\r\nLigne directrice Normes de fonds propres et de liquidité des petites et moyennes institutions de dépôt\r\nLigne directrice Normes de fonds propres\r\nLigne directrice Normes de liquidité\r\nDésistement de responsabilité concernant l'information provenant de tiers\r\nUne partie des informations de ce site Web à été fournie par des sources externes. Le gouvernement du Canada n'assume aucune responsabilité concernant la précision, l'actualité ou la fiabilité des informations fournies par les sources externes. Les utilisateurs qui désirent employer cette information devraient consulter directement la source des informations. Le contenu fournit par les sources externes n'est pas assujetti aux exigences sur les langues officielles, la protection des renseignements personnels et l'accessibilité.\r\n\r\n__Dates de publication prévues pour toutes les déclarations mensuelles actives – 2026 : __\r\n\r\n* Janvier – 15 janvier\r\n* Février – 16 février\r\n* Mars – 16 mars\r\n* Avril – 15 avril\r\n* Mai – 15 mai\r\n* Juin – 15 juin\r\n* Juillet – 15 juillet\r\n* Août – 17 août\r\n* Septembre – 15 septembre\r\n* Octobre – 15 octobre\r\n* Novembre – 15 novembre\r\n* Décembre – 15 décembre\r\n\r\n__ Dates de publication prévues pour toutes les déclarations trimestrielles actives – 2026 :__\r\n\r\n* Trimestre 1 — Date d’échéance: 15 mai | Date de publication: 23 mai\r\n* Trimestre 2 — Date d’échéance: 14 août | Date de publication: 22 août \r\n* Trimestre 3 — Date d’échéance: 14 novembre | Date de publication: 22 novembre\r\n* Trimestre 4 — Date d’échéance: 1er mars | Date de publication: 19 mars\r\n\r\n"
+        },
+        {
+          "@language": "en",
+          "@value": "December monthly results for October fiscal year end filers will be published on February 15th and the results for December fiscal year end filers will be published on February 28th. This disclosure is done to align with public disclosure of publicly traded financial institutions.\r\n\r\nEffective Q2 2023, Small and Medium-Sized Deposit Taking Institutions (SMSBs) classified as Category III under the 2023 Capital and Liquidity requirements will no longer report a risk-based capital ratio or leverage ratio. Rather, Category III SMSBs will report simplified risk-based capital ratios. Please refer to the following OSFI Guidelines for additional information on the reporting requirements for SMSBs:\r\n\r\nSmall and Medium-Sized Deposit Taking Institutions Capital and Liquidity Requirements Guideline\r\nCapital Adequacy Requirements Guideline\r\nLiquidity Adequacy Requirements Guideline\r\nThird-Party Information Liability Disclaimer\r\nSome of the information on this Web page has been provided by external sources. The Government of Canada is not responsible for the accuracy, reliability or currency of the information supplied by external sources. Users wishing to rely upon this information should consult directly with the source of the information. Content provided by external sources is not subject to official languages, privacy and accessibility requirements.\r\n\r\n\r\n__Scheduled publication dates for all active Monthly returns 2026:__\r\n\r\n* January – January 15\r\n* February – February 16\r\n* March – March 16\r\n* April – April 15\r\n* May – May 15\r\n* June – June 15\r\n* July – July 15\r\n* August – August 17\r\n* September – September 15\r\n* October – October 15\r\n* November – November 15\r\n* December – December 15\r\n\r\n__Scheduled publication dates for all active Quarterly returns 2026: __\r\n\r\n* Quarter 1 — Due: May 15 | Publish: May 23\r\n* Quarter 2 — Due: Aug 14 | Publish: Aug 22 \r\n* Quarter 3 — Due: Nov 14 | Publish: Nov 22 \r\n* Quarter 4 — Due: March 1 | Publish: March 19\r\n"
+        }
+      ],
+      "dct:identifier": "203bb08d-fdff-46f6-93ec-00e5d1d76a81",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T10:28:02.228484"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-16T16:12:05.376245"
+      },
+      "dct:publisher": {
+        "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Trust companies"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés de fiducie"
+        }
+      ]
+    },
+    {
+      "@id": "_:N689d7e5bd4784a70a4ce1a92ab0528b7",
+      "@type": "vcard:Organization",
+      "vcard:hasEmail": {
+        "@id": "mailto:information@osfi-bsif.gc.ca"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/9df41a7b-87cd-425b-a036-cf650177e5cd",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/9df41a7b-87cd-425b-a036-cf650177e5cd/download/trust_companies_quarterly_p3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "158062909.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T10:28:02.236162"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:31:43.724811"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "P3 - Consolidated Statement Of Income, Retained Earnings & AOCI (Active)"
+        },
+        {
+          "@language": "fr",
+          "@value": "P3 - État consolidés des revenus, bénéfices non repartis et AERE (Actif)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Ne89b7b025b514505a2900442c1db1f44"
+      }
+    },
+    {
+      "@id": "_:Ne89b7b025b514505a2900442c1db1f44",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "174acad513682c6249ac2f18dac4b0b3"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/4679fcee-29ad-4619-9612-a0ddcb46d84d",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81/resource/4679fcee-29ad-4619-9612-a0ddcb46d84d/download/trust_companies_quarterly_g3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "24790655.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:45:57.052686"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T18:51:55.244443"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "G3 - Capital Adequacy Return (Inactive Q1/2008)​"
+        },
+        {
+          "@language": "fr",
+          "@value": "G3 - Normes de fonds propres (Inactif T1/2008)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N87c2ee544711447c9301238ad99b8e6b"
+      }
+    },
+    {
+      "@id": "_:N87c2ee544711447c9301238ad99b8e6b",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "b62bea269995edfc21aaf4ec86fd1c60"
+      }
+    }
+  ]
+}

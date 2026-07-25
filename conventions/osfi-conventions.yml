@@ -1,0 +1,154 @@
+generated: '2026-07-25'
+method: searched
+source: https://docs.ckan.org/en/2.10/api/index.html and https://docs.ckan.org/en/2.10/maintaining/datastore.html
+  (the CKAN 3 Action API contract that serves OSFI's data), https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data
+  (OSFI's own guidance), plus live probes of https://open.canada.ca/data/en/api/3/action on 2026-07-25.
+description: 'How OSFI''s machine-readable surface actually behaves. OSFI does not operate its own API
+  gateway: its regulatory data is published to Canada''s Open Government Portal, which runs CKAN 2.10.8
+  (confirmed via status_show) and exposes the CKAN 3 Action API. Every convention below is CKAN''s, verified
+  live against OSFI''s own resources.'
+base_url: https://open.canada.ca/data/en/api/3/action
+api_style: RPC-over-HTTP. Every call is /api/3/action/<action_name>; parameters go on the query string
+  for GET or as a JSON body for POST. Responses are always a JSON envelope, never a bare resource. This
+  is not a REST-resource API and there is no OpenAPI description of it.
+operations:
+- action: status_show
+  description: Return the CKAN site status, version and enabled extensions.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/status_show
+- action: package_list
+  description: List every dataset (package) name on the portal.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/package_list
+- action: package_search
+  description: Search datasets; filter to OSFI with fq=organization:osfi-bsif.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/package_search
+- action: package_show
+  description: Return one dataset with all of its resources and their datastore_active flag.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/package_show
+- action: resource_show
+  description: Return one resource (a single OSFI return series or register file).
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/resource_show
+- action: datastore_search
+  description: Read records out of a datastore-active resource, with filters, q, fields, limit and offset.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/datastore_search
+- action: datastore_info
+  description: Return the datastore table metadata for a resource.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/datastore_info
+- action: organization_show
+  description: Return the osfi-bsif publisher organization.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/organization_show
+- action: organization_list
+  description: List publisher organizations on the portal.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/organization_list
+- action: group_list
+  description: List dataset groups/themes.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/group_list
+- action: tag_list
+  description: List tags in use across the portal.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/tag_list
+- action: resource_search
+  description: Search resources by field.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/resource_search
+- action: package_activity_list
+  description: Return the change activity stream for a dataset.
+  verified_status: 200
+  url: https://open.canada.ca/data/en/api/3/action/package_activity_list
+disabled_actions:
+- action: datastore_search_sql
+  status: 400
+  response: 'Bad request - Action name not known: datastore_search_sql'
+  note: CKAN's SQL passthrough is NOT enabled on open.canada.ca. Verified 2026-07-25. Consumers must use
+    datastore_search with filters/q/fields instead — any guidance that suggests datastore_search_sql against
+    OSFI data is wrong.
+authentication:
+  scheme: none
+  detail: Every action above returns 200 to a fully anonymous request. No API key, no OAuth, no registration.
+    See authentication/osfi-authentication.yml.
+idempotency:
+  supported: false
+  mechanism: null
+  note: The public surface is read-only (GET), so it is inherently idempotent, but there is no idempotency-key
+    contract because there are no client-initiated writes. Writes happen on the gated filing side (Regulatory
+    Reporting System), which publishes no programmatic interface.
+pagination:
+  style: limit/offset with hypermedia links
+  request_params:
+    limit: number of records to return (datastore_search); default 100
+    offset: records to skip
+    rows: page size for package_search
+    start: offset for package_search
+  response_fields:
+  - result.total
+  - result.limit
+  - result.offset
+  - result._links.start
+  - result._links.next
+  - result._links.prev
+  verified: datastore_search?resource_id=945045fa-2de0-47d4-aad2-144d69467824&limit=1&offset=2 returned
+    total=349 with _links.next/_links.prev
+  note: total_was_estimated / total_estimation_threshold are returned on large resources — the record
+    count on the multi-hundred-thousand-row return series may be an estimate unless include_total is forced.
+filtering:
+  filters: JSON object of exact-match column filters, e.g. filters={"Industry Group":"Banks"}
+  q: free-text search across the resource, or a JSON object for per-field search
+  fields: comma-separated column projection
+  sort: column [asc|desc]
+  distinct: boolean, de-duplicate the projected fields
+response_envelope:
+  shape:
+    help: URL of the help_show page for the action
+    success: boolean
+    result: the payload, present only when success is true
+    error: present only when success is false
+  content_type: application/json;charset=utf-8
+  note: Errors carry the same envelope with success:false and error.__type; see errors/osfi-problem-types.yml.
+    RFC 9457 problem+json is NOT used.
+data_shape:
+  bilingual: Every FINDAT column is published as an English/French pair (for example 'Fiscal Year/Annee
+    fiscale', 'Return Title' + 'Titre du releve'). Consumers must pick a language side.
+  typing: The CKAN datastore types every OSFI column as `text`, including 'Measure Value/Valeur de mesure'.
+    Numeric analysis requires client-side casting.
+  surrogate_key: _id is a CKAN row id, not an OSFI identifier. The OSFI keys are 'Id' (institution) plus
+    'Data Point Address/Adresse de point de donnee'.
+  schemas: json-schema/
+caching:
+  cache_control: public, max-age=30, must-revalidate
+  etag: false
+  note: Observed on datastore_search responses 2026-07-25.
+cors:
+  access_control_allow_methods: GET, POST
+request_tracing:
+  request_id_header: null
+  note: No request-id or correlation header is returned.
+versioning:
+  scheme: uri-path
+  current: '3'
+  example: /api/3/action/<action>
+  detail: lifecycle/osfi-lifecycle.yml
+rate_limit_signaling:
+  headers: []
+  note: No RateLimit-* / Retry-After headers are returned and no limit is published. See rate-limits/osfi-rate-limits.yml.
+client_gotchas:
+- issue: WAF rejects default curl/script User-Agents
+  detail: open.canada.ca answers requests carrying a default curl User-Agent with an HTML 'Request Rejected'
+    page under HTTP 200. Send a browser User-Agent or you will silently parse HTML as JSON.
+  verified: '2026-07-25'
+- issue: datastore_search_sql is unavailable
+  detail: Returns HTTP 400 'Action name not known'.
+related:
+  errors: errors/osfi-problem-types.yml
+  authentication: authentication/osfi-authentication.yml
+  lifecycle: lifecycle/osfi-lifecycle.yml
+  rate_limits: rate-limits/osfi-rate-limits.yml
+  data_model: data-model/osfi-data-model.yml

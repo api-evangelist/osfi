@@ -1,0 +1,50 @@
+generated: '2026-07-25'
+method: searched
+source: https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns/filing-financial-returns/glossary-terms-change-control-log
+description: 'OSFI does not publish an API changelog — there is no OSFI-operated API to version. What
+  it does publish, and what actually breaks consumers of the FINDAT data, is a dated CHANGE CONTROL LOG
+  per return and for the reporting glossary: amendment number, effective date, page, and the exact terms
+  added / updated / deleted. This is the schema changelog for the data behind the CKAN resources.'
+scheme: amendment-number + effective-date
+surface: reporting schemas and controlled vocabulary (not the transport API)
+current:
+  document: Glossary of Terms
+  date_updated: September 2017
+  latest_amendment: 4
+entries:
+- amendment: 4
+  effective_date: 2018-01
+  breaking: true
+  highlights:
+  - 'Update: instructions under Introduction'
+  - 'Update: Accounting Principles — ''Allowance for Impairment'' renamed ''Allowance for Expected Credit
+    Losses'''
+  - 'Delete: Central Cooperative Credit Society; Add: Collective Allowances'
+  - 'Update: Country-Risk Allowances, Financial Leasing Corporation, Restructured Loans, Service Corporation,
+    Sovereign Risk Loans, Special Surveillance Loans, Specialized Financing Corporation'
+  - 'Delete: Group Allowances'
+  - 'Update: Investment Counselling and Portfolio Management Corporation, Mutual Fund Distribution Corporation'
+  - 'Update: Real Property Brokerage Corporation / Real Property Corporation / Real Property Holding Vehicle'
+- amendment: 3
+  effective_date: 2006-01
+  breaking: false
+  highlights:
+  - 'Delete: CDIC Standards of Sound Business and Financial Practices'
+- amendment: 2
+  effective_date: 2003-01
+  breaking: false
+  highlights:
+  - 'Add: Head Office Account'
+- amendment: 1
+  effective_date: 1998-01
+  breaking: false
+  highlights: []
+other_change_logs:
+  note: Every financial reporting instruction has its own change control log page under the financial
+    reporting instructions section (e.g. change-control-log-a2, change-control-log-e3, change-control-log-gq).
+  index: https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns/filing-financial-returns/financial-reporting-instructions
+platform_changelog:
+  note: Portal-side dataset changes are readable programmatically per dataset via the CKAN package_activity_list
+    action.
+  example: https://open.canada.ca/data/en/api/3/action/package_activity_list?id=b27ec3ef-7338-4e76-a6fd-128339a92df5
+  verified_status: 200

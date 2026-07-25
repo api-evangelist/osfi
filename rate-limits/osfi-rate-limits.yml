@@ -1,0 +1,44 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+provider: OSFI
+providerId: osfi
+generated: '2026-07-25'
+method: probed
+created: '2026-07-25'
+modified: '2026-07-25'
+description: No rate limit is published for the CKAN Action API serving OSFI's data, and no RateLimit-*
+  or Retry-After headers are returned (verified 2026-07-25). What IS enforced is a WAF that rejects non-browser
+  User-Agents, and page-size caps on the read actions.
+sources:
+- https://docs.ckan.org/en/2.10/api/index.html
+- https://open.canada.ca/data/en/api/3/action
+responseCodes:
+  throttled: null
+  waf_rejection: HTTP 200 with an HTML 'Request Rejected' body
+headers: []
+limits:
+- name: datastore_search page size
+  scope: request
+  metric: records-per-response
+  limit_count: 100
+  notes: CKAN default limit when none is supplied; pass a larger limit explicitly and page with offset.
+- name: package_search page size
+  scope: request
+  metric: rows-per-response
+  limit_count: 1000
+  notes: CKAN's ckan.search.rows_max default.
+- name: Requests per client
+  scope: client
+  metric: requests-per-minute
+  limit_count: null
+  notes: None published; none observed.
+policies:
+- name: Browser User-Agent required
+  description: 'Requests with a default curl/script User-Agent are answered with an HTML WAF page under
+    HTTP 200. Send a browser User-Agent and assert Content-Type: application/json before parsing.'
+- name: Backoff strategy
+  description: Exponential backoff with jitter on 5xx; harvest large return series (the PC1 resource alone
+    is 693,693 records) in offset pages rather than one call.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

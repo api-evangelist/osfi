@@ -156,9 +156,13 @@ findings:
       baseURL: https://open.canada.ca/data/en/api/3/action
       documented: true
       note: |
-        CKAN 3 Action API (package_search, package_show, resource_show,
-        datastore_search, datastore_search_sql) over OSFI's Open Government
-        datasets. Anonymous. Documented in prose by CKAN, plus OSFI's own
+        CKAN 3 Action API over OSFI's Open Government datasets. Anonymous.
+        Thirteen actions verified live on 2026-07-25: status_show, package_list,
+        package_search, package_show, resource_show, datastore_search,
+        datastore_info, organization_show, organization_list, group_list,
+        tag_list, resource_search, package_activity_list. datastore_search_sql
+        is DISABLED on this instance (HTTP 400, "Action name not known") —
+        corrected 2026-07-25. Documented in prose by CKAN, plus OSFI's own
         step-by-step API usage guide PDF per dataset.
     - protocol: HTTPS portal
       scheme: https
@@ -186,10 +190,22 @@ findings:
     - request: GET https://open.canada.ca/data/en/api/3/action/package_search?fq=organization:osfi-bsif&rows=100
       httpStatus: 200
       note: 36 OSFI datasets published on Open Government; 9 carry datastore-active
-        resources, of which 4 are insurance-relevant.
+        resources — 4 insurance-relevant (life, P&C/mortgage, fraternal, register)
+        and 5 deposit-taking (banks, foreign bank branches, trust companies, loan
+        companies, retail associations). All 9 confirmed live and added to apis.yml
+        on 2026-07-25.
     - request: GET https://open.canada.ca/data/en/api/3/action/status_show
       httpStatus: 200
       note: CKAN instance responds to unauthenticated Action API calls.
+  dcat:
+    present: true
+    note: |
+      open.canada.ca runs CKAN 2.10.8 with the dcat and dcat_json_interface
+      extensions (confirmed via status_show, 2026-07-25). Every OSFI dataset
+      resolves as JSON-LD, RDF/XML and Turtle at
+      https://open.canada.ca/data/en/dataset/<id>.{jsonld,rdf,ttl} — this is the
+      real machine-readable DESCRIPTION layer, in place of an OpenAPI. All nine
+      datastore-active dataset descriptions are saved verbatim in json-ld/.
   gated: false
   gatedNote: |
     Set false because the substantive data surface is genuinely open and anonymous.

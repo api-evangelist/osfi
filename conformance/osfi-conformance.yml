@@ -1,0 +1,69 @@
+generated: '2026-07-25'
+method: searched
+source: live probes 2026-07-25; https://docs.ckan.org/en/2.10/api/index.html
+standards:
+- id: ckan-action-api-3
+  conforms: true
+  evidence: status_show reports CKAN 2.10.8; /api/3/action/<action> serves every OSFI dataset.
+- id: dcat
+  conforms: true
+  evidence: CKAN `dcat` + `dcat_json_interface` extensions enabled (status_show); every dataset resolves
+    as .jsonld/.rdf/.ttl — saved in json-ld/.
+- id: json-ld
+  conforms: true
+  evidence: https://open.canada.ca/data/en/dataset/<id>.jsonld returns 200 application/ld+json.
+- id: rdf-xml
+  conforms: true
+  evidence: https://open.canada.ca/data/en/dataset/<id>.rdf returns 200.
+- id: turtle
+  conforms: true
+  evidence: https://open.canada.ca/data/en/dataset/<id>.ttl returns 200.
+- id: open-government-licence-canada
+  conforms: true
+  evidence: OSFI datasets are released under the Open Government Licence – Canada; see https://open.canada.ca/en/open-government-licence-canada.
+- id: ifrs
+  conforms: true
+  evidence: OSFI's Glossary of Terms requires returns to be prepared under International Financial Reporting
+    Standards except where otherwise specified — vocabulary/osfi-vocabulary.yml.
+- id: basel-iii
+  conforms: true
+  evidence: The BA / BCAR return series is BASEL III Capital Adequacy Reporting; the LR series is the
+    Leverage Requirements Return.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors use the CKAN {success:false, error:{__type,message}} envelope, not application/problem+json.
+- id: oauth2
+  conforms: false
+  evidence: No OAuth. The read surface is anonymous; the filing surface is a human portal login.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returns 404 on every OSFI and portal host.
+- id: openapi
+  conforms: false
+  evidence: No OpenAPI/Swagger document exists on any OSFI or portal host — see review.yml specProbes.
+- id: asyncapi
+  conforms: false
+  evidence: No event, streaming or webhook surface.
+- id: json-api
+  conforms: false
+  evidence: The Action API is RPC-over-HTTP, not JSON:API.
+- id: graphql
+  conforms: false
+  evidence: No /graphql surface.
+- id: grpc
+  conforms: false
+  evidence: No published .proto.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on www.osfi-bsif.gc.ca and open.canada.ca.
+- id: rfc8594-sunset-header
+  conforms: false
+  evidence: No Sunset/Deprecation headers; retirement is signalled by re-labelling resources '(Inactive
+    <quarter>)'.
+- id: acord
+  conforms: false
+  evidence: Zero of the 3,622 URLs in the osfi-bsif.gc.ca sitemap reference ACORD, AL3, NGDS or IVANS.
+    OSFI collects solvency data in its own return schemas.
+note: No security certification programme (SOC 2, ISO 27001, PCI DSS, FedRAMP) is published by OSFI for
+  its data surface, so no Compliance pointer is claimed. OSFI is the supervisor that ISSUES capital and
+  risk guidance to Canadian financial institutions; it does not certify its own web platform.

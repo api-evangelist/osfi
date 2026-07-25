@@ -1,0 +1,145 @@
+{
+  "generated": "2026-07-25",
+  "method": "searched",
+  "description": "Read BA / BASEL III Capital Adequacy Reporting (BCAR) data points for banks.",
+  "request": {
+    "method": "GET",
+    "url": "https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=fe7617f7-a676-4966-aae3-c4cfbab4b935&limit=2",
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "a browser User-Agent is required; the open.canada.ca WAF rejects default curl UAs with an HTML page under HTTP 200"
+    },
+    "auth": "none \u2014 anonymous"
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "help": "https://open.canada.ca/data/en/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "include_total": true,
+        "limit": 2,
+        "records_format": "objects",
+        "resource_id": "fe7617f7-a676-4966-aae3-c4cfbab4b935",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "_id": 594991,
+            "Fiscal Year/Annee fiscale": "2026",
+            "Fiscal Quarter": "Q2 - 2026",
+            "Trimestre fiscal": "T2 - 2026",
+            "Id": "1000000",
+            "Total All Banks/Total Industry Groups/FIs": "Total All Banks",
+            "Total Banques/Total des groupe sectoriel/IFFs": "Total toutes les banques",
+            "Industry Group": "All Banks",
+            "Groupe Sectoriel": "Toutes les banques",
+            "Return/Releve": "BA",
+            "Return Title": "BA \u2013 BASEL III Capital Adequacy Reporting - BCAR",
+            "Titre du releve": "BA - Relev\u00e9 des normes de fonds propres - B\u00e2le III",
+            "Data Point Address/Adresse de point de donnee": "1000",
+            "Data Point Address Label": "Common Equity Tier 1 (CET1) capital ratio (%)",
+            "Libelle de l'adresse du point de donnees": "Ratio de fonds propres de cat\u00e9gorie\u00a01 sous forme d\u2019actions ordinaires (CET1) (%)",
+            "FI Inactive Date/Date d'inactivite IFF": "9999-12-31",
+            "Measure Value/Valeur de mesure": "13.58"
+          },
+          {
+            "_id": 594992,
+            "Fiscal Year/Annee fiscale": "2026",
+            "Fiscal Quarter": "Q2 - 2026",
+            "Trimestre fiscal": "T2 - 2026",
+            "Id": "1000000",
+            "Total All Banks/Total Industry Groups/FIs": "Total All Banks",
+            "Total Banques/Total des groupe sectoriel/IFFs": "Total toutes les banques",
+            "Industry Group": "All Banks",
+            "Groupe Sectoriel": "Toutes les banques",
+            "Return/Releve": "BA",
+            "Return Title": "BA \u2013 BASEL III Capital Adequacy Reporting - BCAR",
+            "Titre du releve": "BA - Relev\u00e9 des normes de fonds propres - B\u00e2le III",
+            "Data Point Address/Adresse de point de donnee": "1008",
+            "Data Point Address Label": "BA, Ratio Calculations, Tier 1 capital ratio (%) - before floor",
+            "Libelle de l'adresse du point de donnees": "BA, Calcul des ratios, Ratio de fonds propres de cat\u00e9gorie 1 sous forme d'actions ordinaires (%) - avant le plancher",
+            "FI Inactive Date/Date d'inactivite IFF": "9999-12-31",
+            "Measure Value/Valeur de mesure": "15.60"
+          }
+        ],
+        "fields": [
+          {
+            "id": "_id",
+            "type": "int"
+          },
+          {
+            "id": "Fiscal Year/Annee fiscale",
+            "type": "text"
+          },
+          {
+            "id": "Fiscal Quarter",
+            "type": "text"
+          },
+          {
+            "id": "Trimestre fiscal",
+            "type": "text"
+          },
+          {
+            "id": "Id",
+            "type": "text"
+          },
+          {
+            "id": "Total All Banks/Total Industry Groups/FIs",
+            "type": "text"
+          },
+          {
+            "id": "Total Banques/Total des groupe sectoriel/IFFs",
+            "type": "text"
+          },
+          {
+            "id": "Industry Group",
+            "type": "text"
+          },
+          {
+            "id": "Groupe Sectoriel",
+            "type": "text"
+          },
+          {
+            "id": "Return/Releve",
+            "type": "text"
+          },
+          {
+            "id": "Return Title",
+            "type": "text"
+          },
+          {
+            "id": "Titre du releve",
+            "type": "text"
+          },
+          {
+            "id": "Data Point Address/Adresse de point de donnee",
+            "type": "text"
+          },
+          {
+            "id": "Data Point Address Label",
+            "type": "text"
+          },
+          {
+            "id": "Libelle de l'adresse du point de donnees",
+            "type": "text"
+          },
+          {
+            "id": "FI Inactive Date/Date d'inactivite IFF",
+            "type": "text"
+          },
+          {
+            "id": "Measure Value/Valeur de mesure",
+            "type": "text"
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=fe7617f7-a676-4966-aae3-c4cfbab4b935&limit=2",
+          "next": "/api/3/action/datastore_search?resource_id=fe7617f7-a676-4966-aae3-c4cfbab4b935&limit=2&offset=2"
+        },
+        "total": 299223,
+        "total_was_estimated": false
+      }
+    }
+  }
+}

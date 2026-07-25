@@ -1,0 +1,643 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatap": "http://data.europa.eu/r5r/",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gsp": "http://www.opengis.net/ont/geosparql#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "schema1": "http://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "time1": "http://www.w3.org/2006/time",
+    "vann": "http://purl.org/vocab/vann/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/a0a2d4cd-72a3-45a6-8c33-f0e6e01951ca",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/a0a2d4cd-72a3-45a6-8c33-f0e6e01951ca/download/cooperative_retail_associations_quarterly_g3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "913762.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:33:42.124566"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-20T21:24:19.569740"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "G3 - Normes de fonds propres (Inactif T1/2008)​"
+        },
+        {
+          "@language": "en",
+          "@value": "G3 - Capital Adequacy Return (Inactive Q1/2008)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N2d2e197f4e4a4e31bd654678a3808d7f"
+      }
+    },
+    {
+      "@id": "_:N2d2e197f4e4a4e31bd654678a3808d7f",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "68597f8d4f463975d7a4d88faeae0537"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/095b87ac-ba52-4d0a-993c-07a57ac5ad75",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/095b87ac-ba52-4d0a-993c-07a57ac5ad75/download/mapping-legacy-findat-open-government-findat_e.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:35.912654"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:35.896937"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/b660b0b4-372b-4211-853d-4ee406842fd2",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/b660b0b4-372b-4211-853d-4ee406842fd2/download/data-dictionary-retail-associations.xlsx"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:01:56.934210"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:01:56.920797"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Data Dictionary"
+        },
+        {
+          "@language": "fr",
+          "@value": "Dictionnaire de données"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/cd284239-22c6-4cc3-b049-d52e26da3388",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/cd284239-22c6-4cc3-b049-d52e26da3388/download/cooperative_retail_associations_quarterly_lr.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "13616.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:33:42.124564"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:02:26.470095"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "LR - Déclaration du ratio de levier (Actif)​"
+        },
+        {
+          "@language": "en",
+          "@value": "LR - Leverage Requirements Return (Active)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nf15fd7744a1940f580093301b6a17bff"
+      }
+    },
+    {
+      "@id": "_:Nf15fd7744a1940f580093301b6a17bff",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "22be9f6d983f0ac950ddaec363d46c65"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/d131f890-3f05-4d7c-94af-17a55463e638",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/d131f890-3f05-4d7c-94af-17a55463e638/download/cooperative_retail_associations_quarterly_e3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "787560.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:33:42.124563"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:02:26.470043"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "E3 - Relevé Des Provisions Pour Pertes De Crédit Attendues (Actif)​"
+        },
+        {
+          "@language": "en",
+          "@value": "E3 - Return of Allowances for Expected Credit Losses (Active)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N7c35cb5fe3ba402983b71762efd1db21"
+      }
+    },
+    {
+      "@id": "_:N7c35cb5fe3ba402983b71762efd1db21",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "d6082b86c1ac4349913243de86930d2f"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/bac3572c-69a3-41a3-8c2b-84a3d483146d",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/bac3572c-69a3-41a3-8c2b-84a3d483146d/download/mapping-legacy-findat-open-government-findat_f.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:35.912658"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:01:35.898208"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        },
+        {
+          "@language": "en",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318",
+      "@type": "dcat:Dataset",
+      "dcat:contactPoint": {
+        "@id": "_:N1471b571b21f4701ae53cad7dffa993d"
+      },
+      "dcat:distribution": [
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/008509cf-6f10-4a99-8a4f-11c5ba5da3e7"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/887b4349-637d-4980-9f59-af1eda392376"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/be49c126-8063-497a-b21f-d34cf6fd577f"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/bac3572c-69a3-41a3-8c2b-84a3d483146d"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/4b433658-6486-49bd-936f-9ea542b67a6c"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/a0a2d4cd-72a3-45a6-8c33-f0e6e01951ca"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/6edb505a-0131-4f33-9116-9b61872f3475"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/cd284239-22c6-4cc3-b049-d52e26da3388"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/f1bcf4fd-0a0f-4c9b-86c8-664b3e6ffeb7"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/d131f890-3f05-4d7c-94af-17a55463e638"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/d5d1fdfa-e736-4278-856e-73766e2b63a1"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/095b87ac-ba52-4d0a-993c-07a57ac5ad75"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/b660b0b4-372b-4211-853d-4ee406842fd2"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "fr",
+          "@value": "Trimestriel"
+        },
+        {
+          "@language": "fr",
+          "@value": "Détail"
+        },
+        {
+          "@language": "en",
+          "@value": "Quarterly"
+        },
+        {
+          "@language": "en",
+          "@value": "Monthly"
+        },
+        {
+          "@language": "fr",
+          "@value": "Associations"
+        },
+        {
+          "@language": "en",
+          "@value": "Association"
+        },
+        {
+          "@language": "en",
+          "@value": "Retail"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mensuel"
+        }
+      ],
+      "dct:accrualPeriodicity": "P1M",
+      "dct:description": [
+        {
+          "@language": "fr",
+          "@value": "Third-Party Information Liability Disclaimer\r\nSome of the information on this Web page has been provided by external sources. The Government of Canada is not responsible for the accuracy, reliability or currency of the information supplied by external sources. Users wishing to rely upon this information should consult directly with the source of the information. Content provided by external sources is not subject to official languages, privacy and accessibility requirements.\r\n\r\n\r\n__Dates de publication prévues pour toutes les déclarations mensuelles actives – 2026 : __\r\n\r\n* Janvier – 15 janvier\r\n* Février – 16 février\r\n* Mars – 16 mars\r\n* Avril – 15 avril\r\n* Mai – 15 mai\r\n* Juin – 15 juin\r\n* Juillet – 15 juillet\r\n* Août – 17 août\r\n* Septembre – 15 septembre\r\n* Octobre – 15 octobre\r\n* Novembre – 15 novembre\r\n* Décembre – 15 décembre\r\n\r\n__ Dates de publication prévues pour toutes les déclarations trimestrielles actives – 2026 :__\r\n\r\n* Trimestre 1 — Date d’échéance: 15 mai | Date de publication: 23 mai\r\n* Trimestre 2 — Date d’échéance: 14 août | Date de publication: 22 août \r\n* Trimestre 3 — Date d’échéance: 14 novembre | Date de publication: 22 novembre\r\n* Trimestre 4 — Date d’échéance: 1er mars | Date de publication: 19 mars"
+        },
+        {
+          "@language": "en",
+          "@value": "Third-Party Information Liability Disclaimer\r\nSome of the information on this Web page has been provided by external sources. The Government of Canada is not responsible for the accuracy, reliability or currency of the information supplied by external sources. Users wishing to rely upon this information should consult directly with the source of the information. Content provided by external sources is not subject to official languages, privacy and accessibility requirements.\r\n\r\n__Scheduled publication dates for all active Monthly returns 2026:__\r\n\r\n* January – January 15\r\n* February – February 16\r\n* March – March 16\r\n* April – April 15\r\n* May – May 15\r\n* June – June 15\r\n* July – July 15\r\n* August – August 17\r\n* September – September 15\r\n* October – October 15\r\n* November – November 15\r\n* December – December 15\r\n\r\n__Scheduled publication dates for all active Quarterly returns 2026: __\r\n\r\n* Quarter 1 — Due: May 15 | Publish: May 23\r\n* Quarter 2 — Due: Aug 14 | Publish: Aug 22 \r\n* Quarter 3 — Due: Nov 14 | Publish: Nov 22 \r\n* Quarter 4 — Due: March 1 | Publish: March 19\r\n\r\n\r\n"
+        }
+      ],
+      "dct:identifier": "af61ecdd-1a40-4630-8e75-1470e721f318",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T10:20:48.807435"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-15T14:01:26.209183"
+      },
+      "dct:publisher": {
+        "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Associations de détail"
+        },
+        {
+          "@language": "en",
+          "@value": "Retail associations"
+        }
+      ]
+    },
+    {
+      "@id": "_:N1471b571b21f4701ae53cad7dffa993d",
+      "@type": "vcard:Organization",
+      "vcard:hasEmail": {
+        "@id": "mailto:information@osfi-bsif.gc.ca"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/4b433658-6486-49bd-936f-9ea542b67a6c",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/4b433658-6486-49bd-936f-9ea542b67a6c/download/cooperative_retail_associations_quarterly_p3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3960220.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T10:20:48.819181"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:11:41.210170"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "P3 - Consolidated Statement Of Income, Retained Earnings & AOCI (Active)"
+        },
+        {
+          "@language": "fr",
+          "@value": "P3 - État consolidés des revenus, bénéfices non repartis et AERE (Actif)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N801dd570cbe345b2bfa4b216455faca8"
+      }
+    },
+    {
+      "@id": "_:N801dd570cbe345b2bfa4b216455faca8",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "a49338e3a32786d0a39bb5912795e6e6"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/f1bcf4fd-0a0f-4c9b-86c8-664b3e6ffeb7",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/f1bcf4fd-0a0f-4c9b-86c8-664b3e6ffeb7/download/cooperative_retail_associations_monthly_m4.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "10479093.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T10:33:42.124559"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-15T14:01:26.201171"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "M4 - Bilan consolidé (Actif)​"
+        },
+        {
+          "@language": "en",
+          "@value": "M4 - Consolidated Balance Sheet (Active)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N994d1e7355a94ff78104e7da5340b96a"
+      }
+    },
+    {
+      "@id": "_:N994d1e7355a94ff78104e7da5340b96a",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "16a937667a21154d3ca9912f957ec6f4"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/d5d1fdfa-e736-4278-856e-73766e2b63a1",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/d5d1fdfa-e736-4278-856e-73766e2b63a1/download/cooperative_retail_associations_quarterly_ba.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "2138346.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T10:20:48.819177"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T17:02:26.469984"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "BA – BASEL III Capital Adequacy Reporting - BCAR (Active)"
+        },
+        {
+          "@language": "fr",
+          "@value": "BA - Relevé des normes de fonds propres - Bâle III (Actif)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Ne9bc14d10b064ba7875b146950990351"
+      }
+    },
+    {
+      "@id": "_:Ne9bc14d10b064ba7875b146950990351",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "784b237d3d032d30168fba073eeb7f22"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/887b4349-637d-4980-9f59-af1eda392376",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/887b4349-637d-4980-9f59-af1eda392376/download/associations-de-detail-manuel-dutilisation.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:43:07.539593"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:43:07.495938"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Associations de détail - Manuel d'utilisation"
+        },
+        {
+          "@language": "fr",
+          "@value": "Associations de détail - Manuel d'utilisation"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/be49c126-8063-497a-b21f-d34cf6fd577f",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/be49c126-8063-497a-b21f-d34cf6fd577f/download/retail-associations-user-manual.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:32:32.189644"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:32:32.152224"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Retail associations - User manual"
+        },
+        {
+          "@language": "en",
+          "@value": "Retail associations - User manual"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/6edb505a-0131-4f33-9116-9b61872f3475",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/6edb505a-0131-4f33-9116-9b61872f3475/download/step-by-step-api-usage-guide_en.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:34:17.549944"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:34:17.531022"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        },
+        {
+          "@language": "fr",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/008509cf-6f10-4a99-8a4f-11c5ba5da3e7",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/af61ecdd-1a40-4630-8e75-1470e721f318/resource/008509cf-6f10-4a99-8a4f-11c5ba5da3e7/download/step-by-step-api-usage-guide_fr.pdf"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "5910923.0"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T11:04:01.761446"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:34:17.531110"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        },
+        {
+          "@language": "fr",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB",
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        {
+          "@language": "fr",
+          "@value": "Bureau du surintendant des institutions financières Canada"
+        },
+        {
+          "@language": "en",
+          "@value": "Office of the Superintendent of Financial Institutions Canada"
+        }
+      ]
+    }
+  ]
+}

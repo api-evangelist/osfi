@@ -1,0 +1,145 @@
+{
+  "generated": "2026-07-25",
+  "method": "searched",
+  "description": "Read LF1 Life Core Financial Statement Return data points.",
+  "request": {
+    "method": "GET",
+    "url": "https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=f3ddcfbc-a852-4dee-be3c-5b08864c9afe&limit=2",
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "a browser User-Agent is required; the open.canada.ca WAF rejects default curl UAs with an HTML page under HTTP 200"
+    },
+    "auth": "none \u2014 anonymous"
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "help": "https://open.canada.ca/data/en/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "include_total": true,
+        "limit": 2,
+        "records_format": "objects",
+        "resource_id": "f3ddcfbc-a852-4dee-be3c-5b08864c9afe",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "_id": 3014076,
+            "Fiscal Year/Annee fiscale": "2026",
+            "Fiscal Quarter": "Q2 - 2026",
+            "Trimestre fiscal": "T2 - 2026",
+            "Id": "1000008",
+            "Total Life Insurance Companies/FIs": "Total Canadian Life Companies",
+            "Total Societes d'assurance-vie/IFFs": "Total soci\u00e9t\u00e9s d\u2019assurance-vie canadiennes",
+            "Industry Group": "Canadian Life Companies",
+            "Groupe Sectoriel": "Soci\u00e9t\u00e9s d\u2019assurance-vie canadiennes",
+            "Return/Releve": "LF1",
+            "Return Title": "LF1 - Life Core Financial Statement Return",
+            "Titre du releve": "LF1 - Vie Relev\u00e9 des \u00e9tats financiers",
+            "Data Point Address/Adresse de point de donnee": "P2000201001",
+            "Data Point Address Label": "LF1: ASSETS: Cash and Cash Equivalents, Current Period, Total",
+            "Libelle de l'adresse du point de donnees": "LF1: ACTIF : Encaisse et quasi-esp\u00e8ces, Exercice courant, Total",
+            "FI Inactive Date/Date d'inactivite IFF": "9999-12-31",
+            "Measure Value/Valeur de mesure": "845301.50"
+          },
+          {
+            "_id": 3014077,
+            "Fiscal Year/Annee fiscale": "2026",
+            "Fiscal Quarter": "Q2 - 2026",
+            "Trimestre fiscal": "T2 - 2026",
+            "Id": "1000008",
+            "Total Life Insurance Companies/FIs": "Total Canadian Life Companies",
+            "Total Societes d'assurance-vie/IFFs": "Total soci\u00e9t\u00e9s d\u2019assurance-vie canadiennes",
+            "Industry Group": "Canadian Life Companies",
+            "Groupe Sectoriel": "Soci\u00e9t\u00e9s d\u2019assurance-vie canadiennes",
+            "Return/Releve": "LF1",
+            "Return Title": "LF1 - Life Core Financial Statement Return",
+            "Titre du releve": "LF1 - Vie Relev\u00e9 des \u00e9tats financiers",
+            "Data Point Address/Adresse de point de donnee": "P2000201003",
+            "Data Point Address Label": "LF1: ASSETS: Cash and Cash Equivalents, Prior Period, Total",
+            "Libelle de l'adresse du point de donnees": "LF1: ACTIF : Encaisse et quasi-esp\u00e8ces, Exercice pr\u00e9c\u00e9dent, Total",
+            "FI Inactive Date/Date d'inactivite IFF": "9999-12-31",
+            "Measure Value/Valeur de mesure": "688886.14"
+          }
+        ],
+        "fields": [
+          {
+            "id": "_id",
+            "type": "int"
+          },
+          {
+            "id": "Fiscal Year/Annee fiscale",
+            "type": "text"
+          },
+          {
+            "id": "Fiscal Quarter",
+            "type": "text"
+          },
+          {
+            "id": "Trimestre fiscal",
+            "type": "text"
+          },
+          {
+            "id": "Id",
+            "type": "text"
+          },
+          {
+            "id": "Total Life Insurance Companies/FIs",
+            "type": "text"
+          },
+          {
+            "id": "Total Societes d'assurance-vie/IFFs",
+            "type": "text"
+          },
+          {
+            "id": "Industry Group",
+            "type": "text"
+          },
+          {
+            "id": "Groupe Sectoriel",
+            "type": "text"
+          },
+          {
+            "id": "Return/Releve",
+            "type": "text"
+          },
+          {
+            "id": "Return Title",
+            "type": "text"
+          },
+          {
+            "id": "Titre du releve",
+            "type": "text"
+          },
+          {
+            "id": "Data Point Address/Adresse de point de donnee",
+            "type": "text"
+          },
+          {
+            "id": "Data Point Address Label",
+            "type": "text"
+          },
+          {
+            "id": "Libelle de l'adresse du point de donnees",
+            "type": "text"
+          },
+          {
+            "id": "FI Inactive Date/Date d'inactivite IFF",
+            "type": "text"
+          },
+          {
+            "id": "Measure Value/Valeur de mesure",
+            "type": "text"
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=f3ddcfbc-a852-4dee-be3c-5b08864c9afe&limit=2",
+          "next": "/api/3/action/datastore_search?resource_id=f3ddcfbc-a852-4dee-be3c-5b08864c9afe&limit=2&offset=2"
+        },
+        "total": 531347,
+        "total_was_estimated": false
+      }
+    }
+  }
+}

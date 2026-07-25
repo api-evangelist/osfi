@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/json-schema/osfi-who-we-regulate-private-pension-plans.json",
+  "title": "OSFI Who We Regulate \u2014 federally regulated private pension plan record",
+  "description": "Derived from the live CKAN datastore field list returned by GET https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=2282e8c7-f949-454d-9c34-b6a78d94b162&limit=1 on 2026-07-25. Every column OSFI publishes is bilingual (English/French pairs) and typed `text` by the datastore, including the measure value \u2014 consumers must cast numerics themselves.",
+  "x-source": {
+    "resource_id": "2282e8c7-f949-454d-9c34-b6a78d94b162",
+    "records": 1002,
+    "probed": "2026-07-25",
+    "method": "derived"
+  },
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "integer",
+      "x-ckan-type": "int",
+      "description": "CKAN datastore surrogate row id; not an OSFI identifier."
+    },
+    "Plan Name": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Plan Registration Number": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Plan Sponsor Name": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Administrator Contact Name": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Address": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "City": {
+      "type": "string",
+      "x-ckan-type": "text"
+    },
+    "Province State": {
+      "type": "string",
+      "x-ckan-type": "text"
+    }
+  },
+  "additionalProperties": true
+}

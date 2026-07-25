@@ -1,0 +1,983 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatap": "http://data.europa.eu/r5r/",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gsp": "http://www.opengis.net/ont/geosparql#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "schema1": "http://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "time1": "http://www.w3.org/2006/time",
+    "vann": "http://purl.org/vocab/vann/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/c23251c1-827f-4ce0-a0d7-71290cc71e02",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/c23251c1-827f-4ce0-a0d7-71290cc71e02/download/mapping-legacy-findat-open-government-findat_f.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:11:44.194467"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:11:44.177437"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        },
+        {
+          "@language": "en",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/b46acbcf-1abd-4358-9de9-3a191564def1",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/b46acbcf-1abd-4358-9de9-3a191564def1/download/fraternals_benefits_societies_quarterly_10a.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "2923967.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:10:32.291850"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:11:16.086905"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "10A - Supplément annuel sur la vie (Inactif T4/2023)"
+        },
+        {
+          "@language": "en",
+          "@value": "10A - Life Annual Supplement (Inactive Q4/2023)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nbdaa9f20aed747e3a61439a4bc349269"
+      }
+    },
+    {
+      "@id": "_:Nbdaa9f20aed747e3a61439a4bc349269",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "b78493c9cea8f94409e8c7187be47fcd"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/ddb14bea-5112-4526-a3ab-b0dfd1aab3a4",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/ddb14bea-5112-4526-a3ab-b0dfd1aab3a4/download/data-dictionary-fraternal-benefits-societies.xlsx"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:12:00.929271"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:12:00.909953"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Dictionnaire de données"
+        },
+        {
+          "@language": "en",
+          "@value": "Data Dictionary"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/1fd9fb51-099b-4e49-b8d8-78a5eb421eda",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/1fd9fb51-099b-4e49-b8d8-78a5eb421eda/download/fraternals_benefits_societies_quarterly_10.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "2849485.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:10:32.291849"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:11:16.086850"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "10 - Life 1 (Inactive Q3/2014)"
+        },
+        {
+          "@language": "fr",
+          "@value": "10 - Vie 1 (Inactif T3/2014)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N752218b32d4e4e2fb1574752fb646f04"
+      }
+    },
+    {
+      "@id": "_:N752218b32d4e4e2fb1574752fb646f04",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "97e31491469a9ed49a1485190655c893"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c",
+      "@type": "dcat:Dataset",
+      "dcat:contactPoint": {
+        "@id": "_:N85ab4c7cc7574b58a38e42044ebe6981"
+      },
+      "dcat:distribution": [
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/dafda1e3-84dc-44af-a672-408f1836727e"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/b4703902-2524-427b-b90f-39b8ebab8fbf"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7f829d95-245c-4e84-a125-6b2dac93cc57"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/b46acbcf-1abd-4358-9de9-3a191564def1"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/8e52a90b-ff30-4ba2-b026-f946ba7b026d"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/5a730b28-ebaa-4d60-ad47-94f0f8a37688"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/11f0fd19-8dc9-49c5-9d90-28f62642ac86"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7a576a78-62eb-4b1b-90e8-18b3f86db668"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/0c2e1bb9-8a18-4fa8-b4b9-ec86580720d3"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/1907c224-cef2-40c4-ba0f-4743ed42c904"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/ddb14bea-5112-4526-a3ab-b0dfd1aab3a4"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/1fd9fb51-099b-4e49-b8d8-78a5eb421eda"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/c23251c1-827f-4ce0-a0d7-71290cc71e02"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/0509d887-1822-402b-a436-ee1d9d85a7fa"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7dcb8a09-f089-4282-b2f9-3fbb42432684"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/a0e348aa-64b8-4d42-9a0e-594c70e2aaa5"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/89fe6102-64a1-4648-83a1-d337ad5c075b"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/2f5924eb-50c2-441b-8d23-c72acf812563"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/dacb48b3-0c02-44c5-b330-05ba02f6779c"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/8b89d887-35e8-46e6-82cf-dfaab540dd1f"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "Canadian fraternal"
+        },
+        {
+          "@language": "en",
+          "@value": "Foreign fraternal"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés de secours mutuels étrangères"
+        },
+        {
+          "@language": "en",
+          "@value": "fraternal benefit"
+        },
+        {
+          "@language": "en",
+          "@value": "societies"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés de secours mutuels canadiennes"
+        },
+        {
+          "@language": "fr",
+          "@value": "secours mutuels"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données financières"
+        },
+        {
+          "@language": "en",
+          "@value": "financial data"
+        }
+      ],
+      "dct:accrualPeriodicity": "P3M",
+      "dct:description": [
+        {
+          "@language": "fr",
+          "@value": "Toutes les données financières publiques, telles que soumises par les sociétés de secours mutuels fédérales, sont disponibles sans frais sur le site Web de la société Beyond 20/20.\r\n\r\nRésultat total de l'industrie: On obtient le résultat total de l'industrie en additionnant «Total Sociétés de secours mutuels canadiennes» et «Total Sociétés de secours mutuels étrangères»\r\n\r\n\r\nDésistement de responsabilité concernant l'information provenant de tiers\r\nPour les exercices ouverts en 2023 (janvier 2023 pour les entités dont l’exercice prend fin en décembre; novembre 2023 pour celles dont l’exercice prend fin en octobre) et ultérieurement, les données financières des assureurs sont présentées conformément à la norme IFRS 17 – Contrats d’assurance; pour les exercices antérieurs à 2023, elles sont présentées conformément à la norme IFRS 4.\r\n\r\nUne partie des informations de ce site Web à été fournie par des sources externes. Le gouvernement du Canada n'assume aucune responsabilité concernant la précision, l'actualité ou la fiabilité des informations fournies par les sources externes. Les utilisateurs qui désirent employer cette information devraient consulter directement la source des informations. Le contenu fournit par les sources externes n'est pas assujetti aux exigences sur les langues officielles, la protection des renseignements personnels et l'accessibilité.\r\n\r\n__Dates de publication prévues pour toutes les déclarations mensuelles actives – 2026 : __\r\n\r\n* Janvier – 15 janvier\r\n* Février – 16 février\r\n* Mars – 16 mars\r\n* Avril – 15 avril\r\n* Mai – 15 mai\r\n* Juin – 15 juin\r\n* Juillet – 15 juillet\r\n* Août – 17 août\r\n* Septembre – 15 septembre\r\n* Octobre – 15 octobre\r\n* Novembre – 15 novembre\r\n* Décembre – 15 décembre\r\n\r\n__ Dates de publication prévues pour toutes les déclarations trimestrielles actives – 2026 :__\r\n\r\n* Trimestre 1 — Date d’échéance: 15 mai | Date de publication: 23 mai\r\n* Trimestre 2 — Date d’échéance: 14 août | Date de publication: 22 août \r\n* Trimestre 3 — Date d’échéance: 14 novembre | Date de publication: 22 novembre\r\n* Trimestre 4 — Date d’échéance: 1er mars | Date de publication: 19 mars\r\n\r\n"
+        },
+        {
+          "@language": "en",
+          "@value": "All publicly available financial data as filed by federally regulated fraternal benefit societies are available free of charge from the Beyond 20/20 Web site.\r\n\r\nIndustry Totals: Please note that to determine total industry data, you must add \"Total Canadian Fraternal Benefit Societies\" and \"Total Foreign Fraternal Benefit Societies\".\r\n\r\n\r\nThird-Party Information Liability Disclaimer\r\nFor periods beginning in fiscal 2023 (January 2023 for calendar year-ends; November 2023 for October year-ends) Financial data for insurers reflect IFRS 17 insurance contract accounting and prior periods reflect IFRS 4.\r\n\r\nSome of the information on this Web page has been provided by external sources. The Government of Canada is not responsible for the accuracy, reliability or currency of the information supplied by external sources. Users wishing to rely upon this information should consult directly with the source of the information. Content provided by external sources is not subject to official languages, privacy and accessibility requirements.\r\n\r\n\r\n__Scheduled publication dates for all active Monthly returns 2026:__\r\n\r\n* January – January 15\r\n* February – February 16\r\n* March – March 16\r\n* April – April 15\r\n* May – May 15\r\n* June – June 15\r\n* July – July 15\r\n* August – August 17\r\n* September – September 15\r\n* October – October 15\r\n* November – November 15\r\n* December – December 15\r\n\r\n__Scheduled publication dates for all active Quarterly returns 2026: __\r\n\r\n* Quarter 1 — Due: May 15 | Publish: May 23\r\n* Quarter 2 — Due: Aug 14 | Publish: Aug 22 \r\n* Quarter 3 — Due: Nov 14 | Publish: Nov 22 \r\n* Quarter 4 — Due: March 1 | Publish: March 19"
+        }
+      ],
+      "dct:identifier": "7ad44bfe-aa26-4b5b-930b-e7845023dd4c",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:22:18.140869"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-15T17:42:27.209255"
+      },
+      "dct:publisher": {
+        "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Sociétés de secours mutuels"
+        },
+        {
+          "@language": "en",
+          "@value": "Fraternal benefit societies"
+        }
+      ]
+    },
+    {
+      "@id": "_:N85ab4c7cc7574b58a38e42044ebe6981",
+      "@type": "vcard:Organization",
+      "vcard:hasEmail": {
+        "@id": "mailto:information@osfi-bsif.gc.ca"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/5a730b28-ebaa-4d60-ad47-94f0f8a37688",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/5a730b28-ebaa-4d60-ad47-94f0f8a37688/download/fraternals_benefits_societies_quarterly_lf2.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "14329287.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:22:18.145887"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-07-15T17:42:27.208324"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "LF2 - Vie Relevé de surveillance trimestiel (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "LF2 - Life Supervisory Quarterly Return (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nbd04257a4b154ad9bfa1ae407e45ea48"
+      }
+    },
+    {
+      "@id": "_:Nbd04257a4b154ad9bfa1ae407e45ea48",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "9fef28e71dc29aa60905214d8ac36c67"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/dacb48b3-0c02-44c5-b330-05ba02f6779c",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/dacb48b3-0c02-44c5-b330-05ba02f6779c/download/fraternal-benefit-societies-user-manual.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:49:16.134979"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:49:16.101319"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Fraternal benefit societies - User manual"
+        },
+        {
+          "@language": "fr",
+          "@value": "Fraternal benefit societies - User manual"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7dcb8a09-f089-4282-b2f9-3fbb42432684",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7dcb8a09-f089-4282-b2f9-3fbb42432684/download/fraternals_benefits_societies_quarterly_lcq.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "4409092.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:22:18.145885"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T16:19:22.845454"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "LCQ – TSAV (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "LCQ - LICAT (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N87446e34dc284911a6f9c46c963d5161"
+      }
+    },
+    {
+      "@id": "_:N87446e34dc284911a6f9c46c963d5161",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "f40d195d935285e50f5e40d4be033010"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB",
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Office of the Superintendent of Financial Institutions Canada"
+        },
+        {
+          "@language": "fr",
+          "@value": "Bureau du surintendant des institutions financières Canada"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7a576a78-62eb-4b1b-90e8-18b3f86db668",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7a576a78-62eb-4b1b-90e8-18b3f86db668/download/fraternals_benefits_societies_quarterly_lf3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "5580248.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:22:18.145888"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T16:31:21.037099"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "LF3 - Vie Relevé de surveillance annual (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "LF3 - Life Supervisory Annual Return (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nd234444b905a46e99eea7aabba813964"
+      }
+    },
+    {
+      "@id": "_:Nd234444b905a46e99eea7aabba813964",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "6ee585031ef4206d0e38d5e4e9a37255"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/8b89d887-35e8-46e6-82cf-dfaab540dd1f",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/8b89d887-35e8-46e6-82cf-dfaab540dd1f/download/societes-de-secours-mutuels-manuel-dutilisation.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:49:16.134983"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T14:49:16.104632"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Sociétés de secours mutuels - Manuel d'utilisation"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés de secours mutuels - Manuel d'utilisation"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/2f5924eb-50c2-441b-8d23-c72acf812563",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/2f5924eb-50c2-441b-8d23-c72acf812563/download/fraternals_benefits_societies_quarterly_77.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3414500.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:10:32.291843"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:31:20.840737"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "77 - Return 77 (Inactive Q4/2010)"
+        },
+        {
+          "@language": "fr",
+          "@value": "77 - Retour 77 (Inactif Q4/2010)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N613d54eb17424d11b9a9aea9ab5204fc"
+      }
+    },
+    {
+      "@id": "_:N613d54eb17424d11b9a9aea9ab5204fc",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "801844763f99caf5a17616c20a877554"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/89fe6102-64a1-4648-83a1-d337ad5c075b",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/89fe6102-64a1-4648-83a1-d337ad5c075b/download/fraternals_benefits_societies_quarterly_86.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "661052.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:10:32.291845"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:31:20.840797"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "86 - Return 86 / TAAM-A (Inactive Q4/2017)​"
+        },
+        {
+          "@language": "fr",
+          "@value": "86 - Retour 86 / TDAMR-A (Inactif T4/2017)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Na2bcab30ee8f492fb1af04ce1574e572"
+      }
+    },
+    {
+      "@id": "_:Na2bcab30ee8f492fb1af04ce1574e572",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "4e43d002ea162f37833f3141ce8c491d"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/0509d887-1822-402b-a436-ee1d9d85a7fa",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/0509d887-1822-402b-a436-ee1d9d85a7fa/download/fraternals_benefits_societies_quarterly_10q.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "9944710.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:10:32.291851"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:11:28.038619"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "10Q - Vie trimestrielle (Inactif T4/2023)"
+        },
+        {
+          "@language": "en",
+          "@value": "10Q - Life Quarterly (Inactive Q4/2023)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N3c71b339465c411e86e01f07e4eca6b4"
+      }
+    },
+    {
+      "@id": "_:N3c71b339465c411e86e01f07e4eca6b4",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "a090094e179b7e6060af36089ab4a138"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/b4703902-2524-427b-b90f-39b8ebab8fbf",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/b4703902-2524-427b-b90f-39b8ebab8fbf/download/fraternals_benefits_societies_quarterly_20.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1400426.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:10:32.291847"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:21:14.755428"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "20 - Vie 2 (Inactif T3/2014)"
+        },
+        {
+          "@language": "en",
+          "@value": "20 - Life 2 (Inactive Q3/2014)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N75f98ba5517e4d688642d11aaa4e27e6"
+      }
+    },
+    {
+      "@id": "_:N75f98ba5517e4d688642d11aaa4e27e6",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "fbd7286581978ca86f5f8bee294bbba1"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/11f0fd19-8dc9-49c5-9d90-28f62642ac86",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/11f0fd19-8dc9-49c5-9d90-28f62642ac86/download/mapping-legacy-findat-open-government-findat_e.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:11:44.194463"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T13:11:44.176153"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/1907c224-cef2-40c4-ba0f-4743ed42c904",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/1907c224-cef2-40c4-ba0f-4743ed42c904/download/fraternals_benefits_societies_quarterly_lf1.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "48390545.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:22:18.145886"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T16:31:21.036972"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "LF1 - Life Core Financial Statement Return (Active) "
+        },
+        {
+          "@language": "fr",
+          "@value": "LF1 - Vie Relevé des états financiers (Actif) "
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nf84bb7318227419cb3c06f056abb6585"
+      }
+    },
+    {
+      "@id": "_:Nf84bb7318227419cb3c06f056abb6585",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "21dbcc360dcb135a4fdeee722e8be08c"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7f829d95-245c-4e84-a125-6b2dac93cc57",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/7f829d95-245c-4e84-a125-6b2dac93cc57/download/step-by-step-api-usage-guide_en.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:11.389654"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:11.355528"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        },
+        {
+          "@language": "fr",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/0c2e1bb9-8a18-4fa8-b4b9-ec86580720d3",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/0c2e1bb9-8a18-4fa8-b4b9-ec86580720d3/download/step-by-step-api-usage-guide_fr.pdf"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "5910923.0"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T11:04:11.549491"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:44:11.355620"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        },
+        {
+          "@language": "fr",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/a0e348aa-64b8-4d42-9a0e-594c70e2aaa5",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/a0e348aa-64b8-4d42-9a0e-594c70e2aaa5/download/fraternals_benefits_societies_quarterly_56.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "5926991.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:10:32.291838"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:21:14.755482"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "56 - Return 56 (Inactive Q4/2010)​"
+        },
+        {
+          "@language": "fr",
+          "@value": "56 - Retour 56 (Inactif T4/2010)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N4923241f7a11426daedc6f4cfd17af71"
+      }
+    },
+    {
+      "@id": "_:N4923241f7a11426daedc6f4cfd17af71",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "ddece7ec1ff4fad8af0c847a1aa68ab1"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/dafda1e3-84dc-44af-a672-408f1836727e",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/dafda1e3-84dc-44af-a672-408f1836727e/download/fraternals_benefits_societies_quarterly_87.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1960489.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T13:10:32.291846"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T16:31:20.840847"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "87 - Return 87 / MCCSR-A (Inactive Q4/2017)​"
+        },
+        {
+          "@language": "fr",
+          "@value": "87 - Retour 87 / MMPRCE-A (Inactif T4/2017)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N5d7c4d1858804a239a38b111a631b538"
+      }
+    },
+    {
+      "@id": "_:N5d7c4d1858804a239a38b111a631b538",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "c6be0ce2314d6f90a0072ee300a10711"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/8e52a90b-ff30-4ba2-b026-f946ba7b026d",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c/resource/8e52a90b-ff30-4ba2-b026-f946ba7b026d/download/fraternals_benefits_societies_quarterly_lca.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "20862.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T12:22:18.145881"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T16:19:22.845188"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "LCA - LICAT (Active)"
+        },
+        {
+          "@language": "fr",
+          "@value": "LCA - TSAV(Actif)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Ndb28364729b04b5db84c1c981798fa72"
+      }
+    },
+    {
+      "@id": "_:Ndb28364729b04b5db84c1c981798fa72",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "9734c1568ed6b23ef708cbfb1256ac7f"
+      }
+    }
+  ]
+}

@@ -1,0 +1,766 @@
+{
+  "generated": "2026-07-25",
+  "method": "searched",
+  "description": "Discover every OSFI dataset published on the Open Government Portal (36 on 2026-07-25; 9 carry datastore-active resources).",
+  "request": {
+    "method": "GET",
+    "url": "https://open.canada.ca/data/en/api/3/action/package_search?fq=organization:osfi-bsif&rows=100",
+    "auth": "none \u2014 anonymous"
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "note": "results[] truncated to the first dataset for size; count is verbatim.",
+    "body": {
+      "help": "https://open.canada.ca/data/en/api/3/action/help_show?name=package_search",
+      "success": true,
+      "result": {
+        "count": 36,
+        "results": [
+          {
+            "association_type": [],
+            "audience": [],
+            "author": null,
+            "author_email": null,
+            "collection": "primary",
+            "contributor": {
+              "en": "",
+              "fr": ""
+            },
+            "creator": "",
+            "creator_user_id": "2dc5a12f-2a6f-4822-8514-165ea6bb05d9",
+            "data_series_issue_identification": {
+              "en": "",
+              "fr": ""
+            },
+            "data_series_name": {
+              "en": "",
+              "fr": ""
+            },
+            "date_published": "2025-05-05 00:00:00",
+            "digital_object_identifier": "",
+            "display_flags": [],
+            "frequency": "P1M",
+            "geographic_region": [],
+            "id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+            "imso_approval": "true",
+            "isopen": false,
+            "jurisdiction": "federal",
+            "keywords": {
+              "en": [
+                "Banks",
+                "Domestic Banks",
+                "Foreign Bank Subsidiaries",
+                "Monthly",
+                "Quarterly"
+              ],
+              "fr": [
+                "Banques",
+                "Banques nationales",
+                "Donn\u00e9es financi\u00e8res des banques",
+                "Filiales de banques \u00e9trang\u00e8res",
+                "Mensuel",
+                "Trimestriel"
+              ]
+            },
+            "license_id": "ca-ogl-lgo",
+            "license_title": "Open Government Licence - Canada",
+            "license_url": "https://open.canada.ca/en/open-government-licence-canada",
+            "maintainer": null,
+            "maintainer_contact_form": {},
+            "maintainer_email": "information@osfi-bsif.gc.ca",
+            "metadata_contact": {},
+            "metadata_created": "2025-09-29T11:10:21.087756",
+            "metadata_modified": "2026-07-20T20:41:33.754521",
+            "name": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+            "notes": "December monthly results for October fiscal year end filers will be published on February 15th and the results for December fiscal year end filers will be published on February 28th. This disclosure is done to align with public disclosure of publicly traded financial institutions.\r\n\r\nEffective Q2 2023, Small and Medium-Sized Deposit Taking Institutions (SMSBs) classified as Category III under the 2023 Capital and Liquidity requirements will no longer report a risk-based capital ratio or leverage ratio. Rather, Category III SMSBs will report simplified risk-based capital ratios. These requirements do not apply to Foreign Bank Branches. Please refer to the following OSFI Guidelines for additional information on the reporting requirements for SMSBs:\r\n\r\nSmall and Medium-Sized Deposit Taking Institutions Capital and Liquidity Requirements Guideline\r\nCapital Adequacy Requirements Guideline\r\nLiquidity Adequacy Requirements Guideline\r\nIndustry Totals: Please note that to determine \"Total All Banks\" data, you must add \"Total Domestic\", \"Total Foreign Bank Subsidiaries\" and \"Total Foreign Bank Branches\".\r\n\r\nIndustry \"Totals\" do not include data reported by Banks that are subsidiaries of other Banks, since this data is already accounted for in the consolidated data reported by the parent banks.\r\n\r\n\r\nThird-Party Information Liability Disclaimer\r\nSome of the information on this Web page has been provided by external sources. The Government of Canada is not responsible for the accuracy, reliability or currency of the information supplied by external sources. Users wishing to rely upon this information should consult directly with the source of the information. Content provided by external sources is not subject to official languages, privacy and accessibility requirements.\r\n\r\n\r\n__Scheduled publication dates for all active Monthly returns 2026:__\r\n\r\n* January \u2013 January 15\r\n* February \u2013 February 16\r\n* March \u2013 March 16\r\n* April \u2013 April 15\r\n* May \u2013 May 15\r\n* June \u2013 June 15\r\n* July \u2013 July 15\r\n* August \u2013 August 17\r\n* September \u2013 September 15\r\n* October \u2013 October 15\r\n* November \u2013 November 15\r\n* December \u2013 December 15\r\n\r\n__Scheduled publication dates for all active Quarterly returns 2026: __\r\n\r\n* Quarter 1 \u2014 Due: May 15 | Publish: May 23\r\n* Quarter 2 \u2014 Due: Aug 14 | Publish: Aug 22 \r\n* Quarter 3 \u2014 Due: Nov 14 | Publish: Nov 22 \r\n* Quarter 4 \u2014 Due: March 1 | Publish: March 19\r\n",
+            "notes_translated": {
+              "en": "December monthly results for October fiscal year end filers will be published on February 15th and the results for December fiscal year end filers will be published on February 28th. This disclosure is done to align with public disclosure of publicly traded financial institutions.\r\n\r\nEffective Q2 2023, Small and Medium-Sized Deposit Taking Institutions (SMSBs) classified as Category III under the 2023 Capital and Liquidity requirements will no longer report a risk-based capital ratio or leverage ratio. Rather, Category III SMSBs will report simplified risk-based capital ratios. These requirements do not apply to Foreign Bank Branches. Please refer to the following OSFI Guidelines for additional information on the reporting requirements for SMSBs:\r\n\r\nSmall and Medium-Sized Deposit Taking Institutions Capital and Liquidity Requirements Guideline\r\nCapital Adequacy Requirements Guideline\r\nLiquidity Adequacy Requirements Guideline\r\nIndustry Totals: Please note that to determine \"Total All Banks\" data, you must add \"Total Domestic\", \"Total Foreign Bank Subsidiaries\" and \"Total Foreign Bank Branches\".\r\n\r\nIndustry \"Totals\" do not include data reported by Banks that are subsidiaries of other Banks, since this data is already accounted for in the consolidated data reported by the parent banks.\r\n\r\n\r\nThird-Party Information Liability Disclaimer\r\nSome of the information on this Web page has been provided by external sources. The Government of Canada is not responsible for the accuracy, reliability or currency of the information supplied by external sources. Users wishing to rely upon this information should consult directly with the source of the information. Content provided by external sources is not subject to official languages, privacy and accessibility requirements.\r\n\r\n\r\n__Scheduled publication dates for all active Monthly returns 2026:__\r\n\r\n* January \u2013 January 15\r\n* February \u2013 February 16\r\n* March \u2013 March 16\r\n* April \u2013 April 15\r\n* May \u2013 May 15\r\n* June \u2013 June 15\r\n* July \u2013 July 15\r\n* August \u2013 August 17\r\n* September \u2013 September 15\r\n* October \u2013 October 15\r\n* November \u2013 November 15\r\n* December \u2013 December 15\r\n\r\n__Scheduled publication dates for all active Quarterly returns 2026: __\r\n\r\n* Quarter 1 \u2014 Due: May 15 | Publish: May 23\r\n* Quarter 2 \u2014 Due: Aug 14 | Publish: Aug 22 \r\n* Quarter 3 \u2014 Due: Nov 14 | Publish: Nov 22 \r\n* Quarter 4 \u2014 Due: March 1 | Publish: March 19\r\n",
+              "fr": "\u00c0 noter que les r\u00e9sultats mensuels du mois de d\u00e9cembre des soci\u00e9t\u00e9s dont l\u2019exercice financier se termine en octobre seront publi\u00e9s le 15 f\u00e9vrier, et les r\u00e9sultats des soci\u00e9t\u00e9s dont l\u2019exercice financier se termine en d\u00e9cembre seront publi\u00e9s le 28 f\u00e9vrier. Ces dates correspondent \u00e0 la divulgation publique des r\u00e9sultats d\u2019institutions financi\u00e8res cot\u00e9es en bourse.\r\n\r\n\u00c0 compter du T2 de 2023, les petites et moyennes institutions de d\u00e9p\u00f4t (PMB) class\u00e9es dans la cat\u00e9gorie III selon les Normes de fonds propres et de liquidit\u00e9 de 2023 cesseront de d\u00e9clarer un ratio de fonds propres fond\u00e9 sur le risque ou un ratio de levier. Elles d\u00e9clareront plut\u00f4t un ratio simplifi\u00e9 de fonds propres fond\u00e9 sur le risque. Ces exigences ne s\u2019appliquent pas aux succursales de banques \u00e9trang\u00e8res. Veuillez consulter les lignes directrices du BSIF ci-dessous pour en savoir plus sur les exigences en mati\u00e8re de d\u00e9claration qui s\u2019appliquent aux PMB :\r\n\r\nLigne directrice Normes de fonds propres et de liquidit\u00e9 des petites et moyennes institutions de d\u00e9p\u00f4t\r\nLigne directrice Normes de fonds propres\r\nLigne directrice Normes de liquidit\u00e9\r\nR\u00e9sultat total de l'industrie: On obtient le r\u00e9sultat \u00abTotal Banques\u00bb en additionnant \u00abTotal Banques Canadiennes\u00bb, \u00abTotal Filiales de Banques \u00c9trang\u00e8res\u00bb et \u00abTotal Succursales de Banques \u00c9trang\u00e8res\u00bb\r\n\r\nLe \u00abtotal\u00bb de l\u2019industrie ne comprend pas les donn\u00e9es d\u00e9clar\u00e9es par des banques qui sont des filiales d\u2019autres banques, car ces donn\u00e9es sont d\u00e9j\u00e0 prises en compte dans les donn\u00e9es consolid\u00e9es d\u00e9clar\u00e9es par la banque m\u00e8re.\r\n\r\n\r\nD\u00e9sistement de responsabilit\u00e9 concernant l'information provenant de tiers\r\nUne partie des informations de ce site Web \u00e0 \u00e9t\u00e9 fournie par des sources externes. Le gouvernement du Canada n'assume aucune responsabilit\u00e9 concernant la pr\u00e9cision, l'actualit\u00e9 ou la fiabilit\u00e9 des informations fournies par les sources externes. Les utilisateurs qui d\u00e9sirent employer cette information devraient consulter directement la source des informations. Le contenu fournit par les sources externes n'est pas assujetti aux exigences sur les langues officielles, la protection des renseignements personnels et l'accessibilit\u00e9.\r\n\r\n__Dates de publication pr\u00e9vues pour toutes les d\u00e9clarations mensuelles actives \u2013 2026 : __\r\n\r\n* Janvier \u2013 15 janvier\r\n* F\u00e9vrier \u2013 16 f\u00e9vrier\r\n* Mars \u2013 16 mars\r\n* Avril \u2013 15 avril\r\n* Mai \u2013 15 mai\r\n* Juin \u2013 15 juin\r\n* Juillet \u2013 15 juillet\r\n* Ao\u00fbt \u2013 17 ao\u00fbt\r\n* Septembre \u2013 15 septembre\r\n* Octobre \u2013 15 octobre\r\n* Novembre \u2013 15 novembre\r\n* D\u00e9cembre \u2013 15 d\u00e9cembre\r\n\r\n__ Dates de publication pr\u00e9vues pour toutes les d\u00e9clarations trimestrielles actives \u2013 2026 :__\r\n\r\n* Trimestre 1 \u2014 Date d\u2019\u00e9ch\u00e9ance: 15 mai | Date de publication: 23 mai\r\n* Trimestre 2 \u2014 Date d\u2019\u00e9ch\u00e9ance: 14 ao\u00fbt | Date de publication: 22 ao\u00fbt \r\n* Trimestre 3 \u2014 Date d\u2019\u00e9ch\u00e9ance: 14 novembre | Date de publication: 22 novembre\r\n* Trimestre 4 \u2014 Date d\u2019\u00e9ch\u00e9ance: 1er mars | Date de publication: 19 mars\r\n\r\n"
+            },
+            "num_resources": 15,
+            "num_tags": 0,
+            "org_section": {
+              "en": "",
+              "fr": ""
+            },
+            "org_title_at_publication": {
+              "en": "Office of the Superintendent of Financial Institutions",
+              "fr": "Bureau du surintendant des institutions financi\u00e8res"
+            },
+            "organization": {
+              "id": "4F01090B-C049-4CAF-9C6C-D00312B23DCB",
+              "name": "osfi-bsif",
+              "title": "Office of the Superintendent of Financial Institutions Canada | Bureau du surintendant des institutions financi\u00e8res Canada",
+              "type": "organization",
+              "description": "",
+              "image_url": "",
+              "created": "2016-09-23T17:25:52.142295",
+              "is_organization": true,
+              "approval_status": "approved",
+              "state": "active"
+            },
+            "owner_org": "4F01090B-C049-4CAF-9C6C-D00312B23DCB",
+            "place_of_publication": [
+              "0"
+            ],
+            "portal_release_date": "2025-09-29",
+            "position_name": {},
+            "private": false,
+            "program_page_url": {
+              "en": "",
+              "fr": ""
+            },
+            "ready_to_publish": "true",
+            "restrictions": "unrestricted",
+            "spatial": "",
+            "spatial_representation_type": [],
+            "state": "active",
+            "subject": [
+              "information_and_communications"
+            ],
+            "title": "Banks",
+            "title_translated": {
+              "en": "Banks",
+              "fr": "Banques"
+            },
+            "topic_category": [],
+            "type": "dataset",
+            "url": null,
+            "version": null,
+            "resources": [
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "ckan_url": "https://registry.open.canada.ca",
+                "created": "2025-10-09T11:13:53.370729",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": true,
+                "datastore_contains_all_records_of_source_file": true,
+                "date_published": "2026-07-20",
+                "description": null,
+                "format": "CSV",
+                "hash": "a010759c0a9551121c3f440636db4d76",
+                "id": "d0f6040e-671c-4301-a235-e9e7ba164604",
+                "ignore_hash": false,
+                "language": [
+                  "en",
+                  "fr"
+                ],
+                "last_modified": "2026-07-20T20:36:47.452813",
+                "metadata_modified": "2026-07-20T20:41:33.747905",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "M4 - Consolidated Balance Sheet (Active)\u200b",
+                "name_translated": {
+                  "en": "M4 - Consolidated Balance Sheet (Active)\u200b",
+                  "fr": "M4 - Bilan consolid\u00e9 (Actif)\u200b"
+                },
+                "original_url": "https://registry.open.canada.ca/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/d0f6040e-671c-4301-a235-e9e7ba164604/download/banks_monthly_m4.csv",
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 0,
+                "resource_id": "d0f6040e-671c-4301-a235-e9e7ba164604",
+                "resource_type": "dataset",
+                "set_url_type": false,
+                "size": 746293743,
+                "state": "active",
+                "task_created": "2026-07-20 20:38:40.410029",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/d0f6040e-671c-4301-a235-e9e7ba164604/download/banks_monthly_m4.csv",
+                "url_type": "upload",
+                "validation_status": "success",
+                "validation_timestamp": "2026-07-20T20:38:38.993204"
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "ckan_url": "https://registry.open.canada.ca",
+                "created": "2025-09-29T11:10:21.095699",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": true,
+                "datastore_contains_all_records_of_source_file": true,
+                "date_published": "2026-05-25",
+                "description": null,
+                "format": "CSV",
+                "hash": "59f3acd925ffbf1fd553ab11c3af979d",
+                "id": "fe7617f7-a676-4966-aae3-c4cfbab4b935",
+                "ignore_hash": false,
+                "language": [
+                  "en",
+                  "fr"
+                ],
+                "last_modified": "2026-05-25T17:45:23.166890",
+                "metadata_modified": "2026-05-25T17:50:23.433621",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "BA \u2013 BASEL III Capital Adequacy Reporting - BCAR (Active)",
+                "name_translated": {
+                  "en": "BA \u2013 BASEL III Capital Adequacy Reporting - BCAR (Active)",
+                  "fr": "BA - Relev\u00e9 des normes de fonds propres - B\u00e2le III (Actif)"
+                },
+                "original_url": "https://registry.open.canada.ca/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/fe7617f7-a676-4966-aae3-c4cfbab4b935/download/banks_quarterly_ba.csv",
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 1,
+                "resource_id": "fe7617f7-a676-4966-aae3-c4cfbab4b935",
+                "resource_type": "dataset",
+                "set_url_type": false,
+                "size": 147909900,
+                "state": "active",
+                "task_created": "2026-05-25 17:45:51.093857",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/fe7617f7-a676-4966-aae3-c4cfbab4b935/download/banks_quarterly_ba.csv",
+                "url_type": "upload",
+                "validation_status": "success",
+                "validation_timestamp": "2026-05-25T17:45:49.757823"
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "ckan_url": "https://registry.open.canada.ca",
+                "created": "2025-10-09T11:13:53.370737",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": true,
+                "datastore_contains_all_records_of_source_file": true,
+                "date_published": "2026-05-25",
+                "description": null,
+                "format": "CSV",
+                "hash": "a0e70b05c96853168318d811a73ef77c",
+                "id": "1f86e088-7d29-49c2-94de-ddbfe6559725",
+                "ignore_hash": false,
+                "language": [
+                  "en",
+                  "fr"
+                ],
+                "last_modified": "2026-05-25T18:11:56.061181",
+                "metadata_modified": "2026-05-25T18:21:55.164851",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "E3 - Return of Allowances for Expected Credit Losses (Active)\u200b",
+                "name_translated": {
+                  "en": "E3 - Return of Allowances for Expected Credit Losses (Active)\u200b",
+                  "fr": "E3 - Relev\u00e9 Des Provisions Pour Pertes De Cr\u00e9dit Attendues (Actif)\u200b"
+                },
+                "original_url": "https://registry.open.canada.ca/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/1f86e088-7d29-49c2-94de-ddbfe6559725/download/banks_quarterly_e3.csv",
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 2,
+                "resource_id": "1f86e088-7d29-49c2-94de-ddbfe6559725",
+                "resource_type": "dataset",
+                "set_url_type": false,
+                "size": 70508769,
+                "state": "active",
+                "task_created": "2026-05-25 18:12:12.490724",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/1f86e088-7d29-49c2-94de-ddbfe6559725/download/banks_quarterly_e3.csv",
+                "url_type": "upload",
+                "validation_status": "success",
+                "validation_timestamp": "2026-05-25T18:12:11.197685"
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "ckan_url": "https://registry.open.canada.ca",
+                "created": "2025-10-09T11:13:53.370740",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": true,
+                "datastore_contains_all_records_of_source_file": true,
+                "date_published": "2026-05-25",
+                "description": null,
+                "format": "CSV",
+                "hash": "c40ba29b2971eb252478ac3c5a54daa9",
+                "id": "817d4005-aa4a-4c4f-9dad-6ce7eca40700",
+                "ignore_hash": false,
+                "language": [
+                  "en",
+                  "fr"
+                ],
+                "last_modified": "2026-05-25T17:47:41.606328",
+                "metadata_modified": "2026-05-25T17:50:23.433744",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "LR - Leverage Requirements Return (Active)",
+                "name_translated": {
+                  "en": "LR - Leverage Requirements Return (Active)",
+                  "fr": "LR - D\u00e9claration du ratio de levier (Actif)\u200b"
+                },
+                "original_url": "https://registry.open.canada.ca/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/817d4005-aa4a-4c4f-9dad-6ce7eca40700/download/banks_quarterly_lr.csv",
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 3,
+                "resource_id": "817d4005-aa4a-4c4f-9dad-6ce7eca40700",
+                "resource_type": "dataset",
+                "set_url_type": false,
+                "size": 1781469,
+                "state": "active",
+                "task_created": "2026-05-25 17:47:48.666669",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/817d4005-aa4a-4c4f-9dad-6ce7eca40700/download/banks_quarterly_lr.csv",
+                "url_type": "upload",
+                "validation_status": "success",
+                "validation_timestamp": "2026-05-25T17:47:47.326523"
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "ckan_url": "https://registry.open.canada.ca",
+                "created": "2025-10-06T16:40:54.134153",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": true,
+                "datastore_contains_all_records_of_source_file": true,
+                "date_published": "2026-05-25",
+                "description": null,
+                "format": "CSV",
+                "hash": "0d81511c24fbbd8f0d533f73a9e1dc3a",
+                "id": "027ee7f8-4b87-45cd-a10f-f95d3a5d4e09",
+                "ignore_hash": false,
+                "language": [
+                  "en",
+                  "fr"
+                ],
+                "last_modified": "2026-05-25T17:53:21.446517",
+                "metadata_modified": "2026-05-25T17:54:32.023623",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "P3 - Consolidated Statement Of Income, Retained Earnings & AOCI (Active)\u200b",
+                "name_translated": {
+                  "en": "P3 - Consolidated Statement Of Income, Retained Earnings & AOCI (Active)\u200b",
+                  "fr": "P3 - \u00c9tat consolid\u00e9s des revenus, b\u00e9n\u00e9fices non repartis et AERE (Actif)\u200b"
+                },
+                "original_url": "https://registry.open.canada.ca/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/027ee7f8-4b87-45cd-a10f-f95d3a5d4e09/download/banks_quarterly_p3.csv",
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 4,
+                "resource_id": "027ee7f8-4b87-45cd-a10f-f95d3a5d4e09",
+                "resource_type": "dataset",
+                "set_url_type": false,
+                "size": 228310089,
+                "state": "active",
+                "task_created": "2026-05-25 17:53:54.699908",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/027ee7f8-4b87-45cd-a10f-f95d3a5d4e09/download/banks_quarterly_p3.csv",
+                "url_type": "upload",
+                "validation_status": "success",
+                "validation_timestamp": "2026-05-25T17:53:53.368309"
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "ckan_url": "https://registry.open.canada.ca",
+                "created": "2025-10-09T11:13:53.370742",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": true,
+                "datastore_contains_all_records_of_source_file": true,
+                "date_published": "2026-02-20",
+                "description": null,
+                "format": "CSV",
+                "hash": "9151d070cc9fa677294b9021727052de",
+                "id": "e61851eb-598a-468b-b3ce-f82bcf3744e0",
+                "ignore_hash": false,
+                "language": [
+                  "en",
+                  "fr"
+                ],
+                "last_modified": "2026-02-20T21:07:17.664377",
+                "metadata_modified": "2026-02-20T21:14:19.076979",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "M3 - Capital Adequacy - Market Risk (Inactive Q4/2007)\u200b",
+                "name_translated": {
+                  "en": "M3 - Capital Adequacy - Market Risk (Inactive Q4/2007)\u200b",
+                  "fr": "M3 - Normes de fonds propres -  Risque de march\u00e9 (Inactif T4/2007)\u200b"
+                },
+                "original_url": "https://registry.open.canada.ca/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/e61851eb-598a-468b-b3ce-f82bcf3744e0/download/banks_quarterly_m3.csv",
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 5,
+                "resource_id": "e61851eb-598a-468b-b3ce-f82bcf3744e0",
+                "resource_type": "dataset",
+                "set_url_type": false,
+                "size": 539264,
+                "state": "active",
+                "task_created": "2026-02-20 21:07:24.202882",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/e61851eb-598a-468b-b3ce-f82bcf3744e0/download/banks_quarterly_m3.csv",
+                "url_type": "upload",
+                "validation_status": "success",
+                "validation_timestamp": "2026-02-20T21:07:22.931053"
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "ckan_url": "https://registry.open.canada.ca",
+                "created": "2025-10-09T11:45:25.816647",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": true,
+                "datastore_contains_all_records_of_source_file": true,
+                "date_published": "2026-02-20",
+                "description": null,
+                "format": "CSV",
+                "hash": "805fdb59b3c2efe0c24726f218ec7507",
+                "id": "b9bc23f2-1bc2-42d1-9ef3-615a6c6eb164",
+                "ignore_hash": false,
+                "language": [
+                  "en",
+                  "fr"
+                ],
+                "last_modified": "2026-02-20T21:06:24.646245",
+                "metadata_modified": "2026-02-20T21:14:19.077039",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "G3 - Capital Adequacy Return (Inactive Q1/2008)\u200b",
+                "name_translated": {
+                  "en": "G3 - Capital Adequacy Return (Inactive Q1/2008)\u200b",
+                  "fr": "G3 - Normes de fonds propres (Inactif T1/2008)\u200b"
+                },
+                "original_url": "https://registry.open.canada.ca/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/b9bc23f2-1bc2-42d1-9ef3-615a6c6eb164/download/banks_quarterly_g3.csv",
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 6,
+                "resource_id": "b9bc23f2-1bc2-42d1-9ef3-615a6c6eb164",
+                "resource_type": "dataset",
+                "set_url_type": false,
+                "size": 82593395,
+                "state": "active",
+                "task_created": "2026-02-20 21:06:41.585596",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/b9bc23f2-1bc2-42d1-9ef3-615a6c6eb164/download/banks_quarterly_g3.csv",
+                "url_type": "upload",
+                "validation_status": "success",
+                "validation_timestamp": "2026-02-20T21:06:40.357467"
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "created": "2026-04-13T19:47:15.723192",
+                "data_quality": [],
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "date_published": "2026-04-13",
+                "description": null,
+                "format": "XLSX",
+                "hash": "",
+                "id": "f2271fb5-6a8a-40c0-8425-503728c3f956",
+                "language": [
+                  "en",
+                  "fr"
+                ],
+                "last_modified": "2026-04-13T18:43:58.409563",
+                "metadata_modified": "2026-04-13T19:47:15.701686",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "List of Bank Subsidiaries",
+                "name_translated": {
+                  "en": "List of Bank Subsidiaries",
+                  "fr": "Liste filiales banque"
+                },
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 7,
+                "resource_type": "dataset",
+                "state": "active",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/f2271fb5-6a8a-40c0-8425-503728c3f956/download/list-of-fi-bank-subsidiaries.xlsx",
+                "url_type": "upload",
+                "validation_status": "",
+                "validation_timestamp": ""
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "created": "2025-10-20T19:01:47.769574",
+                "data_quality": [],
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "date_published": "",
+                "description": null,
+                "format": "XLSX",
+                "hash": "",
+                "id": "52af898b-9901-4239-b130-3aa25e5b3f14",
+                "language": [
+                  "en",
+                  "fr"
+                ],
+                "last_modified": "2025-10-20T18:56:30.926867",
+                "metadata_modified": "2025-10-20T19:01:47.753693",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "Data Dictionary",
+                "name_translated": {
+                  "en": "Data Dictionary",
+                  "fr": "Dictionnaire de donn\u00e9es"
+                },
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 8,
+                "resource_type": "data_dictionary",
+                "state": "active",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/52af898b-9901-4239-b130-3aa25e5b3f14/download/data-dictionary-banks.xlsx",
+                "url_type": "upload",
+                "validation_status": "",
+                "validation_timestamp": ""
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "created": "2026-06-03T14:22:26.956015",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "date_published": "2026-06-03",
+                "description": null,
+                "format": "PDF",
+                "hash": "",
+                "id": "fdb8db54-44e3-4380-990a-a28e49c384d4",
+                "language": [
+                  "en"
+                ],
+                "last_modified": "2026-06-03T14:16:32.243424",
+                "metadata_modified": "2026-06-03T15:08:54.116085",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "Banks - User manual",
+                "name_translated": {
+                  "en": "Banks - User manual",
+                  "fr": "Banks - User manual"
+                },
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 9,
+                "resource_type": "guide",
+                "state": "active",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/fdb8db54-44e3-4380-990a-a28e49c384d4/download/banks-user-manual.pdf",
+                "url_type": "upload",
+                "validation_status": "",
+                "validation_timestamp": ""
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "created": "2026-06-03T14:22:26.956019",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "date_published": "2026-06-03",
+                "description": null,
+                "format": "PDF",
+                "hash": "",
+                "id": "98562ed9-a0af-4974-a510-2717feaa10cd",
+                "language": [
+                  "fr"
+                ],
+                "last_modified": "2026-06-03T14:17:54.035112",
+                "metadata_modified": "2026-06-03T15:08:54.116133",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "Banques \u2013 Manuel d\u2019utilisation",
+                "name_translated": {
+                  "en": "Banques \u2013 Manuel d\u2019utilisation",
+                  "fr": "Banques \u2013 Manuel d\u2019utilisation"
+                },
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 10,
+                "resource_type": "guide",
+                "state": "active",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/98562ed9-a0af-4974-a510-2717feaa10cd/download/banques-manuel-dutilisation.pdf",
+                "url_type": "upload",
+                "validation_status": "",
+                "validation_timestamp": ""
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "created": "2026-06-04T12:34:10.978620",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "date_published": "2026-06-04",
+                "description": null,
+                "format": "PDF",
+                "hash": "",
+                "id": "31fb7173-63e4-477b-8e71-7005ba544a64",
+                "language": [
+                  "en"
+                ],
+                "last_modified": "2026-06-04T12:29:23.734902",
+                "metadata_modified": "2026-06-04T12:34:10.944332",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources",
+                "name_translated": {
+                  "en": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources",
+                  "fr": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+                },
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 11,
+                "resource_type": "guide",
+                "size": 4504600,
+                "state": "active",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/31fb7173-63e4-477b-8e71-7005ba544a64/download/step-by-step-api-usage-guide_en.pdf",
+                "url_type": "upload",
+                "validation_status": "",
+                "validation_timestamp": ""
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "created": "2026-06-04T11:03:57.092390",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "date_published": "2026-06-04",
+                "description": null,
+                "format": "PDF",
+                "hash": "",
+                "id": "0b70195c-e3c6-4018-b930-b6e1878a4c7d",
+                "language": [
+                  "fr"
+                ],
+                "last_modified": "2026-06-04T12:34:17.693055",
+                "metadata_modified": "2026-06-04T12:34:24.853982",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "Guide \u00e9tape par \u00e9tape Utilisation des outils de production de rapports, comme Power BI et Excel, pour acc\u00e9der aux sources de donn\u00e9es de l\u2019API du Gouvernement ouvert",
+                "name_translated": {
+                  "en": "Guide \u00e9tape par \u00e9tape Utilisation des outils de production de rapports, comme Power BI et Excel, pour acc\u00e9der aux sources de donn\u00e9es de l\u2019API du Gouvernement ouvert",
+                  "fr": "Guide \u00e9tape par \u00e9tape Utilisation des outils de production de rapports, comme Power BI et Excel, pour acc\u00e9der aux sources de donn\u00e9es de l\u2019API du Gouvernement ouvert"
+                },
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 12,
+                "resource_type": "guide",
+                "size": 5910923,
+                "state": "active",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/0b70195c-e3c6-4018-b930-b6e1878a4c7d/download/step-by-step-api-usage-guide_fr.pdf",
+                "url_type": "upload",
+                "validation_status": "",
+                "validation_timestamp": ""
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "created": "2026-01-14T13:01:27.430374",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "date_published": "2026-01-14",
+                "description": null,
+                "format": "DOCX",
+                "hash": "",
+                "id": "dca2e1d1-b97c-4255-8af8-2bba56ac8a71",
+                "language": [
+                  "en"
+                ],
+                "last_modified": "2026-01-14T12:54:30.159454",
+                "metadata_modified": "2026-01-14T13:01:27.414576",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)",
+                "name_translated": {
+                  "en": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)",
+                  "fr": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+                },
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 13,
+                "resource_type": "guide",
+                "state": "active",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/dca2e1d1-b97c-4255-8af8-2bba56ac8a71/download/mapping-legacy-findat-open-government-findat_e.docx",
+                "url_type": "upload",
+                "validation_status": "",
+                "validation_timestamp": ""
+              },
+              {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "character_set": "",
+                "created": "2026-01-14T13:01:27.430378",
+                "data_quality": [
+                  "data_includes_uris",
+                  "data_includes_links"
+                ],
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "date_published": "2026-01-14",
+                "description": null,
+                "format": "DOCX",
+                "hash": "",
+                "id": "c20f3eb0-13dd-4481-b9fd-414942dd2855",
+                "language": [
+                  "fr"
+                ],
+                "last_modified": "2026-01-14T12:54:58.911027",
+                "metadata_modified": "2026-01-14T13:01:27.415561",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de donn\u00e9es figurant dans le Portail du gouvernement ouvert (APD)",
+                "name_translated": {
+                  "en": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de donn\u00e9es figurant dans le Portail du gouvernement ouvert (APD)",
+                  "fr": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de donn\u00e9es figurant dans le Portail du gouvernement ouvert (APD)"
+                },
+                "package_id": "91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de",
+                "position": 14,
+                "resource_type": "guide",
+                "state": "active",
+                "unique_identifier": "",
+                "url": "https://open.canada.ca/data/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de/resource/c20f3eb0-13dd-4481-b9fd-414942dd2855/download/mapping-legacy-findat-open-government-findat_f.docx",
+                "url_type": "upload",
+                "validation_status": "",
+                "validation_timestamp": ""
+              }
+            ],
+            "tags": [],
+            "groups": [],
+            "relationships_as_subject": [],
+            "relationships_as_object": []
+          }
+        ]
+      }
+    }
+  }
+}

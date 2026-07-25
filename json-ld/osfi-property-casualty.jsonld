@@ -1,0 +1,1072 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatap": "http://data.europa.eu/r5r/",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gsp": "http://www.opengis.net/ont/geosparql#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "schema1": "http://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "time1": "http://www.w3.org/2006/time",
+    "vann": "http://purl.org/vocab/vann/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/2658af9f-0676-4d61-8e49-fc8fa612bc69",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/2658af9f-0676-4d61-8e49-fc8fa612bc69/download/property_and_casualty_companies_quarterly_pc4.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "63682991.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T11:48:27.310233"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T16:14:44.111997"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "PC4 - Test du capital minimal et Test de suffisance de l'actif des succursales des sociétés d'assurance multirisque (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "PC4 - P&C Minimum Capital Test and Branch Adequacy of Assets Test (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N18786fec0c0e4654ba5d60ce3cf4eaa3"
+      }
+    },
+    {
+      "@id": "_:N18786fec0c0e4654ba5d60ce3cf4eaa3",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "5c46cf91c5a058e48044d26aa689bbb1"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/5c362990-9f55-4240-a6e6-ab9fa5f53d5d",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/5c362990-9f55-4240-a6e6-ab9fa5f53d5d/download/property_and_casualty_companies_quarterly_4.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "255197548.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T12:48:52.072519"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T18:22:35.818605"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "4 - PC-2i Foreign Interim (Inactive Q3/2014)"
+        },
+        {
+          "@language": "fr",
+          "@value": "4 - PC-2i étrangère provisoire (Inactif T3/2014)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Ne75917a31d0146cba3d56e9d649069f8"
+      }
+    },
+    {
+      "@id": "_:Ne75917a31d0146cba3d56e9d649069f8",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "20e2a1f3efa01097ad0c34a5536fe53b"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/cb137a22-7f85-4e2a-81a9-a6177222c0a8",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/cb137a22-7f85-4e2a-81a9-a6177222c0a8/download/property_and_casualty_companies_quarterly_mi4.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "12486845.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T11:48:27.310227"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T15:01:59.596208"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "MI4 - Relevé de surveillance trimestriel des assureurs hypothécaires (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "MI4 - Mortgage Insurers Supervisory Quarterly Return (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nfeec1a878e5d477a82f07ef74bb627bd"
+      }
+    },
+    {
+      "@id": "_:Nfeec1a878e5d477a82f07ef74bb627bd",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "db2728fa5ebcddd421bc17453a108864"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/1c5124c6-e632-4dec-9622-6ba90a878816",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/1c5124c6-e632-4dec-9622-6ba90a878816/download/property-and-casualty-companies-user-manual.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:06:25.776467"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:06:25.735516"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Property and casualty companies - User manual"
+        },
+        {
+          "@language": "fr",
+          "@value": "Property and casualty companies - User manual"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/0cf8a4bc-b20e-40a9-bc36-38219652edd2",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/0cf8a4bc-b20e-40a9-bc36-38219652edd2/download/property_and_casualty_companies_quarterly_mi3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "12037380.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T11:48:27.310226"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T15:01:13.210278"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "MI3 - Relevé des états financiers de base desassureurs hypothécaires (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "MI3 - Mortgage Insurers Core Financial Statement Return (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nbdfd8cc2112a42cabdf66951962f7c9b"
+      }
+    },
+    {
+      "@id": "_:Nbdfd8cc2112a42cabdf66951962f7c9b",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "5f987654d7f234ceeb6b99fae0c1045f"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/7b45c3f4-0853-4b53-a63a-0981eaa0aeba",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/7b45c3f4-0853-4b53-a63a-0981eaa0aeba/download/property_and_casualty_companies_quarterly_mi5.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1110419.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T11:48:27.310228"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T15:11:12.774744"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "MI5 - Mortgage Insurers Supervisory Annual Return (Active)"
+        },
+        {
+          "@language": "fr",
+          "@value": "MI5 - Mortgage Insurers Supervisory Annual Return (Actif)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nc36501760e154e11bbf67bdd0eb024f8"
+      }
+    },
+    {
+      "@id": "_:Nc36501760e154e11bbf67bdd0eb024f8",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "bf9a7cbcb3518d1124f667b29da87bcc"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/11dc94fb-8f90-4451-a386-aa2731ed4f2e",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/11dc94fb-8f90-4451-a386-aa2731ed4f2e/download/property_and_casualty_companies_quarterly_1.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "109912170.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T11:48:15.058186"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T14:51:13.501966"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "1 - PC-1 Canadian Annual (Inactive Q3/2014)​"
+        },
+        {
+          "@language": "fr",
+          "@value": "1 - PC-1 canadienne annuelle (Inactif T3/2014)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nc967969d38534aa7b2ed7a147fd156b7"
+      }
+    },
+    {
+      "@id": "_:Nc967969d38534aa7b2ed7a147fd156b7",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "565f83836645049b5be49bbbbbe4fd18"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/1d3afc80-6482-4b27-93e9-91127825232f",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/1d3afc80-6482-4b27-93e9-91127825232f/download/property_and_casualty_companies_quarterly_pc2.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "1041291354.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T11:48:27.310231"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T15:41:36.664230"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "PC2 - P&C Relevé de surveillance trimestriel (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "PC2 - P&C Supervisory Quarterly Return (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N41c5df436883486c87df7777e3ff8a21"
+      }
+    },
+    {
+      "@id": "_:N41c5df436883486c87df7777e3ff8a21",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "eff45b49b4ee5e5027af2655e546b032"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/4ec671af-44a1-43cf-9b28-ee6d657d802f",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/4ec671af-44a1-43cf-9b28-ee6d657d802f/download/property_and_casualty_companies_quarterly_1q.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "591207004.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T19:04:09.240442"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T17:58:14.834314"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "1Q - Relevés Trimenstriel  (Inactif T1/2024)"
+        },
+        {
+          "@language": "en",
+          "@value": "1Q - PC Quarterly  (Inactive Q1/2024)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:N5c833772a2bb4afa8a74bb7d3a2abd7c"
+      }
+    },
+    {
+      "@id": "_:N5c833772a2bb4afa8a74bb7d3a2abd7c",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "a332743ad02bf8781f7da1c71a6781a4"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/b43a8ed9-0d9f-4ecf-ab96-b93f68ccf935",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/b43a8ed9-0d9f-4ecf-ab96-b93f68ccf935/download/property_and_casualty_companies_quarterly_mi1.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "3111542.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T11:48:15.058182"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-03-19T15:32:23.885050"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "MI1 - Relevé financier trimestriel des assureurs hypothécaires canadiens (Inactif T4/2022)​"
+        },
+        {
+          "@language": "en",
+          "@value": "MI1 - Mortgage Insurance Quarterly (Inactive Q4/2022)​"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Ndb538217bbee40cc9dec90ff1bbbb9c2"
+      }
+    },
+    {
+      "@id": "_:Ndb538217bbee40cc9dec90ff1bbbb9c2",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "007cd902074c7427edf1805df49a9718"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/521eb681-8904-48c2-ba53-6d488c85d466",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/521eb681-8904-48c2-ba53-6d488c85d466/download/mapping-legacy-findat-open-government-findat_e.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T12:51:23.929112"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T12:51:23.904766"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        },
+        {
+          "@language": "en",
+          "@value": "Mapping of legacy FINDAT reports (DPA) to datasets in the Open Government Portal (DPA)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/30685923-492c-4872-ad7d-06a2397d51d1",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/30685923-492c-4872-ad7d-06a2397d51d1/download/step-by-step-api-usage-guide_fr.pdf"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "5910923.0"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T11:03:01.071801"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:56:06.959824"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        },
+        {
+          "@language": "en",
+          "@value": "Guide étape par étape Utilisation des outils de production de rapports, comme Power BI et Excel, pour accéder aux sources de données de l’API du Gouvernement ouvert"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/4ae57282-682e-409e-8d05-1976efba9b26",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/4ae57282-682e-409e-8d05-1976efba9b26/download/mapping-legacy-findat-open-government-findat_f.docx"
+      },
+      "dct:format": "DOCX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T12:51:23.929115"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-01-14T12:51:23.906927"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mise en correspondance des anciens rapports FINDAT (APD) et des ensembles de données figurant dans le Portail du gouvernement ouvert (APD)"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/6987c14b-8c4f-4462-9339-1341960d0fc6",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/6987c14b-8c4f-4462-9339-1341960d0fc6/download/property_and_casualty_companies_quarterly_mi.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "2316411.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T11:48:27.310222"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T14:51:13.501506"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "MI -Mortgage Insurance Capital Adequacy Test (Active)"
+        },
+        {
+          "@language": "fr",
+          "@value": "MI - Test de suffisance du Capital des assureurs hypothécaire (Actif)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nb584cf0660d0442fadd94ee853c1c08e"
+      }
+    },
+    {
+      "@id": "_:Nb584cf0660d0442fadd94ee853c1c08e",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "0e4264cb22fc0659fc747d72c4499207"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB",
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Office of the Superintendent of Financial Institutions Canada"
+        },
+        {
+          "@language": "fr",
+          "@value": "Bureau du surintendant des institutions financières Canada"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/c979598d-46fc-45dd-b0a2-ce094737d308",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/c979598d-46fc-45dd-b0a2-ce094737d308/download/step-by-step-api-usage-guide_en.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:56:06.995700"
+      },
+      "dct:language": "en",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:56:06.959727"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        },
+        {
+          "@language": "en",
+          "@value": "Step by Step Guide on how to use reporting tools such as Power BI and Excel to access Open Government API sources"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/f152eb8b-9701-421f-9ee5-819254b1b8ae",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/f152eb8b-9701-421f-9ee5-819254b1b8ae/download/property_and_casualty_companies_quarterly_2.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "89834724.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T11:48:15.058193"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T18:11:39.626063"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "2 - PC-2 Foreign Annual (Inactive Q4/2013)"
+        },
+        {
+          "@language": "fr",
+          "@value": "2 - PC-2 étrangère annuelle (Inactive Q4/2013)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nb476bfa2ec324d9ea9691bd9f07598d0"
+      }
+    },
+    {
+      "@id": "_:Nb476bfa2ec324d9ea9691bd9f07598d0",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "3d18fb3c6d91bc627ae8efc94a3388fb"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/ee07f4d8-b221-49b3-aacc-654bb27bc35e",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/ee07f4d8-b221-49b3-aacc-654bb27bc35e/download/property_and_casualty_companies_quarterly_3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "346860866.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-09T12:48:52.072515"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-02-23T18:22:35.818545"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "3 - PC-1i Canadian Interim (Inactive Q3/2014)"
+        },
+        {
+          "@language": "fr",
+          "@value": "3 - PC-1i canadienne provisoire (Inactif T3/2014)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Ndf921b0f3d9b45c5a5cf288d47ae25e5"
+      }
+    },
+    {
+      "@id": "_:Ndf921b0f3d9b45c5a5cf288d47ae25e5",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "16126fe00d9f8cc4cf80a5697f007385"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/a79ef376-fda8-4534-989e-6740e772edce",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/a79ef376-fda8-4534-989e-6740e772edce/download/data-dictionary-property-and-casualty-companies.xlsx"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:12:06.494427"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-10-20T19:12:06.474775"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Data Dictionary"
+        },
+        {
+          "@language": "fr",
+          "@value": "Dictionnaire de données"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/d4c1d98d-c19e-4730-ab2d-6e64160351a7",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/d4c1d98d-c19e-4730-ab2d-6e64160351a7/download/property_and_casualty_companies_quarterly_pc1.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "420169406.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T11:48:27.310230"
+      },
+      "dct:language": [
+        "fr",
+        "en"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T15:21:13.168380"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "PC1 - P&C Relevé des états financiers de base (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "PC1 - P&C Core Financial Statement Return (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nba8dc9d5d91648739d4f75938bc70e0a"
+      }
+    },
+    {
+      "@id": "_:Nba8dc9d5d91648739d4f75938bc70e0a",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "d8f5be62c7691d9bcd890200c0a86cd2"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705",
+      "@type": "dcat:Dataset",
+      "dcat:contactPoint": {
+        "@id": "_:N5bc7c038d83a4e709f353e8947a0454b"
+      },
+      "dcat:distribution": [
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/11dc94fb-8f90-4451-a386-aa2731ed4f2e"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/30685923-492c-4872-ad7d-06a2397d51d1"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/6987c14b-8c4f-4462-9339-1341960d0fc6"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/c046ea03-a121-470d-bd23-20a4d7fd7b20"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/5c362990-9f55-4240-a6e6-ab9fa5f53d5d"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/1d3afc80-6482-4b27-93e9-91127825232f"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/4ec671af-44a1-43cf-9b28-ee6d657d802f"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/27ff2ef9-d66f-4e73-bbf0-4a13ffb33f8e"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/7b45c3f4-0853-4b53-a63a-0981eaa0aeba"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/4ea3ad80-fec1-4a03-941c-8006318bdb09"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/4ae57282-682e-409e-8d05-1976efba9b26"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/1c5124c6-e632-4dec-9622-6ba90a878816"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/f152eb8b-9701-421f-9ee5-819254b1b8ae"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/ee07f4d8-b221-49b3-aacc-654bb27bc35e"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/cb137a22-7f85-4e2a-81a9-a6177222c0a8"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/c979598d-46fc-45dd-b0a2-ce094737d308"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/0cf8a4bc-b20e-40a9-bc36-38219652edd2"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/d4c1d98d-c19e-4730-ab2d-6e64160351a7"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/a79ef376-fda8-4534-989e-6740e772edce"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/b43a8ed9-0d9f-4ecf-ab96-b93f68ccf935"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/2658af9f-0676-4d61-8e49-fc8fa612bc69"
+        },
+        {
+          "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/521eb681-8904-48c2-ba53-6d488c85d466"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "Casualty"
+        },
+        {
+          "@language": "en",
+          "@value": "insurers"
+        },
+        {
+          "@language": "en",
+          "@value": "Canadian"
+        },
+        {
+          "@language": "en",
+          "@value": "foreign"
+        },
+        {
+          "@language": "en",
+          "@value": "Property"
+        },
+        {
+          "@language": "fr",
+          "@value": "Assurances multirisques canadiennes"
+        },
+        {
+          "@language": "fr",
+          "@value": "multirisques"
+        },
+        {
+          "@language": "fr",
+          "@value": "Assurances multirisques étrangères"
+        },
+        {
+          "@language": "en",
+          "@value": "mortgage"
+        },
+        {
+          "@language": "fr",
+          "@value": "Assureurs hypothécaires canadien"
+        }
+      ],
+      "dct:accrualPeriodicity": "P3M",
+      "dct:description": [
+        {
+          "@language": "en",
+          "@value": "All publicly available financial data as filed by federally regulated property and casualty insurance companies are available free of charge from the Beyond 20/20 Web site.\r\n\r\nIndustry Totals: Please note that to determine total industry data, you must add “Total Canadian P&C”, “Total Foreign P&C” and “Total Canadian Mortgage Insurers”.\r\n(Up to and including Q4 2017, “Total Canadian P&C Companies” industry total included Canadian mortgage insurers’ data.)\r\n(Effective Q1 2018, to determine “Total Canadian P&C Companies” industry data, you must add “Total Canadian P&C” and “Total Canadian Mortgage Insurers”.)\r\n\r\n(For 2023 reporting year, insurers with a December fiscal year-end will begin filing the new IFRS 17 return versions effective Q1 2023 and insurers with an October fiscal year-end are required to continue filing the existing P&C returns until they implement IFRS 17 effective with their Q1 2024 filing period. As a result of this transition year, total industry and Total Canadian P&C data may not be available.)\r\n\r\nData aggregated under \"Total Canadian P&C Companies\" do not include data reported by P&C companies that are subsidiaries of other P&C companies, since these data are already accounted for in the consolidated data reported by the parent companies.\r\n\r\n\r\nThird-Party Information Liability Disclaimer\r\nFor periods beginning in fiscal 2023 (January 2023 for calendar year-ends; November 2023 for October year-ends) Financial data for insurers reflect IFRS 17 insurance contract accounting and prior periods reflect IFRS 4.\r\n\r\nSome of the information on this Web page has been provided by external sources. The Government of Canada is not responsible for the accuracy, reliability or currency of the information supplied by external sources. Users wishing to rely upon this information should consult directly with the source of the information. Content provided by external sources is not subject to official languages, privacy and accessibility requirements.\r\n\r\n__Scheduled publication dates for all active Monthly returns 2026:__\r\n\r\n* January – January 15\r\n* February – February 16\r\n* March – March 16\r\n* April – April 15\r\n* May – May 15\r\n* June – June 15\r\n* July – July 15\r\n* August – August 17\r\n* September – September 15\r\n* October – October 15\r\n* November – November 15\r\n* December – December 15\r\n\r\n__Scheduled publication dates for all active Quarterly returns 2026: __\r\n\r\n* Quarter 1 — Due: May 15 | Publish: May 23\r\n* Quarter 2 — Due: Aug 14 | Publish: Aug 22 \r\n* Quarter 3 — Due: Nov 14 | Publish: Nov 22 \r\n* Quarter 4 — Due: March 1 | Publish: March 19\r\n\r\n\r\n\r\n"
+        },
+        {
+          "@language": "fr",
+          "@value": "Toutes les données financières publiques, telles que soumises par les sociétés d’assurances multirisques fédérales, sont disponibles sans frais sur le site Web de la société Beyond 20/20.\r\n\r\nRésultat total de l'industrie: On obtient le résultat total de l’industrie en additionnant « Total Sociétés d’assurances multirisques canadiennes », « Total Sociétés d’assurances multirisques étrangères » et « Total des sociétés d’assurance hypothécaire canadiennes ».\r\n(Jusqu’à la fin du T4 de 2017, le « Total Sociétés d’assurances multirisques canadiennes » du secteur englobait les données sur les assureurs hypothécaires canadiens.)\r\n(À compter du T1 de 2018, pour déterminer les données afférentes au « Total Sociétés d’assurances multirisques canadiennes », vous devez additionner le « Total Sociétés d’assurances multirisques canadiennes » et le « Total des sociétés d’assurance hypothécaire canadiennes ».)\r\n\r\n(Pour l’exercice de déclaration 2023, les assureurs dont l’exercice se termine en décembre commenceront à produire les nouvelles versions du relevé au titre de l’IFRS 17 à compter du T1 de 2023. Les assureurs dont l’exercice se termine en octobre devront continuer à produire les versions existantes des relevés de l’assurance multirisque (« relevés P&C ») jusqu’à ce qu’ils mettent en œuvre l’IFRS 17, ce qui concordera avec leur période de déclaration du T1 de 2024. En raison de cette année de transition, les données afférentes au « résultat total de l’industrie » et au « Total Sociétés d’assurance multirisque canadiennes » pourraient ne pas être disponibles.\r\n\r\nLe «Total Sociétés d'assurance multirisques canadiennes» ne comprend pas les données déclarées par des sociétés d'assurance multirisques qui sont des filiales d'autres sociétés d'assurance multirisques, car ces données sont déjà prises en compte dans les données consolidées déclarées par la société mère.\r\n\r\n\r\nDésistement de responsabilité concernant l'information provenant de tiers\r\nPour les exercices ouverts en 2023 (janvier 2023 pour les entités dont l’exercice prend fin en décembre; novembre 2023 pour celles dont l’exercice prend fin en octobre) et ultérieurement, les données financières des assureurs sont présentées conformément à la norme IFRS 17 – Contrats d’assurance; pour les exercices antérieurs à 2023, elles sont présentées conformément à la norme IFRS 4.\r\n\r\nUne partie des informations de ce site Web à été fournie par des sources externes. Le gouvernement du Canada n'assume aucune responsabilité concernant la précision, l'actualité ou la fiabilité des informations fournies par les sources externes. Les utilisateurs qui désirent employer cette information devraient consulter directement la source des informations. Le contenu fournit par les sources externes n'est pas assujetti aux exigences sur les langues officielles, la protection des renseignements personnels et l'accessibilité.\r\n\r\n__Dates de publication prévues pour toutes les déclarations mensuelles actives – 2026 : __\r\n\r\n* Janvier – 15 janvier\r\n* Février – 16 février\r\n* Mars – 16 mars\r\n* Avril – 15 avril\r\n* Mai – 15 mai\r\n* Juin – 15 juin\r\n* Juillet – 15 juillet\r\n* Août – 17 août\r\n* Septembre – 15 septembre\r\n* Octobre – 15 octobre\r\n* Novembre – 15 novembre\r\n* Décembre – 15 décembre\r\n\r\n__ Dates de publication prévues pour toutes les déclarations trimestrielles actives – 2026 :__\r\n\r\n* Trimestre 1 — Date d’échéance: 15 mai | Date de publication: 23 mai\r\n* Trimestre 2 — Date d’échéance: 14 août | Date de publication: 22 août \r\n* Trimestre 3 — Date d’échéance: 14 novembre | Date de publication: 22 novembre\r\n* Trimestre 4 — Date d’échéance: 1er mars | Date de publication: 19 mars\r\n\r\n"
+        }
+      ],
+      "dct:identifier": "4c6c515f-7c44-4bb6-ab56-c5f79f75f705",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T11:48:27.302410"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-04T12:56:06.969687"
+      },
+      "dct:publisher": {
+        "@id": "https://open.canada.ca/organization/4F01090B-C049-4CAF-9C6C-D00312B23DCB"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Property and casualty companies"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés d'assurances multirisques"
+        }
+      ]
+    },
+    {
+      "@id": "_:N5bc7c038d83a4e709f353e8947a0454b",
+      "@type": "vcard:Organization",
+      "vcard:hasEmail": {
+        "@id": "mailto:information@osfi-bsif.gc.ca"
+      }
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/4ea3ad80-fec1-4a03-941c-8006318bdb09",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/4ea3ad80-fec1-4a03-941c-8006318bdb09/download/list-of-fi-pc-subsidiaries.xlsx"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "13273.0"
+      },
+      "dct:format": "XLSX",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-14T13:52:29.714920"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-15T13:12:47.956045"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "List of Property and Casualty Company Subsidiaries"
+        },
+        {
+          "@language": "fr",
+          "@value": "Liste des filiales des sociétés d’assurances multirisques"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/27ff2ef9-d66f-4e73-bbf0-4a13ffb33f8e",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/27ff2ef9-d66f-4e73-bbf0-4a13ffb33f8e/download/societes-dassurances-multirisques-manuel-dutilisation.pdf"
+      },
+      "dct:format": "PDF",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:07:33.164155"
+      },
+      "dct:language": "fr",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-06-03T15:07:33.123877"
+      },
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "Sociétés d'assurances multirisques - Manuel d'utilisation"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sociétés d'assurances multirisques - Manuel d'utilisation"
+        }
+      ]
+    },
+    {
+      "@id": "https://open.canada.ca/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/c046ea03-a121-470d-bd23-20a4d7fd7b20",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://open.canada.ca/data/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705/resource/c046ea03-a121-470d-bd23-20a4d7fd7b20/download/property_and_casualty_companies_quarterly_pc3.csv"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:decimal",
+        "@value": "139931979.0"
+      },
+      "dct:format": "CSV",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-09-29T11:48:27.310232"
+      },
+      "dct:language": [
+        "en",
+        "fr"
+      ],
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-05-25T16:14:44.111941"
+      },
+      "dct:title": [
+        {
+          "@language": "fr",
+          "@value": "PC3 - P&C Relevé de surveillance annuel (Actif)"
+        },
+        {
+          "@language": "en",
+          "@value": "PC3 - P&C Supervisory Annual Return (Active)"
+        }
+      ],
+      "spdx:checksum": {
+        "@id": "_:Nb8afc202383049b68176cb3533c3d090"
+      }
+    },
+    {
+      "@id": "_:Nb8afc202383049b68176cb3533c3d090",
+      "@type": "spdx:Checksum",
+      "spdx:checksumValue": {
+        "@type": "xsd:hexBinary",
+        "@value": "c7c6e69995d52956c40915ea083d82d1"
+      }
+    }
+  ]
+}

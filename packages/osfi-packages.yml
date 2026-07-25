@@ -1,0 +1,32 @@
+generated: '2026-07-25'
+method: searched
+source: npm, PyPI, RubyGems, pkg.go.dev, crates.io searches for an OSFI client; https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data
+  for OSFI's own recommended tooling.
+official_sdks: 0
+note: OSFI publishes NO client libraries in any language, and its GitHub organization (github.com/osfi-bsif)
+  exists but has zero public repositories and no profile metadata, so it is not recorded as a first-party
+  source. The packages below are third-party CKAN clients that work against OSFI's data because the portal
+  is CKAN — none are first-party, so no SDKs pointer is claimed.
+packages:
+- language: python
+  registry: pypi
+  name: ckanapi
+  url: https://pypi.org/project/ckanapi/
+  install: pip install ckanapi
+  official: false
+  maintainer: CKAN community (github.com/ckan/ckanapi)
+  note: Generic CKAN Action API client + CLI. Point it at https://open.canada.ca/data/en and call package_search
+    / datastore_search.
+- language: r
+  registry: cran
+  name: ckanr
+  url: https://cran.r-project.org/package=ckanr
+  install: install.packages("ckanr")
+  official: false
+  maintainer: rOpenSci
+  note: Generic CKAN client for R; useful for the FINDAT return series.
+provider_recommended_tooling:
+  note: OSFI's own guidance points analysts at Excel and Power BI rather than at code; each dataset ships
+    a step-by-step guide for pulling it through the Open Government API into those tools.
+  source: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data
+  power_bi_view: The portal has CKAN's power_bi_view extension enabled (status_show).

@@ -1,0 +1,35 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+provider: OSFI
+providerId: osfi
+generated: '2026-07-25'
+method: searched
+created: '2026-07-25'
+modified: '2026-07-25'
+description: 'OSFI''s regulatory data is Government of Canada open data. There is no plan, no tier, no
+  key and no charge — it is released under the Open Government Licence – Canada and read anonymously over
+  the Open Government Portal''s CKAN Action API. The filing side is not a commercial product either: it
+  is a statutory obligation for federally regulated institutions.'
+licence: https://open.canada.ca/en/open-government-licence-canada
+sources:
+- https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data
+- https://open.canada.ca/en/open-government-licence-canada
+plans:
+- id: osfi-open-data
+  name: Open Data
+  type: free
+  description: Anonymous public access to OSFI's registers and regulatory returns.
+  entries:
+  - label: Open API access
+    name: open_api_access
+    type: free
+    metric: requests
+    limit: -1
+    timeFrame: usage
+    geo: global
+    unit: 1
+    price: '0.00'
+    userMultiplied: false
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

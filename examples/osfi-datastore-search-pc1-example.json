@@ -1,0 +1,145 @@
+{
+  "generated": "2026-07-25",
+  "method": "searched",
+  "description": "Read PC1 P&C Core Financial Statement Return data points.",
+  "request": {
+    "method": "GET",
+    "url": "https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=d4c1d98d-c19e-4730-ab2d-6e64160351a7&limit=2",
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "a browser User-Agent is required; the open.canada.ca WAF rejects default curl UAs with an HTML page under HTTP 200"
+    },
+    "auth": "none \u2014 anonymous"
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "help": "https://open.canada.ca/data/en/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "include_total": true,
+        "limit": 2,
+        "records_format": "objects",
+        "resource_id": "d4c1d98d-c19e-4730-ab2d-6e64160351a7",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "_id": 2583670,
+            "Fiscal Year/Annee fiscale": "2026",
+            "Fiscal Quarter": "Q1 - 2026",
+            "Trimestre fiscal": "T1 - 2026",
+            "Id": "1000012",
+            "Total P&C Companies/FIs": "Total Canadian Property & Casualty",
+            "Total Societes d'assurance multirisque/IFFs": "Total soci\u00e9t\u00e9s d\u2019assurances multirisques canadiennes",
+            "Industry Group": "Canadian Property & Casualty",
+            "Groupe Sectoriel": "Assurances multirisques canadiennes",
+            "Return/Releve": "PC1",
+            "Return Title": "PC1 - P&C Core Financial Statement Return",
+            "Titre du releve": "PC1 - P&C Relev\u00e9 des \u00e9tats financiers de base",
+            "Data Point Address/Adresse de point de donnee": "P20100101",
+            "Data Point Address Label": "PC1: ASSETS:Cash and Cash Equivalents, Current Period, Total",
+            "Libelle de l'adresse du point de donnees": "PC1: ACTIF: Encaisse et quasi-esp\u00e8ces, Exercice courant, Total",
+            "FI Inactive Date/Date d'inactivite IFF": "9999-12-31",
+            "Measure Value/Valeur de mesure": "3682194.62"
+          },
+          {
+            "_id": 2583671,
+            "Fiscal Year/Annee fiscale": "2026",
+            "Fiscal Quarter": "Q1 - 2026",
+            "Trimestre fiscal": "T1 - 2026",
+            "Id": "1000012",
+            "Total P&C Companies/FIs": "Total Canadian Property & Casualty",
+            "Total Societes d'assurance multirisque/IFFs": "Total soci\u00e9t\u00e9s d\u2019assurances multirisques canadiennes",
+            "Industry Group": "Canadian Property & Casualty",
+            "Groupe Sectoriel": "Assurances multirisques canadiennes",
+            "Return/Releve": "PC1",
+            "Return Title": "PC1 - P&C Core Financial Statement Return",
+            "Titre du releve": "PC1 - P&C Relev\u00e9 des \u00e9tats financiers de base",
+            "Data Point Address/Adresse de point de donnee": "P20100103",
+            "Data Point Address Label": "PC1: ASSETS:Cash and Cash Equivalents, Prior Period, Total",
+            "Libelle de l'adresse du point de donnees": "PC1: ACTIF: Encaisse et quasi-esp\u00e8ces, Exercice pr\u00e9c\u00e9dent, Total",
+            "FI Inactive Date/Date d'inactivite IFF": "9999-12-31",
+            "Measure Value/Valeur de mesure": "3636300.16"
+          }
+        ],
+        "fields": [
+          {
+            "id": "_id",
+            "type": "int"
+          },
+          {
+            "id": "Fiscal Year/Annee fiscale",
+            "type": "text"
+          },
+          {
+            "id": "Fiscal Quarter",
+            "type": "text"
+          },
+          {
+            "id": "Trimestre fiscal",
+            "type": "text"
+          },
+          {
+            "id": "Id",
+            "type": "text"
+          },
+          {
+            "id": "Total P&C Companies/FIs",
+            "type": "text"
+          },
+          {
+            "id": "Total Societes d'assurance multirisque/IFFs",
+            "type": "text"
+          },
+          {
+            "id": "Industry Group",
+            "type": "text"
+          },
+          {
+            "id": "Groupe Sectoriel",
+            "type": "text"
+          },
+          {
+            "id": "Return/Releve",
+            "type": "text"
+          },
+          {
+            "id": "Return Title",
+            "type": "text"
+          },
+          {
+            "id": "Titre du releve",
+            "type": "text"
+          },
+          {
+            "id": "Data Point Address/Adresse de point de donnee",
+            "type": "text"
+          },
+          {
+            "id": "Data Point Address Label",
+            "type": "text"
+          },
+          {
+            "id": "Libelle de l'adresse du point de donnees",
+            "type": "text"
+          },
+          {
+            "id": "FI Inactive Date/Date d'inactivite IFF",
+            "type": "text"
+          },
+          {
+            "id": "Measure Value/Valeur de mesure",
+            "type": "text"
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=d4c1d98d-c19e-4730-ab2d-6e64160351a7&limit=2",
+          "next": "/api/3/action/datastore_search?resource_id=d4c1d98d-c19e-4730-ab2d-6e64160351a7&limit=2&offset=2"
+        },
+        "total": 693693,
+        "total_was_estimated": false
+      }
+    }
+  }
+}

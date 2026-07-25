@@ -1,0 +1,23 @@
+generated: '2026-07-25'
+method: searched
+source: https://open.canada.ca/data/en/dataset/<id>.jsonld
+description: DCAT descriptions of every datastore-active OSFI dataset, saved verbatim as JSON-LD from
+  the Open Government Portal. open.canada.ca runs CKAN 2.10.8 with the `dcat` and `dcat_json_interface`
+  extensions (confirmed via status_show), so each dataset is also retrievable as .rdf and .ttl at the
+  same path. Each document carries the dataset's dcat:Distribution list — the resource ids the CKAN datastore_search
+  endpoint takes.
+serializations:
+- .jsonld
+- .rdf
+- .ttl
+catalog: https://open.canada.ca/data/en/catalog.jsonld
+files:
+- osfi-banks.jsonld
+- osfi-foreign-bank-branches.jsonld
+- osfi-fraternal-benefit-societies.jsonld
+- osfi-life-insurance.jsonld
+- osfi-loan-companies.jsonld
+- osfi-property-casualty.jsonld
+- osfi-retail-associations.jsonld
+- osfi-trust-companies.jsonld
+- osfi-who-we-regulate.jsonld

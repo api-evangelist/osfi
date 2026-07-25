@@ -1,0 +1,51 @@
+generated: '2026-07-25'
+method: searched
+source: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data;
+  https://docs.ckan.org/en/2.10/api/index.html; live probes 2026-07-25
+versioning:
+  scheme: uri-path
+  current: '3'
+  mechanism: /api/3/action/<action> — the CKAN Action API major version
+  ckan_version: 2.10.8 (from status_show on 2026-07-25)
+  docs: https://docs.ckan.org/en/2.10/api/index.html
+  note: OSFI does not version its own API — it inherits CKAN's. The return SERIES are versioned instead,
+    through the financial reporting instructions and their per-return change control logs.
+publication_cadence:
+  who_we_regulate: monthly, on the 1st
+  findat_monthly: monthly, on the 15th
+  findat_quarterly: late May, August, November and March
+  source: https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data
+deprecation:
+  policy_url: null
+  sunset_header: false
+  practice: 'OSFI publishes no deprecation policy page and sends no RFC 8594 Sunset/Deprecation headers.
+    It does, however, deprecate in the open: superseded return series stay published as datastore-active
+    resources and are re-labelled ''(Inactive <quarter>)'' with the quarter they stopped being collected,
+    so historical data stays queryable after a schema retires.'
+  examples:
+  - 10 - Life 1 (Inactive Q3/2014)
+  - 10A - Life Annual Supplement (Inactive Q4/2023)
+  - 10Q - Life Quarterly (Inactive Q4/2023)
+  - M3 - Capital Adequacy - Market Risk (Inactive Q4/2007)
+  - G3 - Capital Adequacy Return (Inactive Q1/2008)
+  - MI1 - Mortgage Insurance Quarterly (Inactive Q4/2022)
+  - 1Q - PC Quarterly (Inactive Q1/2024)
+  - 86 - Return 86 / TAAM-A (Inactive Q4/2017)
+  - 87 - Return 87 / MCCSR-A (Inactive Q4/2017)
+change_control:
+  detail: changelog/osfi-changelog.yml
+  note: Each return and the glossary carry a dated 'Change Control Log' page listing amendment number,
+    effective date and what changed.
+sla:
+  url: null
+  uptime_target: null
+  note: No SLA is published for open.canada.ca or for OSFI's data publication.
+status_page: null
+status_page_note: No status page was found for open.canada.ca, osfi-bsif.gc.ca or the Regulatory Reporting
+  System.
+platform_roadmap:
+  initiative: Data Collection Modernization (May 2023 – April 2028), with the Bank of Canada and CDIC
+  successor_platform: Regulatory Data Hub (RDH)
+  stated_go_live: late fall 2026
+  api_contract_published: false
+  url: https://www.osfi-bsif.gc.ca/en/about-osfi/progress-our-initiatives/modernizing-we-collect-data-institutions
