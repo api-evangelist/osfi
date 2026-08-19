@@ -57,3 +57,9 @@ not_covered:
     401); it publishes no programmatic interface.
 - capability: SQL over the datastore
   reason: datastore_search_sql is disabled on open.canada.ca (HTTP 400).
+deployment:
+  mode: none
+  verified: derived
+  tools: 9
+  checked: '2026-08-12'
+  source: catalog MCP census
