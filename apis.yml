@@ -18,6 +18,17 @@ description: The Office of the Superintendent of Financial Institutions (OSFI / 
   each dataset. The filing side (the Regulatory Reporting System) is institution-gated behind a Bank of
   Canada Connect login. Everything else is a documentation-and-rulebook corpus of 313 guidance-library
   pages and 142 financial reporting instruction pages.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Insurance
