@@ -1,4 +1,4 @@
-# OSFI (osfi)
+# OSFI
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,137 +64,158 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-The Office of the Superintendent of Financial Institutions (OSFI / BSIF) is Canada's federal prudential regulator, supervising more than 400 federally regulated financial institutions and over 1,200 private pension plans. On the insurance side it supervises federally regulated life insurance companies, property and casualty insurers, mortgage insurers and fraternal benefit societies for solvency and capital adequacy — issuing the LICAT, MCT and BAAT capital guidelines and collecting the LF1/LF2/LF3, PC1–PC4 and MI1–MI5 regulatory returns. Market conduct is not OSFI's remit; that sits with the provinces (FSRA in Ontario, AMF in Quebec), and Canada has no open-insurance mandate — Consumer-Driven Banking excludes insurance entirely.
+The Office of the Superintendent of Financial Institutions (OSFI / BSIF) is Canada's federal prudential regulator, supervising more than 400 federally regulated financial institutions and over 1,200 private pension plans. On the insurance side OSFI supervises federally regulated life insurance companies, property and casualty insurers, mortgage insurers and fraternal benefit societies for solvency and capital adequacy — issuing the LICAT, MCT and BAAT capital guidelines and collecting the LF1/LF2/LF3, PC1-PC4 and MI1-MI5 regulatory returns. It does NOT regulate market conduct; that sits with the provinces (FSRA in Ontario, AMF in Quebec), and Canada has no open-insurance mandate — Consumer-Driven Banking excludes insurance entirely. OSFI publishes no first-party developer portal and no OpenAPI — developer.osfi-bsif.gc.ca, api.osfi-bsif.gc.ca and docs.osfi-bsif.gc.ca do not resolve, and /developers, /api and /developer all return 404. Its real machine-readable surface is its insurance and banking regulatory data (FINDAT) plus the "Who we regulate" register, published as datastore-active datasets on Canada's Open Government portal and readable anonymously through the CKAN 3 Action API (datastore_search; the SQL passthrough datastore_search_sql is disabled on the portal) — OSFI ships a step-by-step API usage guide PDF with each dataset. The filing side (the Regulatory Reporting System) is institution-gated behind a Bank of Canada Connect login. Everything else is a documentation-and-rulebook corpus of 313 guidance-library pages and 142 financial reporting instruction pages.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/osfi/refs/heads/main/apis.yml)
+**Areas:** Insurance · Canada · Regulator · Life Insurance · Property and Casualty · Financial Regulation · Prudential Supervision · Open Data · Risk Data · Market Infrastructure · Banking · Basel III
 
-## Tags
+## OSFI on APIs.io
 
-- Insurance
-- Canada
-- Regulator
-- Life Insurance
-- Property and Casualty
-- Financial Regulation
-- Prudential Supervision
-- Open Data
-- Risk Data
-- Market Infrastructure
+Everything profiled for OSFI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/osfi/](https://apis.io/providers/osfi/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (9)
 
-- **Created:** 2026-07-25
-- **Modified:** 2026-07-25
+- [OSFI Who We Regulate Register](https://apis.io/apis/osfi/osfi-who-we-regulate-register/) — Public register of the federally regulated financial institutions OSFI supervises, including every federally regulated insurer with its Authorized Insurance…
+- [OSFI Life Insurance Companies Financial Data](https://apis.io/apis/osfi/osfi-life-insurance-financial-data/) — Publicly disclosable regulatory returns filed by federally regulated life insurance companies — LCA/LCQ (LICAT capital), LF1 Life Core Financial Statement…
+- [OSFI Property and Casualty Companies Financial Data](https://apis.io/apis/osfi/osfi-property-casualty-financial-data/) — Publicly disclosable regulatory returns filed by federally regulated property and casualty insurers and mortgage insurers — PC1 P&C Core Financial Statement…
+- [OSFI Fraternal Benefit Societies Financial Data](https://apis.io/apis/osfi/osfi-fraternal-benefit-societies-financial-data/) — Publicly disclosable regulatory returns filed by federally regulated fraternal benefit societies — the LICAT (LCA/LCQ) and LF1/LF2/LF3 life-return series…
+- [OSFI Banks Financial Data](https://apis.io/apis/osfi/osfi-banks-financial-data/) — Publicly disclosable regulatory returns filed by federally regulated banks — M4 Consolidated Balance Sheet, BA BASEL III Capital Adequacy Reporting (BCAR),…
+- [OSFI Foreign Bank Branches Financial Data](https://apis.io/apis/osfi/osfi-foreign-bank-branches-financial-data/) — Publicly disclosable regulatory returns filed by foreign bank branches operating in Canada — M4 Consolidated Balance Sheet, E3 Return of Allowances for…
+- [OSFI Trust Companies Financial Data](https://apis.io/apis/osfi/osfi-trust-companies-financial-data/) — Publicly disclosable regulatory returns filed by federally regulated trust companies — M4 Consolidated Balance Sheet, BA BASEL III Capital Adequacy…
+- [OSFI Loan Companies Financial Data](https://apis.io/apis/osfi/osfi-loan-companies-financial-data/) — Publicly disclosable regulatory returns filed by federally regulated loan companies — M4 Consolidated Balance Sheet, BA BASEL III Capital Adequacy Reporting…
+- [OSFI Retail Associations Financial Data](https://apis.io/apis/osfi/osfi-retail-associations-financial-data/) — Publicly disclosable regulatory returns filed by federally regulated cooperative retail associations — M4 Consolidated Balance Sheet, BA BASEL III Capital…
 
-## API posture
+### Published properties
 
-OSFI operates **no first-party developer portal**. `developer.osfi-bsif.gc.ca`, `developers.osfi-bsif.gc.ca`, `docs.osfi-bsif.gc.ca` and `api.osfi-bsif.gc.ca` do not resolve, and `/developers`, `/developer`, `/api` all return HTTP 404. There is no OpenAPI, Swagger, AsyncAPI, GraphQL, gRPC or public Postman collection.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-What OSFI does publish machine-readably is real. Its insurance regulatory returns (FINDAT) and its "Who we regulate" register are pushed to Canada's Open Government portal as datastore-active CKAN datasets and can be read **anonymously** over the CKAN 3 Action API. OSFI ships a step-by-step API usage guide PDF alongside each dataset, so the API route is explicitly sanctioned. This is Canada's closest analogue to the FCA Financial Services Register API — but it is Government-of-Canada CKAN infrastructure, not an OSFI-branded API product.
+#### MCP servers (1)
 
-The filing side is institution-gated: insurers submit their returns through the Regulatory Reporting System behind a Bank of Canada Connect login (HTTP 401 anonymously). The successor Regulatory Data Hub, part of the Data Collection Modernization project, is stated to go live in late fall 2026 with no published API contract.
+Model Context Protocol servers that expose the API to agents.
 
-**ACORD posture: no ACORD reference found.** Zero of the 3,622 URLs in the osfi-bsif.gc.ca sitemap mention ACORD, AL3, ACORD XML, NGDS or IVANS. OSFI collects insurance data in its own return schemas, which is expected for a prudential supervisor — ACORD governs carrier/broker policy and claims transactions, not solvency reporting.
+- [osfi](https://apis.io/servers/osfi/osfi/)
 
-None of the four insurance API verbs — quote, bind, issue, FNOL — are exposed. OSFI writes no policies and settles no claims.
+#### JSON Schema (4)
 
-## APIs
+The data models the API reads and writes.
 
-### OSFI Who We Regulate Register
+- [OSFI FINDAT regulatory-return data point (fiscal-quarter return series)](https://apis.io/schemas/osfi/osfi-financial-return-datapoint/)
+- [OSFI FINDAT regulatory-return data point (calendar-month return series)](https://apis.io/schemas/osfi/osfi-financial-return-datapoint-monthly/)
+- [OSFI Who We Regulate — federally regulated financial institution record](https://apis.io/schemas/osfi/osfi-who-we-regulate-financial-institutions/)
+- [OSFI Who We Regulate — federally regulated private pension plan record](https://apis.io/schemas/osfi/osfi-who-we-regulate-private-pension-plans/)
 
-Public register of the federally regulated financial institutions OSFI supervises, including every federally regulated insurer with its Authorized Insurance Classes, FI industry group, trade name and principal representative. Confirmed live 2026-07-25 — 349 institution records.
+#### JSON-LD (9)
 
-- **Human URL:** [https://open.canada.ca/data/en/dataset/b27ec3ef-7338-4e76-a6fd-128339a92df5](https://open.canada.ca/data/en/dataset/b27ec3ef-7338-4e76-a6fd-128339a92df5)
-- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+Linked-data contexts for the provider's vocabulary.
 
-### OSFI Life Insurance Companies Financial Data
+- [Osfi Banks Context](https://apis.io/jsonld/osfi/osfi-banks/)
+- [Osfi Foreign Bank Branches Context](https://apis.io/jsonld/osfi/osfi-foreign-bank-branches/)
+- [Osfi Fraternal Benefit Societies Context](https://apis.io/jsonld/osfi/osfi-fraternal-benefit-societies/)
+- [Osfi Life Insurance Context](https://apis.io/jsonld/osfi/osfi-life-insurance/)
+- [Osfi Loan Companies Context](https://apis.io/jsonld/osfi/osfi-loan-companies/)
+- [Osfi Property Casualty Context](https://apis.io/jsonld/osfi/osfi-property-casualty/)
+- [Osfi Retail Associations Context](https://apis.io/jsonld/osfi/osfi-retail-associations/)
+- [Osfi Trust Companies Context](https://apis.io/jsonld/osfi/osfi-trust-companies/)
+- [Osfi Who We Regulate Context](https://apis.io/jsonld/osfi/osfi-who-we-regulate/)
 
-LCA/LCQ (LICAT capital), LF1 Life Core Financial Statement Return, LF2 Life Supervisory Quarterly Return and LF3 Life Supervisory Annual Return, plus inactive legacy returns — 13 datastore-active CSV resources. Confirmed live 2026-07-25; the LF1 resource alone returns 531,347 records.
+#### Vocabulary (1)
 
-- **Human URL:** [https://open.canada.ca/data/en/dataset/1358284b-26e7-4c69-abd8-398d3da2c270](https://open.canada.ca/data/en/dataset/1358284b-26e7-4c69-abd8-398d3da2c270)
-- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+The provider's domain terms, defined.
 
-### OSFI Property and Casualty Companies Financial Data
+- [OSFI Glossary of Terms — Reporting Manual for Deposit-Taking Institutions Vocabulary](https://apis.io/vocabularies/osfi/osfi-vocabulary/)
 
-PC1 P&C Core Financial Statement Return, PC2/PC3 supervisory returns, PC4 Minimum Capital Test and Branch Adequacy of Assets Test, and the MI/MI3/MI4/MI5 mortgage-insurance series — 14 datastore-active CSV resources. Confirmed live 2026-07-25; the PC1 resource returns 693,693 records.
+#### Examples (6)
 
-- **Human URL:** [https://open.canada.ca/data/en/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705](https://open.canada.ca/data/en/dataset/4c6c515f-7c44-4bb6-ab56-c5f79f75f705)
-- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+Example requests and responses.
 
-### OSFI Fraternal Benefit Societies Financial Data
+- [Osfi Datastore Search Banks Bcar Example](https://apis.io/examples/osfi/osfi-datastore-search-banks-bcar-example/)
+- [Osfi Datastore Search Life Lf1 Example](https://apis.io/examples/osfi/osfi-datastore-search-life-lf1-example/)
+- [Osfi Datastore Search Not Found Example](https://apis.io/examples/osfi/osfi-datastore-search-not-found-example/)
+- [Osfi Datastore Search Pc1 Example](https://apis.io/examples/osfi/osfi-datastore-search-pc1-example/)
+- [Osfi Datastore Search Who We Regulate Example](https://apis.io/examples/osfi/osfi-datastore-search-who-we-regulate-example/)
+- [Osfi Package Search Example](https://apis.io/examples/osfi/osfi-package-search-example/)
 
-The LICAT (LCA/LCQ) and LF1/LF2/LF3 life-return series applied to Canada's mutual-aid insurers, plus inactive legacy returns — 13 datastore-active CSV resources.
+#### Security (2)
 
-- **Human URL:** [https://open.canada.ca/data/en/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c](https://open.canada.ca/data/en/dataset/7ad44bfe-aa26-4b5b-930b-e7845023dd4c)
-- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+Authentication, trust centre, and vulnerability disclosure.
 
-### OSFI Banks Financial Data
+- [Osfi Authentication](https://apis.io/security/osfi/osfi-authentication/)
+- [Osfi Domain Security](https://apis.io/security/osfi/osfi-domain-security/)
 
-M4 Consolidated Balance Sheet, BA BASEL III Capital Adequacy Reporting (BCAR), E3 Allowances for Expected Credit Losses, LR Leverage Requirements Return and P3 Consolidated Statement of Income — seven datastore-active CSV resources. Confirmed live 2026-07-25; M4 returns 1,555,044 records and BCAR returns 299,223.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://open.canada.ca/data/en/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de](https://open.canada.ca/data/en/dataset/91ed76b4-a1a2-4f87-9c4c-59cd64f7a9de)
-- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+Published plans, tiers and prices.
 
-### OSFI Foreign Bank Branches Financial Data
+- [Osfi Plans Pricing](https://apis.io/plans/osfi/osfi-plans-pricing/)
 
-M4, E3, K3 Supplementary Return for Foreign Bank Branches and P3 — five datastore-active CSV resources. Confirmed live 2026-07-25; K3 returns 28,337 records.
+#### Rate limits (1)
 
-- **Human URL:** [https://open.canada.ca/data/en/dataset/c6879faf-2bc7-4c84-999c-0626ae33ec84](https://open.canada.ca/data/en/dataset/c6879faf-2bc7-4c84-999c-0626ae33ec84)
-- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
+Published request limits.
 
-### OSFI Trust Companies Financial Data
+- [Osfi Rate Limits](https://apis.io/rate-limits/osfi/osfi-rate-limits/)
 
-M4, BA/BCAR, E3, LR and P3 — six datastore-active CSV resources. Confirmed live 2026-07-25; M4 returns 895,465 records.
+## Where to find this API
 
-- **Human URL:** [https://open.canada.ca/data/en/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81](https://open.canada.ca/data/en/dataset/203bb08d-fdff-46f6-93ec-00e5d1d76a81)
-- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
-
-### OSFI Loan Companies Financial Data
-
-M4, BA/BCAR, E3, LR and P3 — six datastore-active CSV resources. Confirmed live 2026-07-25; M4 returns 301,455 records.
-
-- **Human URL:** [https://open.canada.ca/data/en/dataset/79c99c29-deff-4093-9c55-fde484d20028](https://open.canada.ca/data/en/dataset/79c99c29-deff-4093-9c55-fde484d20028)
-- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
-
-### OSFI Retail Associations Financial Data
-
-M4, BA/BCAR, E3, LR and P3 for federally regulated cooperative retail associations — six datastore-active CSV resources. Confirmed live 2026-07-25; M4 returns 19,480 records.
-
-- **Human URL:** [https://open.canada.ca/data/en/dataset/af61ecdd-1a40-4630-8e75-1470e721f318](https://open.canada.ca/data/en/dataset/af61ecdd-1a40-4630-8e75-1470e721f318)
-- **Base URL:** `https://open.canada.ca/data/en/api/3/action`
-
-## Artifacts
-
-Enrichment round 2026-07-25. Everything below was probed live against `https://open.canada.ca/data/en/api/3/action`; nothing is fabricated.
-
-- [`conventions/`](conventions/osfi-conventions.yml) — the CKAN 3 Action API contract as OSFI exposes it: 13 verified actions, limit/offset pagination with `_links`, the `{help, success, result}` envelope, the bilingual/all-text column shape, and two gotchas (the WAF rejects non-browser User-Agents; `datastore_search_sql` is **disabled**, HTTP 400).
-- [`errors/`](errors/osfi-problem-types.yml) — the CKAN error envelope (not RFC 9457), with live-captured 404 and 400 cases and the HTML-under-HTTP-200 WAF failure mode.
-- [`authentication/`](authentication/osfi-authentication.yml) — two surfaces, two models: anonymous read, gated human filing.
-- [`lifecycle/`](lifecycle/osfi-lifecycle.yml) — CKAN v3 path versioning, OSFI's publication calendar, and deprecation-in-the-open (retired return series stay queryable, re-labelled `(Inactive Qx/YYYY)`).
-- [`changelog/`](changelog/osfi-changelog.yml) — the Glossary of Terms Change Control Log: four dated amendments, including the 2018 rename of "Allowance for Impairment" to "Allowance for Expected Credit Losses".
-- [`vocabulary/`](vocabulary/osfi-vocabulary.yml) — OSFI's published Glossary of Terms, the controlled vocabulary for the returns.
-- [`conformance/`](conformance/osfi-conformance.yml) — what it conforms to (CKAN 3, DCAT, JSON-LD/RDF/Turtle, OGL-Canada, IFRS, Basel III) and what it does not (OpenAPI, OAuth, RFC 9457, ACORD).
-- [`json-ld/`](json-ld/) — DCAT descriptions of all nine datastore-active datasets, saved verbatim.
-- [`json-schema/`](json-schema/) — record schemas derived from the live datastore field lists.
-- [`examples/`](examples/) — real captured request/response pairs, including the error case.
-- [`data-model/`](data-model/osfi-data-model.yml) — the register/fact-table entity graph and the full resource catalog.
-- [`skills/`](skills/_index.yml) — three agent skills grounded in verified actions and resource ids.
-- [`mcp/`](mcp/osfi-mcp.yml) — a candidate MCP tool surface (no server is published).
-- [`llms/`](llms/osfi-llms.txt), [`packages/`](packages/osfi-packages.yml), [`well-known/`](well-known/osfi-well-known.yml), [`rate-limits/`](rate-limits/osfi-rate-limits.yml), [`plans/`](plans/osfi-plans-pricing.yml), [`security/`](security/osfi-domain-security.yml).
-
-## Links
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.osfi-bsif.gc.ca/en)
-- [Data and forms](https://www.osfi-bsif.gc.ca/en/data-forms)
-- [Financial data on Open Government](https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data)
-- [Working with Open Government data](https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data)
-- [Guidance library](https://www.osfi-bsif.gc.ca/en/guidance/guidance-library)
-- [Financial reporting instructions](https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns/filing-financial-returns/financial-reporting-instructions)
-- [Reporting and returns](https://www.osfi-bsif.gc.ca/en/data-forms/reporting-returns)
-- [Modernizing how we collect data from institutions](https://www.osfi-bsif.gc.ca/en/about-osfi/progress-our-initiatives/modernizing-we-collect-data-institutions)
-- [OSFI datasets on Open Government](https://search.open.canada.ca/opendata/?owner_org=osfi-bsif)
-- [Regulatory Reporting System sign-in (gated)](https://connect-connexion.bank-banque-canada.ca/igw/apps/ami/portal/login)
-- [News](https://www.osfi-bsif.gc.ca/en/news)
-- [LinkedIn](https://www.linkedin.com/company/office-of-the-superintendent-of-financial-institutions-of-canada)
-- [X (Twitter)](https://twitter.com/OSFICanada)
-- [YouTube](https://www.youtube.com/user/OSFIBSIF)
+- [Documentation](https://www.osfi-bsif.gc.ca/en/data-forms)
+- [Getting started](https://www.osfi-bsif.gc.ca/en/data-forms/open-government-osfi-financial-data/working-open-government-data)
+- [API reference](https://docs.ckan.org/en/2.10/api/index.html)
+- [Support](https://www.osfi-bsif.gc.ca/en/contact-us)
+- [Terms of service](https://www.osfi-bsif.gc.ca/en/terms-conditions)
+- [Privacy policy](https://www.osfi-bsif.gc.ca/en/transparency/access-information-privacy)
+
+## API Evangelist rating
+
+**Kin Score 45.6** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 79.5 |
+| Contract quality | 25.2 |
+| Contract governance | 33.3 |
+| Operational transparency | 52.6 |
+| Developer ergonomics | 56.5 |
+| Access clarity | 42.1 |
+
+**Agent readiness 10.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 21.9** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/osfi/](https://apis.io/providers/osfi/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OSFI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/osfi/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
